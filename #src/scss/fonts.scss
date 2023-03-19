@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Roman.eot');
+	src: local('../fonts/HelveticaNeueCyr-Roman'),
+		url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Bold.eot');
+	src: local('../fonts/HelveticaNeueCyr-Bold'),
+		url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PPRightGothic';
+	src: url('PPRightGothic-WideMedium.eot');
+	src: local('../fonts/PPRightGothic-WideMediumn'),
+		url('../fonts/PPRightGothic-WideMedium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PPRightGothic-WideMedium.woff') format('woff'),
+		url('../fonts/PPRightGothic-WideMedium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "rouble";
+    src: url("../fonts/rouble/rouble.otf") format("opentype");
+}
