@@ -14,6 +14,7 @@ $(document).click(function (e) {
 
 $("body").on("click", ".toggle__nav__item", function () {
   $('.main-nav').toggleClass('active');
+  $('.overflow-background').slideToggle();
 })
 
 $("body").on("click", ".open_soc", function () {
@@ -40,6 +41,14 @@ $('.index-slider').slick({
   dots: false,
   fade: false,
   infinite: true,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
 });
 
 
@@ -156,6 +165,9 @@ $(document).on('click', function(e) {
   if (!$(e.target).closest(".logos-parnters__item").length) {
     $('.logos-parnters__item').removeClass('active');
   }
+  if ((!$(e.target).closest(".header__change-course .container").length) && (!$(e.target).closest(".nav__change-course").length)) {
+    $('.header__change-course').removeClass('active');
+  }
   e.stopPropagation();
 });
 
@@ -182,3 +194,9 @@ $("body").on("click", ".nav__change-course", function () {
   $('.header__change-course').toggleClass('active');
 })
 
+//
+
+$("body").on("click",".toggle__nav", function (event) {
+  $('.toggle__nav').toggleClass('active');
+  $('.header__m-toggle').toggleClass('active');
+});

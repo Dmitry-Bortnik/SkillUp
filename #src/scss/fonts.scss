@@ -21,6 +21,17 @@
 }
 
 @font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('HelveticaNeueCyr-Medium.eot');
+	src: local('../fonts/HelveticaNeueCyr-Medium'),
+		url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+		url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'PPRightGothic';
 	src: url('PPRightGothic-WideMedium.eot');
 	src: local('../fonts/PPRightGothic-WideMediumn'),
