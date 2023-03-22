@@ -123,7 +123,6 @@ $(document).ready(function() {
     const span = $(this).parent().find( 'span' ).html();
     const filterItem = document.createElement("a");
     $(filterItem).appendTo('.multiple-filter').html('<span>' + span + '</span><i></i>');
-    
   })
 
   $("body").on("click", ".multiple-select label > input.inputSelected", function () {

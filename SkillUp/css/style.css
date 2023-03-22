@@ -1068,11 +1068,11 @@ summary::marker {
 
 .multiple-filter {
   margin: 16px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .multiple-filter a {
@@ -1101,6 +1101,7 @@ summary::marker {
 .searchForm {
   max-width: 470px;
   width: 100%;
+  position: relative;
 }
 
 .searchForm input {
@@ -1114,6 +1115,8 @@ summary::marker {
 .searchForm button {
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+  right: 0px;
 }
 
 .index-our-courses {
@@ -2133,7 +2136,7 @@ a.footer-logo {
     border-top: 0px;
     -webkit-box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.1);
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     position: fixed;
     top: 0px;
     background: var(--mainBg);
@@ -2189,6 +2192,10 @@ a.footer-logo {
     font-size: 24px;
     display: block;
     margin-bottom: 35px;
+  }
+
+  .header__mobile-change-course-title {
+    margin-bottom: 20px;
   }
 
   .logo {
@@ -2286,6 +2293,11 @@ a.footer-logo {
 
   .multiple-filter {
     gap: 8px;
+    margin: 0px;
+  }
+
+  .multiple-filter a {
+    margin-top: 20px;
   }
 
   .searchForm {
@@ -2415,7 +2427,7 @@ a.footer-logo {
   }
 
   .header__m-toggle .header__change-course .container {
-    padding: 90px 15px 30px 15px;
+    padding: 85px 15px 20px 15px;
   }
 
   .header__mobile-account {
@@ -2430,7 +2442,7 @@ a.footer-logo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px 10px;
-    margin: 0px 15px;
+    margin: 20px 15px 0px 15px;
   }
 
   .flex-row.header__change-course__list-test {
@@ -2452,7 +2464,7 @@ a.footer-logo {
   }
 
   .title-container {
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 30px 0px;
   }
 
   .title-container .title__descr {
@@ -2483,7 +2495,11 @@ a.footer-logo {
   }
 
   .multiple-select {
-    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .index-our-courses__filter {
+    margin-bottom: 25px;
   }
 
   .our-courses__item {
@@ -2493,6 +2509,10 @@ a.footer-logo {
   .index-feedbacks .title {
     font-size: 40px;
     margin-bottom: 25px;
+  }
+
+  .index-feedbacks .title__descr {
+    margin-bottom: 10px;
   }
 
   .index-feedbacks__tags {
@@ -2520,5 +2540,18 @@ a.footer-logo {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .index-contacts .title__descr {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .subscribe-containter .title__descr {
+    margin-bottom: 10px;
+  }
+
+  .footer .flex-row [class^=flex-col] {
+    margin-top: 25px;
   }
 }
