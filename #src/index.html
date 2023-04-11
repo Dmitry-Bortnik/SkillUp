@@ -14,7 +14,14 @@
         @@include('_header.html')
         <div class="container">
             <div class="index-banner">
-                <img src="img/banner_content.jpg" alt="">
+                <div class="index-banner--top">
+                    <img src="img/main-banner-top.png" alt="">
+                    <h1>Школа 3D рисунка и цифровой графики</h1>
+                </div>
+                <div class="index-banner--bottom">
+                    <div class="index-banner--image"><img src="img/banner-img.png" alt=""></div>
+                    <div class="index-banner--int"><img src="img/main-banner-int.png" alt=""></div>
+                </div>
             </div>
             <section class="index-slider slider">
                 <div>
@@ -61,7 +68,7 @@
                         </div>
                     </div>
                     <div class="flex-col-6 cust-col-tablet-12">
-                        <img class="index-about__image" src="img/main-about.jpg" alt="">
+                        <div class="index-about--image" style="background: url('img/main-about__tablet.jpg') no-repeat center; background-size: cover;"></div>
                     </div>
                 </div>
             </div>
@@ -69,18 +76,18 @@
                 <div class="title-container">
                     <div class="title">ОСНОВНЫЕ Направления <br> для обучения</div>
                 </div>
-                <div class="index-basic-direction__index draft-banner">
+                <a href="#" class="index-basic-direction__index draft-banner">
                     <span>РИСУНОК</span>
-                    <a class="link-arrow" href="#">Подробнее</a>
-                </div>
-                <div class="index-basic-direction__index twod-banner">
+                    <div class="link-arrow" href="#">Подробнее</div>
+                </a>
+                <a href="#" class="index-basic-direction__index twod-banner">
                     <span>2D ГРАФИКА</span>
-                    <a class="link-arrow" href="#">Подробнее</a>
-                </div>
-                <div class="index-basic-direction__index treed-banner">
+                    <div class="link-arrow" href="#">Подробнее</div>
+                </a>
+                <a href="#" class="index-basic-direction__index treed-banner">
                     <span>3D ГРАФИКА</span>
-                    <a class="link-arrow" href="#">Подробнее</a>
-                </div>
+                    <div class="link-arrow" href="#">Подробнее</div>
+                </a>
             </div>
             <div class="index-maps-test">
                 <div class="flex-row">
@@ -105,103 +112,118 @@
                 </div>
                 <div class="index-our-courses__filter">
                     <div class="flex-row">
-                        <div class="flex-col-6 cust-col-tablet-12">
+                        <div class="flex-col-8 cust-col-tablet-12">
                             <details class="multiple-select">
-                                <summary>Направление</summary>
+                                <summary>
+                                    <div class="multiple--title">Направление</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
                                 <div class="multiple-select-dropdown">
                                     <label>
-                                        <input type="checkbox" hidden name="rusunok" value="Рисунок">
+                                        <input type="radio" hidden name="napravlenie" value="Рисунок">
                                         <span class="content">Рисунок</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="2d" value="2D Графика">
+                                        <input type="radio" hidden name="napravlenie" value="2D Графика">
                                         <span class="content">2D Графика</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="3d" value="3D Графика">
+                                        <input type="radio" hidden name="napravlenie" value="3D Графика">
                                         <span class="content">3D Графика</span>
                                     </label>
                                 </div>
                             </details>
                             <details class="multiple-select">
-                                <summary>Уровень</summary>
+                                <summary>
+                                    <div class="multiple--title">Уровень</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
                                 <div class="multiple-select-dropdown">
                                     <label>
-                                        <input type="checkbox" hidden name="Junior" value="Junior">
+                                        <input type="radio" hidden name="levl" value="Junior">
                                         <span class="content">Junior</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="Middle" value="Middle">
+                                        <input type="radio" hidden name="levl" value="Middle">
                                         <span class="content">Middle</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="High" value="High">
+                                        <input type="radio" hidden name="levl" value="High">
                                         <span class="content">High</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="Pro" value="Pro">
+                                        <input type="radio" hidden name="levl" value="Pro">
                                         <span class="content">Pro</span>
                                     </label>
                                 </div>
                             </details>
                             <details class="multiple-select">
-                                <summary>Формат</summary>
+                                <summary>
+                                    <div class="multiple--title">Формат</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
                                 <div class="multiple-select-dropdown">
                                     <label>
-                                        <input type="checkbox" hidden name="online" value="Онлайн">
+                                        <input type="radio" hidden name="format" value="Онлайн">
                                         <span class="content">Онлайн</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="moscow" value="Москва">
+                                        <input type="radio" hidden name="format" value="Москва">
                                         <span class="content">Москва</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="piter" value="Питер">
+                                        <input type="radio" hidden name="format" value="Питер">
                                         <span class="content">Питер</span>
                                     </label>
                                 </div>
                             </details>
                             <details class="multiple-select">
-                                <summary>Длительность</summary>
+                                <summary>
+                                    <div class="multiple--title">Длительность</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
                                 <div class="multiple-select-dropdown">
                                     <label>
-                                        <input type="checkbox" hidden name="do3hmesyacev" value="До трёх месяцев">
+                                        <input type="radio" hidden name="duration" value="До трёх месяцев">
                                         <span class="content">До трёх месяцев</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="3-6mesyacev" value="3-6 месяцев">
+                                        <input type="radio" hidden name="duration" value="3-6 месяцев">
                                         <span class="content">3-6 месяцев</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="7-12mesyacev" value="7-12 месяцев">
+                                        <input type="radio" hidden name="duration" value="7-12 месяцев">
                                         <span class="content">7-12 месяцев</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="bolshe-goda" value="Больше года">
+                                        <input type="radio" hidden name="duration" value="Больше года">
                                         <span class="content">Больше года</span>
                                     </label>
                                 </div>
                             </details>
                             <details class="multiple-select">
-                                <summary>Стоимость</summary>
+                                <summary>
+                                    <div class="multiple--title">Стоимость</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
                                 <div class="multiple-select-dropdown">
                                     <label>
-                                        <input type="checkbox" hidden name="besplatno" value="Бесплатно">
+                                        <input type="radio" hidden name="price" value="Бесплатно">
                                         <span class="content">Бесплатно</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="deshevle" value="Сначала дешевле">
+                                        <input type="radio" hidden name="price" value="Сначала дешевле">
                                         <span class="content">Сначала дешевле</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox" hidden name="dorozhe" value="Сначала дороже">
+                                        <input type="radio" hidden name="price" value="Сначала дороже">
                                         <span class="content">Сначала дороже</span>
                                     </label>
 
                                 </div>
                             </details>
                         </div>
-                        <div class="flex-col-6 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
+                        <div class="flex-col-4 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
                             <form action="#" class="searchForm">
                                 <input type="search" placeholder="Поиск">
                                 <button type="submit"></button>
@@ -456,14 +478,14 @@
                         </div>
                         <div class="feedback-slider slider">
                             <div>
-                                <p>Пятый и финальный день интенсива в skillsupschool. Я шла на этот интенсив с желанием
+                                <p data-fancybox data-src="#feedback-1">Пятый и финальный день интенсива в skillsupschool. Я шла на этот интенсив с желанием
                                     понять мое ли это заниматься компьютерной графикой и смогу ли вообще. Да, это было в
                                     чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно
                                     что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно. Да, это
                                     было в чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все
                                     равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно...
                                 </p>
-                                <a class="feedback-slider__author">
+                                <a class="feedback-slider__author" >
                                     <img src="img/avatar-nastya.png" alt="">
                                     <div class="feedback-slider__author-text">
                                         <div class="author-name">Настя Макарова</div>
@@ -472,7 +494,7 @@
                                 </a>
                             </div>
                             <div>
-                                <p>Пятый и финальный день интенсива в skillsupschool. Я шла на этот интенсив с желанием
+                                <p data-fancybox data-src="#feedback-2">Пятый и финальный день интенсива в skillsupschool. Я шла на этот интенсив с желанием
                                     понять мое ли это заниматься компьютерной графикой и смогу ли вообще. Да, это было в
                                     чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно
                                     что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно. Да, это
@@ -653,6 +675,7 @@
             </div>
             <div class="index-events index-section">
                 <div class="flex-row">
+                    <div class="flex-col-12"><div class="border"></div></div>
                     <div class="flex-col-6 cust-col-tablet-12">
                         <div class="title">Skills up мероприятия</div>
                         <div class="title__descr">Skills Up School появилась в Петербурге 9 лет назад и с тех пор
@@ -664,34 +687,23 @@
                         </div>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" href="#">
-                            <img src="img/event-1.png" alt="">
-                        </a>
+                        <a class="index-event__item" style="background: url('img/event-1.png') no-repeat center; background-size: cover;" href="#"> </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" href="#">
-                            <img src="img/event-1.png" alt="">
-                        </a>
+                        <a class="index-event__item" style="background: url('img/event-1.png') no-repeat center; background-size: cover;" href="#"> </a>
+                    </div>
+                    <div class="flex-col-12"> <div class="border"></div></div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a class="index-event__item" style="background: url('img/event-2.png') no-repeat center; background-size: cover;" href="#"> </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" href="#">
-                            <img src="img/event-2.png" alt="">
-                        </a>
+                        <a class="index-event__item" style="background: url('img/event-3.png') no-repeat center; background-size: cover;" href="#"> </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" href="#">
-                            <img src="img/event-3.png" alt="">
-                        </a>
+                        <a class="index-event__item" style="background: url('img/event-4.png') no-repeat center; background-size: cover;" href="#"> </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" href="#">
-                            <img src="img/event-4.png" alt="">
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" href="#">
-                            <img src="img/event-5.png" alt="">
-                        </a>
+                        <a class="index-event__item" style="background: url('img/event-5.png') no-repeat center; background-size: cover;" href="#"> </a>
                     </div>
                 </div>
                 <a class="see-all__link" href="#">Смотреть все мероприятия</a>
@@ -778,7 +790,7 @@
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <div class="index-contacts__location">
                             <span>Москва</span>
-                            <p>Шлюзовая наб., д. 8 ст 1
+                            <p>Шлюзовая наб., <br>д. 8 ст 1
                                 <a href="tel:+7 495 003 72 65">+7 495 003 72 65</a>
                             </p>
                             <a class="index-contacts__link" href="#">Как добраться</a>
@@ -792,7 +804,7 @@
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <div class="index-contacts__location">
                             <span>Санкт-Петербург</span>
-                            <p>Уральская улица, д. 1, корп. 2, лит. А
+                            <p>Уральская улица, <br>д. 1, корп. 2, лит. А
                                 <a href="tel:+7 495 003 72 65">+7 495 003 72 65</a>
                             </p>
                             <a class="index-contacts__link" href="#">Как добраться</a>
@@ -841,7 +853,7 @@
                     <div class="flex-col-6 cust-col-tablet-12">
                         <form class="subscribe-form" action="#">
                             <input type="text" name="name" required placeholder="Введите Имя">
-                            <input type="text" name="phone" required placeholder="Введите Email">
+                            <input type="text" name="mail" required placeholder="Введите Email">
                             <div class="custom-checkbox">
                                 <input type="checkbox" checked id="checkbox-subscribe" name="checkbox-subscribe">
                                 <label for="checkbox-subscribe">
@@ -857,12 +869,10 @@
 
         </div>
 
-
-
-
     </main>
     @@include('_footer.html')
     @@include('_modal.html')
+    @@include('_feedbacks.html')
     @@include('_scripts.html')
 </body>
 

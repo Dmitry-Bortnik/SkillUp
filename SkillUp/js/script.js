@@ -118,31 +118,23 @@ $(document).ready(function() {
 
   // filter selected
 
-  $("body").on("click", ".multiple-select-dropdown label input:not('.inputSelected')", function () {
-    $(this).addClass('inputSelected');
+  $("body").on("click", ".multiple-select-dropdown label input", function () {
     const span = $(this).parent().find( 'span' ).html();
-    const filterItem = document.createElement("a");
-    $(filterItem).appendTo('.multiple-filter').html('<span>' + span + '</span><i></i>');
+    const selected = $(this).parents('.multiple-select-dropdown').prev().find('.multiple--selected');
+    $(this).parents('.multiple-select-dropdown').prev().find('.multiple--title').hide();
+    $(this).parents('.multiple-select-dropdown').prev().addClass('summary-selected');
+    selected.html('<span>' + span + '</span><i></i>').addClass('active');
   })
+  
+  $("body").on("click", ".multiple--selected i", function () {
+    $(this).parents('.multiple--selected').prev('.multiple--title').show();
+    $(this).parents('summary').removeClass('summary-selected');
+    const radio = $(this).parents('summary').next('.multiple-select-dropdown');
 
-  $("body").on("click", ".multiple-select label > input.inputSelected", function () {
-    $(this).removeClass('inputSelected');
-    const span = $(this).parent().find('span').html();
-    $(".multiple-filter a").each(function(i){
-      if ($(this).find('span').html() == span) {
-        $(this).remove();
-      }
-    })
-  })
-
-  $("body").on("click", ".multiple-filter a i", function () {
-    const span = $(this).parent().find('span').html();
-    $(".multiple-select label > input:checked").each(function(i){
-      if ($(this).parent().find('span').html() == span) {
-        $(this).prop("checked", false);
-      }
-    });
-    $(this).parent().remove();
+     $(radio[0].children).each(function(i){
+        $(this.children[0].checked = false);
+      });
+    $(this).parent().removeClass('active').html('');
   })
 
   $(document).on('click', function(e) {
@@ -155,10 +147,6 @@ $(document).ready(function() {
 });
 
 // index partners
-
-$("body").on("click", ".logos-parnters__v", function () {
-  $(this).parent().toggleClass('active');
-})
 
 $(document).on('click', function(e) {
   if (!$(e.target).closest(".logos-parnters__item").length) {
@@ -185,6 +173,7 @@ $("body").on("click", ".subscribe-form input[type=checkbox]", function () {
 // 
 
 $("body").on("click", ".nav__dropdown span", function () {
+  $(this).toggleClass('active');
   $(this).next().toggleClass('active');
 })
 
@@ -198,4 +187,5 @@ $("body").on("click", ".nav__change-course", function () {
 $("body").on("click",".toggle__nav", function (event) {
   $('.toggle__nav').toggleClass('active');
   $('.header__m-toggle').toggleClass('active');
+  $('body').toggleClass('no-scroll');
 });
