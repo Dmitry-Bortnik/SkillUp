@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Up School - Каталог курсов</title>
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+    <div class="header__top">
+        <div class="container xl-flex xl-align-center xl-jst-btw">
+            <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+            <div class="header__top-right-side xl-flex xl-align-center xl-jst-btw">
+                <a class="header__phone" href="tel:88005500540">8-800-550-05-40</a>
+                <div class="header__top-nav">
+                    <a class="header__acc-href" href="#">Аккаунт</a>
+                </div>
+            </div>
+            <div class="toggle__nav__item">
+                <div class="toggle__nav">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__m-toggle">
+        <div class="header__m-scroll">
+            <div class="navigation">
+                <div class="container xl-flex xl-align-center xl-jst-btw x-block">
+                    <div class="nav xl-flex xl-align-center xl-jst-btw x-block">
+                        <div class="nav__change-course">
+                            <span>Выбрать курс</span>
+                        </div>
+                        <a href="#">Работы студентов</a>
+                        <a href="#">Отзывы</a>
+                        <a href="#">Кураторы</a>
+                        <div class="nav__dropdown">
+                            <span>Комьюнити</span>
+                            <div class="dropdown">
+                                <a href="#">О школе</a>
+                                <a href="#">Мероприятия</a>
+                                <a href="#">Лекторий</a>
+                                <a href="#">Блог</a>
+                                <a href="#">Skills up Lab</a>
+                                <a href="#">Клуб Skills up</a>
+                                <a href="#">Вопросы и ответы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__for-partners xl-flex xl-align-center x-block">
+                        <a class="header__for-partners__link" href="#">Контакты</a>
+                        <div class="header__basket">
+                            <div class="basket">
+                                <span></span>
+                            </div>
+                        </div>
+                        <a class="header__mobile-callback" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__change-course">
+                <div class="container">
+                    <a class="header__mobile-account" href="#">Аккаунт</a>
+                    <div class="header__mobile-change-course-title">Выбрать курс</div>
+                    <div class="flex-row">
+                        <div class="flex-col-6 cust-col-tablet-12 header__change-course__list">
+                            <a href="courses.html" class="header__change-course__category">Все курсы</a>
+                            <a href="course.html" class="header__change-course__category">Рисунок</a>
+                            <a href="#" class="header__change-course__category">2D Графика</a>
+                            <a href="#" class="header__change-course__category">3D Графика</a>
+                        </div>
+                        <div class="flex-col-6 cust-col-tablet-12 header__search-container">
+                            <form class="header__search" action="#">
+                                <input type="search" placeholder="Поиск по курсам и навыкам">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-row header__change-course__list-test">
+                        <div class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12">
+                            <div class="header__change-course__test">
+                                <div class="header__change-course__test__image">
+                                    <img width="118" src="img/blNE_KpMtKa2HKBGBerbaby-yoda.png" alt="">
+                                </div>
+                                <div class="header__change-course__test__text">
+                                    <p>Пройти тест по <br>совместимости профессии</p>
+                                    <a href="#">начать тест</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12">
+                            <div class="header__change-course__test">
+                                <div class="header__change-course__test__image">
+                                    <img src="img/blNE_KpMtKa2HKBGBerbaby-yoda.png" alt="">
+                                </div>
+                                <div class="header__change-course__test__text">
+                                    <p>Пройти тест по <br>совместимости профессии</p>
+                                    <a href="#">начать тест</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-col-4 tablet-none">
+                            <div class="header__change-course__test header__change-course__map-b">
+                                <div class="header__change-course__test__text">
+                                    <p>Карта профессий по <br>всем направлениям</p>
+                                    <a href="#">Смотреть</a>
+                                </div>
+                                <div class="header__change-course__test__image">
+                                    <img src="img/other.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+           
+            <div class="our-courses">
+                <div class="title-container">
+                    <div class="title">Наши курсы</div>
+                </div>
+                <div class="index-our-courses__filter">
+                    <div class="flex-row">
+                        <div class="flex-col-8 cust-col-tablet-12">
+                            <details class="multiple-select">
+                                <summary>
+                                    <div class="multiple--title">Направление</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
+                                <div class="multiple-select-dropdown">
+                                    <label>
+                                        <input type="radio" hidden name="napravlenie" value="Рисунок">
+                                        <span class="content">Рисунок</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="napravlenie" value="2D Графика">
+                                        <span class="content">2D Графика</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="napravlenie" value="3D Графика">
+                                        <span class="content">3D Графика</span>
+                                    </label>
+                                </div>
+                            </details>
+                            <details class="multiple-select">
+                                <summary>
+                                    <div class="multiple--title">Уровень</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
+                                <div class="multiple-select-dropdown">
+                                    <label>
+                                        <input type="radio" hidden name="levl" value="Junior">
+                                        <span class="content">Junior</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="levl" value="Middle">
+                                        <span class="content">Middle</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="levl" value="High">
+                                        <span class="content">High</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="levl" value="Pro">
+                                        <span class="content">Pro</span>
+                                    </label>
+                                </div>
+                            </details>
+                            <details class="multiple-select">
+                                <summary>
+                                    <div class="multiple--title">Формат</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
+                                <div class="multiple-select-dropdown">
+                                    <label>
+                                        <input type="radio" hidden name="format" value="Онлайн">
+                                        <span class="content">Онлайн</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="format" value="Москва">
+                                        <span class="content">Москва</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="format" value="Питер">
+                                        <span class="content">Питер</span>
+                                    </label>
+                                </div>
+                            </details>
+                            <details class="multiple-select">
+                                <summary>
+                                    <div class="multiple--title">Длительность</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
+                                <div class="multiple-select-dropdown">
+                                    <label>
+                                        <input type="radio" hidden name="duration" value="До трёх месяцев">
+                                        <span class="content">До трёх месяцев</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="duration" value="3-6 месяцев">
+                                        <span class="content">3-6 месяцев</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="duration" value="7-12 месяцев">
+                                        <span class="content">7-12 месяцев</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="duration" value="Больше года">
+                                        <span class="content">Больше года</span>
+                                    </label>
+                                </div>
+                            </details>
+                            <details class="multiple-select">
+                                <summary>
+                                    <div class="multiple--title">Стоимость</div>
+                                    <div class="multiple--selected"></div>
+                                </summary>
+                                <div class="multiple-select-dropdown">
+                                    <label>
+                                        <input type="radio" hidden name="price" value="Бесплатно">
+                                        <span class="content">Бесплатно</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="price" value="Сначала дешевле">
+                                        <span class="content">Сначала дешевле</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" hidden name="price" value="Сначала дороже">
+                                        <span class="content">Сначала дороже</span>
+                                    </label>
+            
+                                </div>
+                            </details>
+                        </div>
+                        <div class="flex-col-4 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
+                            <form action="#" class="searchForm">
+                                <input type="search" placeholder="Поиск">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="multiple-filter"></div>
+                </div>
+                <div class="our-courses__list flex-row">
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-1.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-2.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-3.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Скетч от руки + перевод рисунка в цифровой вид
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-4.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-1.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-2.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-3.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                        <a href="#" class="our-courses__item">
+                            <div class="our-courses__image">
+                                <img src="img/course-4.png" alt="">
+                            </div>
+                            <div class="our-courses__name">
+                                Стилизованный 3D-персонаж
+                            </div>
+                            <div class="our-courses__prices">
+                                <div class="our-courses__old-price">12 250</div>
+                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe-containter">
+    <div class="flex-row">
+        <div class="flex-col-6 cust-col-tablet-12">
+            <div class="title">подпишись сейчас на новости от skills up</div>
+            <div class="title__descr">Подпишитесь на рассылку, чтобы <a href="#">первыми узнавать</a>
+                новости о свежих поступлениях, <a href="#">скидках и распродажах</a>.</div>
+        </div>
+        <div class="flex-col-6 cust-col-tablet-12">
+            <form class="subscribe-form" action="#">
+                <input type="text" name="name" required placeholder="Введите Имя">
+                <input type="text" name="mail" required placeholder="Введите Email">
+                <div class="custom-checkbox">
+                    <input type="checkbox" checked id="checkbox-subscribe" name="checkbox-subscribe">
+                    <label for="checkbox-subscribe">
+                        <span>Нажимая на кнопку подписаться вы соглашаетесь с политикой
+                            конфидициальности.</span>
+                    </label>
+                </div>
+                <button class="subscribe-subtit" type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="flex-row footer-links">
+            <div class="flex-col-12"><div class="border"></div></div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="/" class="footer-logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#">выбрать курс</a>
+                <a href="#" class="disabled-link">Карта профессий</a>
+                <a href="#" class="disabled-link">Пройти тест</a>
+                <a href="#">О школе</a>
+                <a href="#">Вопросы и ответы</a>
+                <a href="#" class="disabled-link">Skills up LAB</a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#">Работы студентов</a>
+                <a href="#">отзывы</a>
+                <a href="#">Кураторы</a>
+                <a href="#">Лекторий</a>
+                <a href="#">Блог</a>
+                <a href="#">Мероприятия</a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#">Партнерам</a>
+                <a href="#">контакты</a>
+                <a href="#">Для компаний</a>
+                <a href="#" class="disabled-link">Вакансии</a>
+                <a href="#" class="disabled-link">клуб Skills up</a>
+                <a href="#">Подарочный Сертификат</a>
+            </div>
+        </div>
+        <div class="flex-row footer-copy">
+           
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                © Skills Up School, 2013-2022
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#">Пользовательское соглашение</a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#">Договор оферты</a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#">Реквизиты</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="overflow-background"></div>
+    <div class="basket__wrapper">
+    <div class="basket__container">
+        <div class="basket__head">
+            <div class="basket__title">Выбранные курсы</div>
+            <div class="basket__close">закрыть</div>
+        </div>
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-1.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-2.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-3.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">2D ГРАФИКА MIDDLE</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-1.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-2.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-3.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">2D ГРАФИКА MIDDLE</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <div class="basket__summ--title">
+                    Вся сумма
+                </div>
+                <div class="basket__summ--i">
+                    61 250 <span class="rouble">i</span>
+                </div>
+            </div>
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+            </div>
+            <div class="basket__summ--row">
+                <a id="continue-pay" class="btn" href="#">Продолжить покупки</a>
+            </div>
+        </div>
+
+        <div class="basket__head">
+            <div class="basket__title">Популярные курсы</div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-3.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
+            </div>
+            <div class="basket__course--href">
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-3.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
+            </div>
+            <div class="basket__course--href">
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-3.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
+            </div>
+            <div class="basket__course--href">
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+            </div>
+        </div>
+
+        <div class="basket__head">
+            <div class="basket__title">В корзине ничего нет</div>
+        </div>
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="#">В каталог</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <form action="#" id="form-modal">
+        <div class="form-row">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="text" name="phone" placeholder="+ 7 (___)___-___-__" required>
+        </div>
+        <div class="form-row">
+            <textarea name="comment" placeholder="Опишите вопрос"></textarea>
+        </div>
+        <div class="form-control">
+            <button type="submit">Заказать</button>
+        </div>
+    </form>
+    <div class="form-thx">
+        <div>Спасибо!</div>
+        <p>Наш менеджер перезвонит <br>Вам в ближайшее время</p>
+    </div>
+</div>
+
+
+    <div id="feedback-1" class="feedback-modal" style="display:none;max-width:670px;">
+    <p>Пятый и финальный день интенсива в skillsupschool. Я шла на этот интенсив с желанием понять мое ли это заниматься
+        компьютерной графикой и смогу ли вообще. Да, это было в чем-то тяжёлые пять дней, все было в новинку и и за пять
+        часов занятия все равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно. Да, это было
+        в чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно что-то было не доделано и я
+        доделывала уже дома. Но по итогу я знаю точно. Пятый и финальный день интенсива в skillsupschool. Я шла на этот
+        интенсив с желанием понять мое ли это заниматься компьютерной графикой и смогу ли вообще. Да, это было в чем-то
+        тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно что-то было не доделано и я доделывала
+        уже дома. Но по итогу я знаю точно. Да, это было в чем-то тяжёлые пять дней, все было в новинку и и за пять
+        часов занятия все равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно...</p>
+
+    <a class="feedback-slider__author" href="#">
+        <img src="img/avatar-nastya.png" alt="">
+        <div class="feedback-slider__author-text">
+            <div class="author-name">Настя Макарова</div>
+            <div class="author-course">Курс Рисунок Basic</div>
+        </div>
+    </a>
+</div>
+
+<div id="feedback-2" class="feedback-modal" style="display:none;max-width:670px;">
+    <p>Пятый и финальный день интенсива в skillsupschool. Я шла на этот интенсив с желанием понять мое ли это заниматься
+        компьютерной графикой и смогу ли вообще. Да, это было в чем-то тяжёлые пять дней, все было в новинку и и за пять
+        часов занятия все равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно. Да, это было
+        в чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно что-то было не доделано и я
+        доделывала уже дома. Но по итогу я знаю точно. Пятый и финальный день интенсива в skillsupschool. Я шла на этот
+        интенсив с желанием понять мое ли это заниматься компьютерной графикой и смогу ли вообще. Да, это было в чем-то
+        тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно что-то было не доделано и я доделывала
+        уже дома. Но по итогу я знаю точно. Да, это было в чем-то тяжёлые пять дней, все было в новинку и и за пять
+        часов занятия все равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно...</p>
+
+    <a class="feedback-slider__author" href="#">
+        <img src="img/avatar-nastya.png" alt="">
+        <div class="feedback-slider__author-text">
+            <div class="author-name">Настя Макарова</div>
+            <div class="author-course">Курс Рисунок Basic</div>
+        </div>
+    </a>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/script.js?v=1"></script>
+</body>
+
+</html>
