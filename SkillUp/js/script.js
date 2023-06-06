@@ -142,6 +142,20 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
+  //
+
+  const detailsElements = document.querySelectorAll("details");
+
+  detailsElements.forEach((details) => {
+    details.addEventListener("click", () => {
+      detailsElements.forEach((otherDetails) => {
+        if (otherDetails !== details) {
+          otherDetails.removeAttribute("open");
+        }
+      });
+    });
+  });
+
 });
 
 // index partners
@@ -178,6 +192,16 @@ $("body").on("click", ".nav__dropdown span", function () {
 
 $("body").on("click", ".nav__change-course", function () {
   $('.header__change-course').toggleClass('active');
+
+  const navElements = document.querySelectorAll(".nav__dropdown");
+
+  navElements.forEach((nav) => {
+    const childElements = nav.querySelectorAll(".nav__dropdown > *");
+    
+    childElements.forEach((child) => {
+      child.classList.remove("active");
+    });
+  });
 })
 
 //

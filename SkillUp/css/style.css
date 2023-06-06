@@ -2199,6 +2199,7 @@ header a {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+  margin-top: 0px;
 }
 
 .summary-selected::after {
