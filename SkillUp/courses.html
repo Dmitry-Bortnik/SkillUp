@@ -11,14 +11,26 @@
 
 <body>
     <main class="main">
-        <header class="header">
+        <section class="top-banner active">
+    <div class="top-banner-close">закрыть</div>
+    <div>
+        <source media="(min-width:992px)" srcset="img/main-slide-1.jpg">
+            <source media="(min-width:768px)" srcset="img/main-slide-1__tablet.jpg">
+            <img src="img/main-slide-1.jpg" alt="">
+        <div class="index-slider__info">
+            <div class="index-slider__title">Чёрная пятница<br> в SkillsUp School</div>
+            <a class="link-arrow" href="#">Подробнее</a>
+        </div>
+    </div>
+</section>
+<header class="header">
     <div class="header__top">
         <div class="container xl-flex xl-align-center xl-jst-btw">
             <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
             <div class="header__top-right-side xl-flex xl-align-center xl-jst-btw">
                 <a class="header__phone" href="tel:88005500540">8-800-550-05-40</a>
                 <div class="header__top-nav">
-                    <a class="header__acc-href" href="#">Аккаунт</a>
+                    <a class="header__acc-href" href="#">Личный кабинет</a>
                 </div>
             </div>
             <div class="toggle__nav__item">
@@ -30,6 +42,7 @@
     </div>
     <div class="header__m-toggle">
         <div class="header__m-scroll">
+            <div class="header__m-toggle--close"></div>
             <div class="navigation">
                 <div class="container xl-flex xl-align-center xl-jst-btw x-block">
                     <div class="nav xl-flex xl-align-center xl-jst-btw x-block">
@@ -65,7 +78,7 @@
             </div>
             <div class="header__change-course">
                 <div class="container">
-                    <a class="header__mobile-account" href="#">Аккаунт</a>
+                    <a class="header__mobile-account" href="#">Личный кабинет</a>
                     <div class="header__mobile-change-course-title">Выбрать курс</div>
                     <div class="flex-row">
                         <div class="flex-col-6 cust-col-tablet-12 header__change-course__list">
@@ -124,8 +137,10 @@
         <div class="container">
            
             <div class="our-courses">
-                <div class="title-container">
-                    <div class="title">Наши курсы</div>
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <div class="title">Наши курсы</div>
+                    </div>
                 </div>
                 <div class="index-our-courses__filter">
                     <div class="flex-row">
@@ -365,68 +380,97 @@
                 </div>
             </div>
 
-            <div class="subscribe-containter">
-    <div class="flex-row">
-        <div class="flex-col-6 cust-col-tablet-12">
-            <div class="title">подпишись сейчас на новости от skills up</div>
-            <div class="title__descr">Подпишитесь на рассылку, чтобы <a href="#">первыми узнавать</a>
-                новости о свежих поступлениях, <a href="#">скидках и распродажах</a>.</div>
-        </div>
-        <div class="flex-col-6 cust-col-tablet-12">
-            <form class="subscribe-form" action="#">
-                <input type="text" name="name" required placeholder="Введите Имя">
-                <input type="text" name="mail" required placeholder="Введите Email">
-                <div class="custom-checkbox">
-                    <input type="checkbox" checked id="checkbox-subscribe" name="checkbox-subscribe">
-                    <label for="checkbox-subscribe">
-                        <span>Нажимая на кнопку подписаться вы соглашаетесь с политикой
-                            конфидициальности.</span>
-                    </label>
-                </div>
-                <button class="subscribe-subtit" type="submit">Подписаться</button>
-            </form>
-        </div>
-    </div>
-</div>
-
         </div>
     </main>
     <footer class="footer">
     <div class="container">
-        <div class="flex-row footer-links">
-            <div class="flex-col-12"><div class="border"></div></div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="/" class="footer-logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">выбрать курс</a>
-                <a href="#" class="disabled-link">Карта профессий</a>
-                <a href="#" class="disabled-link">Пройти тест</a>
-                <a href="#">О школе</a>
-                <a href="#">Вопросы и ответы</a>
-                <a href="#" class="disabled-link">Skills up LAB</a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">Работы студентов</a>
-                <a href="#">отзывы</a>
-                <a href="#">Кураторы</a>
-                <a href="#">Лекторий</a>
-                <a href="#">Блог</a>
-                <a href="#">Мероприятия</a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">Партнерам</a>
-                <a href="#">контакты</a>
-                <a href="#">Для компаний</a>
-                <a href="#" class="disabled-link">Вакансии</a>
-                <a href="#" class="disabled-link">клуб Skills up</a>
-                <a href="#">Подарочный Сертификат</a>
+        <div class="index-contacts">
+            <div class="flex-row">
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-1 border-mobile">
+                    <a href="/" class="footer-logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="index-contacts__location">
+                        <div class="index-contacts__socials">
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#tg"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#tube"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#mail"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-3 mobile-none">
+                    <a href="#">Выбрать курс</a>
+                    <a href="#">Работы студентов</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Кураторы</a>
+                    <a href="#">Партнерам</a>
+                    <a href="#">Подарочный Сертификат</a>
+                    <a href="#">Карта профессий</a>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-4 mobile-none">
+                    <a href="#">О школе</a>
+                    <a href="#">Мероприятия</a>
+                    <a href="#">Лекторий</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">контакты</a>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-4 none mobile-block">
+                    <div class="navigation navigation-footer">
+                        <div class="xl-flex xl-align-center xl-jst-btw x-block">
+                            <div class="nav xl-flex xl-align-center xl-jst-btw x-block">
+                                <a href="#">Работы студентов</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Кураторы</a>
+                                <div class="nav__dropdown">
+                                    <span>Комьюнити</span>
+                                    <div class="dropdown">
+                                        <a href="#">О школе</a>
+                                        <a href="#">Мероприятия</a>
+                                        <a href="#">Лекторий</a>
+                                        <a href="#">Блог</a>
+                                        <a href="#">Skills up Lab</a>
+                                        <a href="#">Клуб Skills up</a>
+                                        <a href="#">Вопросы и ответы</a>
+                                    </div>
+                                </div>
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-2 border-mobile border-mobile-p-40">
+                    <div class="subscribe-containter">
+    <p><span>Подпишитесь на рассылку, чтобы</span> первыми узнавать <span>новости о свежих поступлениях</span>,
+        скидках и распродажах.</p>
+    <form class="subscribe-form" action="#">
+        <input type="email" name="mail" required placeholder="Email">
+        <button class="subscribe-subtit" type="submit">Подписаться</button>
+    </form>
+    <p class="subscribe-copy">Нажимая на кнопку подписаться вы соглашаетесь с политикой конфидициальности.</p>
+</div>
+                </div>
             </div>
         </div>
+
         <div class="flex-row footer-copy">
-           
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 © Skills Up School, 2013-2022
             </div>

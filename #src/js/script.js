@@ -1,86 +1,8 @@
-$("body").on("click", ".callback-fix > span", function () {
-  $('.callback-fix__drop').toggleClass('opened');
-})
-
-$(document).click(function (e) {
-  var div = $(".callback-fix");
-  var itemClick = $(".callback-fix__drop");
-  if ((!div.is(e.target) && div.has(e.target).length === 0) && (!itemClick.is(e.target) && itemClick.has(e.target).length === 0)) {
-    $(".callback-fix__drop").removeClass('opened');
-  }
-});
-
-//  nav 
-
-$("body").on("click", ".toggle__nav__item", function () {
-  $('.main-nav').toggleClass('active');
-  $('.overflow-background').toggleClass('active');
-})
-
-$("body").on("click", ".open_soc", function () {
-  $('.main-nav').toggleClass('active');
-})
-
-$("body").on("click", ".mobile-close-nav", function () {
-  $('.main-nav').removeClass('active');
-})
-
-
 $(function () {
   $('input[name="phone"]').mask("9(999) 999-9999");
 });
 
-
 // 
-
-$('.index-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  dots: false,
-  fade: false,
-  infinite: true,
-  responsive: [{
-    breakpoint: 480,
-    settings: {
-      arrows: false,
-    }
-  }]
-});
-
-
-var $slider = $('.feedback-slider');
-
-if ($slider.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounter = document.createElement('div');
-  sliderCounter.classList.add('slider__counter');
-
-  var updateSliderCounter = function (slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounter).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
-  };
-
-  $slider.on('init', function (event, slick) {
-    $('.feedback-slider__control__noms').append(sliderCounter);
-    updateSliderCounter(slick);
-  });
-
-  $slider.on('afterChange', function (event, slick, currentSlide) {
-    updateSliderCounter(slick, currentSlide);
-  });
-
-  $(".feedback-slider").slick({
-    dots: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: $('.feedback-slider__control__prev'),
-    nextArrow: $('.feedback-slider__control__next'),
-  });
-}
 
 $('.js-video').on('click', function (e) {
   e.preventDefault();
@@ -101,17 +23,6 @@ $('.js-close-popup').click(function () {
 });
 
 $(document).ready(function () {
-  $("#form-modal").submit(function () {
-    $("#form-modal button").prop("disabled", true).text("Ждите...");
-    $.ajax({
-      type: "POST",
-      url: "send.php",
-      data: $(this).serialize()
-    }).done(function () {
-      $('#form-modal').html("<div class='thx-text'><span>Спасибо.<br>Менеджер свяжется с вами в ближайшее время</span>");
-    });
-    return false;
-  });
 
   // filter selected
 
@@ -176,12 +87,6 @@ $("body").on("click", ".index-event__filter a", function () {
   $(this).toggleClass('active');
 })
 
-//
-
-$("body").on("click", ".subscribe-form input[type=checkbox]", function () {
-  $(".subscribe-subtit").prop('disabled', !this.checked);
-})
-
 // 
 
 $("body").on("click", ".nav__dropdown span", function () {
@@ -197,7 +102,7 @@ $("body").on("click", ".nav__change-course", function () {
 
   navElements.forEach((nav) => {
     const childElements = nav.querySelectorAll(".nav__dropdown > *");
-    
+
     childElements.forEach((child) => {
       child.classList.remove("active");
     });
@@ -206,11 +111,13 @@ $("body").on("click", ".nav__change-course", function () {
 
 //
 
-$("body").on("click", ".toggle__nav", function (event) {
+$("body").on("click", ".toggle__nav, .header__m-toggle--close", function (event) {
   $('.toggle__nav').toggleClass('active');
   $('.header__m-toggle').toggleClass('active');
+  $('.overflow-background').toggleClass('active');
   $('body').toggleClass('no-scroll');
 });
+
 
 $(function () {
   $(".course--change-course__item").on("mouseover", function () {
@@ -293,9 +200,9 @@ if ($sliderWorksCurators.length) {
 
 
 
-(function($) {
-  $(function() {
-    $('.tab').on('click', '.tablinks:not(.active)', function() {
+(function ($) {
+  $(function () {
+    $('.tab').on('click', '.tablinks:not(.active)', function () {
       $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabcontent').removeClass('active').eq($(this).index()).addClass('active');
@@ -310,17 +217,17 @@ $("body").on("click", ".toggle-data--title", function () {
   $(this).next().slideToggle();
 })
 
-$( "#change-connect" ).on( "change", function() {
+$("#change-connect").on("change", function () {
   let thisChange = $(this).find(':selected').attr('data-placeholder');
-  $('#connect-input').attr('placeholder',thisChange);
-} );
+  $('#connect-input').attr('placeholder', thisChange);
+});
 
 //
 
 $("body").on("click", ".header__basket", function () {
   $('.basket__wrapper').addClass('active');
   $('.basket__container').addClass('active');
-  $('.overflow-background').addClass('active') 
+  $('.overflow-background').addClass('active')
   $('body').addClass('no-scroll');
   $('.toggle__nav').removeClass('active');
   $('.header__m-toggle').removeClass('active');
@@ -329,7 +236,7 @@ $("body").on("click", ".header__basket", function () {
 function closeBasket() {
   $('.basket__wrapper').removeClass('active');
   $('.basket__container').removeClass('active');
-  $('.overflow-background').removeClass('active') 
+  $('.overflow-background').removeClass('active')
   $('body').removeClass('no-scroll');
 }
 
@@ -337,12 +244,12 @@ $("body").on("click", ".basket__close, #continue-pay", function () {
   closeBasket()
 })
 
-$(document).on('click', function (e) {
-  if ((!$(e.target).closest(".header__basket").length) && (!$(e.target).closest(".basket__container").length)) {
-    closeBasket()
-  }
-  e.stopPropagation();
-});
+// $(document).on('click', function (e) {
+//   if ((!$(e.target).closest(".header__basket").length) && (!$(e.target).closest(".basket__container").length)) {
+//     closeBasket()
+//   }
+//   e.stopPropagation();
+// });
 
 $("body").on("click", ".basket__page--payments--item", function () {
   $('.basket__page--payments--item').removeClass('active');
@@ -367,3 +274,117 @@ function openPrice(evt, tab) {
   document.getElementById(tab).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// close top banner
+
+const closeBanner = document.querySelector(".top-banner-close");
+
+closeBanner.addEventListener("click", () => {
+  const banner = document.querySelector(".top-banner");
+  banner.classList.remove("active");
+});
+
+
+
+// sliders tablet
+
+
+function checkWindowWidth() {
+  if (window.innerWidth < 1025) {
+
+    $(".index-works__list").slick({
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    $(".index-feedbacks__list").slick({
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    $(".index-events__list").slick({
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    $(".logos-parnters__list").slick({
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    console.log("Окно меньше 1024 пикселей в ширину");
+    // Дополнительные действия...
+  }
+}
+
+// Проверяем ширину окна при загрузке страницы
+checkWindowWidth();
+
+// Добавляем слушатель события resize для проверки при изменении ширины окна
+window.addEventListener('resize', checkWindowWidth);
+

@@ -1,39 +1,84 @@
 <footer class="footer">
     <div class="container">
-        <div class="flex-row footer-links">
-            <div class="flex-col-12"><div class="border"></div></div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="/" class="footer-logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">выбрать курс</a>
-                <a href="#" class="disabled-link">Карта профессий</a>
-                <a href="#" class="disabled-link">Пройти тест</a>
-                <a href="#">О школе</a>
-                <a href="#">Вопросы и ответы</a>
-                <a href="#" class="disabled-link">Skills up LAB</a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">Работы студентов</a>
-                <a href="#">отзывы</a>
-                <a href="#">Кураторы</a>
-                <a href="#">Лекторий</a>
-                <a href="#">Блог</a>
-                <a href="#">Мероприятия</a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">Партнерам</a>
-                <a href="#">контакты</a>
-                <a href="#">Для компаний</a>
-                <a href="#" class="disabled-link">Вакансии</a>
-                <a href="#" class="disabled-link">клуб Skills up</a>
-                <a href="#">Подарочный Сертификат</a>
+        <div class="index-contacts">
+            <div class="flex-row">
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-1 border-mobile">
+                    <a href="/" class="footer-logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="index-contacts__location">
+                        <div class="index-contacts__socials">
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#tg"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#tube"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#mail"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-3 mobile-none">
+                    <a href="#">Выбрать курс</a>
+                    <a href="#">Работы студентов</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Кураторы</a>
+                    <a href="#">Партнерам</a>
+                    <a href="#">Подарочный Сертификат</a>
+                    <a href="#">Карта профессий</a>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-4 mobile-none">
+                    <a href="#">О школе</a>
+                    <a href="#">Мероприятия</a>
+                    <a href="#">Лекторий</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">контакты</a>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-4 none mobile-block">
+                    <div class="navigation navigation-footer">
+                        <div class="xl-flex xl-align-center xl-jst-btw x-block">
+                            <div class="nav xl-flex xl-align-center xl-jst-btw x-block">
+                                <a href="#">Работы студентов</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Кураторы</a>
+                                <div class="nav__dropdown">
+                                    <span>Комьюнити</span>
+                                    <div class="dropdown">
+                                        <a href="#">О школе</a>
+                                        <a href="#">Мероприятия</a>
+                                        <a href="#">Лекторий</a>
+                                        <a href="#">Блог</a>
+                                        <a href="#">Skills up Lab</a>
+                                        <a href="#">Клуб Skills up</a>
+                                        <a href="#">Вопросы и ответы</a>
+                                    </div>
+                                </div>
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-2 border-mobile border-mobile-p-40">
+                    @@include('_subscribe.html')
+                </div>
             </div>
         </div>
+
         <div class="flex-row footer-copy">
-           
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 © Skills Up School, 2013-2022
             </div>

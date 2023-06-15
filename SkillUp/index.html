@@ -11,14 +11,26 @@
 
 <body>
     <main class="main">
-        <header class="header">
+        <section class="top-banner active">
+    <div class="top-banner-close">закрыть</div>
+    <div>
+        <source media="(min-width:992px)" srcset="img/main-slide-1.jpg">
+            <source media="(min-width:768px)" srcset="img/main-slide-1__tablet.jpg">
+            <img src="img/main-slide-1.jpg" alt="">
+        <div class="index-slider__info">
+            <div class="index-slider__title">Чёрная пятница<br> в SkillsUp School</div>
+            <a class="link-arrow" href="#">Подробнее</a>
+        </div>
+    </div>
+</section>
+<header class="header">
     <div class="header__top">
         <div class="container xl-flex xl-align-center xl-jst-btw">
             <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
             <div class="header__top-right-side xl-flex xl-align-center xl-jst-btw">
                 <a class="header__phone" href="tel:88005500540">8-800-550-05-40</a>
                 <div class="header__top-nav">
-                    <a class="header__acc-href" href="#">Аккаунт</a>
+                    <a class="header__acc-href" href="#">Личный кабинет</a>
                 </div>
             </div>
             <div class="toggle__nav__item">
@@ -30,6 +42,7 @@
     </div>
     <div class="header__m-toggle">
         <div class="header__m-scroll">
+            <div class="header__m-toggle--close"></div>
             <div class="navigation">
                 <div class="container xl-flex xl-align-center xl-jst-btw x-block">
                     <div class="nav xl-flex xl-align-center xl-jst-btw x-block">
@@ -65,7 +78,7 @@
             </div>
             <div class="header__change-course">
                 <div class="container">
-                    <a class="header__mobile-account" href="#">Аккаунт</a>
+                    <a class="header__mobile-account" href="#">Личный кабинет</a>
                     <div class="header__mobile-change-course-title">Выбрать курс</div>
                     <div class="flex-row">
                         <div class="flex-col-6 cust-col-tablet-12 header__change-course__list">
@@ -124,345 +137,350 @@
         <div class="container">
             <div class="index-banner">
                 <div class="index-banner--top">
-                    <img src="img/main-banner-top.png" alt="">
-                    <h1>Школа 3D рисунка и цифровой графики</h1>
+                    <h1>Школа Рисунка 3D и&nbsp;ЦИФРОВОЙ ГРАФИКИ </h1>
                 </div>
                 <div class="index-banner--bottom">
-                    <div class="index-banner--image"><img src="img/banner-img.png" alt=""></div>
-                    <div class="index-banner--int"><img src="img/main-banner-int.png" alt=""></div>
+                    <picture class="index-banner--image">
+                        <source media="(min-width:1024px)" srcset="img/banner-about.png">
+                        <img  src="img/main-banner-int--tablet.png" alt="">
+                      </picture>
+                    <div class="index-banner--int"><img src="img/banner-girl.png" alt=""></div>
                 </div>
             </div>
-            <section class="index-slider slider">
-                <div>
-                    <picture>
-                        <source media="(min-width:992px)" srcset="img/main-slide-1.jpg">
-                        <source media="(min-width:768px)" srcset="img/main-slide-1__tablet.jpg">
-                        <img src="img/main-slide-1__mobile.jpg" alt="">
-                    </picture>
-                    <div class="index-slider__info">
-                        <div class="index-slider__title">Чёрная пятница<br> в SkillsUp School</div>
-                        <a class="link-arrow" href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div>
-                    <picture>
-                        <source media="(min-width:992px)" srcset="img/main-slide-1.jpg">
-                        <source media="(min-width:768px)" srcset="img/main-slide-1__tablet.jpg">
-                        <img src="img/main-slide-1__mobile.jpg" alt="">
-                    </picture>
-                </div>
-            </section>
-            <div class="index-about">
-                <div class="flex-row">
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="index-about__main-text">
-                            <p>Skills Up School появилась в Петербурге 9 лет назад и&nbsp;с тех пор открыла свои филиалы
-                                в
-                                Москве и онлайн по всему миру. Мы не просто обучаем CG - профессиям и помогаем с
-                                трудоустройством в лучшие компании индустрии, но и развиваем комьюнити.
-                            </p>
-                        </div>
-                        <div class="flex-row">
-                            <div class="flex-col-6 cust-col-mobile-12">
-                                <p>Мы — не просто школа обучения рисованию. Вместе с вами мы создаем сообщество
-                                    профессионалов, влюбленных в свое дело. Наша команда из преподавателей и студентов
-                                    разделяет одну цель — рисовать много, классно и в удовольствие.
-                                </p>
-                            </div>
-                            <div class="flex-col-6 cust-col-mobile-12">
-                                <p>Занятия проводят опытные кураторы, имеющие опыт работы над AAA проектами в топовых
-                                    компаниях индустрии цифровой графики.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="index-about--image" style="background: url('img/main-about__tablet.jpg') no-repeat center; background-size: cover;"></div>
+        </div>
+
+        <div class="index-basic-direction">
+            <div class="container">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <div class="title">ВЫБЕРИ СВОе ОБУЧЕНИе</div>
                     </div>
                 </div>
             </div>
-            <div class="index-basic-direction">
-                <div class="title-container">
-                    <div class="title">ОСНОВНЫЕ Направления <br> для обучения</div>
-                </div>
-                <a href="directions.html" class="index-basic-direction__index draft-banner">
-                    <span>РИСУНОК</span>
-                    <div class="link-arrow">Подробнее</div>
-                </a>
-                <a href="directions.html" class="index-basic-direction__index twod-banner">
-                    <span>2D ГРАФИКА</span>
-                    <div class="link-arrow">Подробнее</div>
-                </a>
-                <a href="directions.html" class="index-basic-direction__index treed-banner">
-                    <span>3D ГРАФИКА</span>
-                    <div class="link-arrow">Подробнее</div>
-                </a>
-            </div>
-            <div class="index-maps-test">
-                <div class="flex-row">
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="index-maps-test__item index-map__item">
-                            <div class="index-map-text__title">Посмотри карту профессии художника по всем направлениям
+            <div class="index-basic-direction__index">
+                <div class="container">
+                    <div class="flex-row align-center">
+                        <div class="flex-col-6 cust-col-tablet-8 cust-col-mobile-12 mobile-order-2">
+                            <div class="index-basic-direction--info">
+                                <div class="index-basic-direction--title">Рисунок</div>
+                                <div class="index-basic-direction--nomCourse">
+                                    12 курсов
+                                </div>
+                                <p>3D-Артист / 3D-модельер / 3D-аниматор / 3D-дизайнер</p>
                             </div>
-                            <a class="link-arrow" href="#">Подробнее</a>
                         </div>
-                    </div>
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="index-maps-test__item index-test__item">
-                            <div class="index-map-text__title">Пройди тест на совместимость профессии</div>
-                            <a class="link-arrow" href="#">Подробнее</a>
+                        <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
+                            <a href="directions.html" class="index-basic-direction--btn link-arrow-white">Подробнее</a>
+                        </div>
+                        <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
+                            <div class="index-basic-direction--img" style="background: url('img/direction-1.png') no-repeat center; background-size: cover;"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="index-our-courses">
-    <div class="title-container">
-        <div class="title">Наши курсы</div>
-    </div>
-    <div class="index-our-courses__filter">
-        <div class="flex-row">
-            <div class="flex-col-8 cust-col-tablet-12">
-                <details class="multiple-select">
-                    <summary>
-                        <div class="multiple--title">Направление</div>
-                        <div class="multiple--selected"></div>
-                    </summary>
-                    <div class="multiple-select-dropdown">
-                        <label>
-                            <input type="radio" hidden name="napravlenie" value="Рисунок">
-                            <span class="content">Рисунок</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="napravlenie" value="2D Графика">
-                            <span class="content">2D Графика</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="napravlenie" value="3D Графика">
-                            <span class="content">3D Графика</span>
-                        </label>
+            <div class="index-basic-direction__index">
+                <div class="container">
+                    <div class="flex-row align-center">
+                        <div class="flex-col-6 cust-col-tablet-8 cust-col-mobile-12 mobile-order-2">
+                            <div class="index-basic-direction--info">
+                                <div class="index-basic-direction--title">3D Графика</div>
+                                <div class="index-basic-direction--nomCourse">
+                                    8 курсов
+                                </div>
+                                <p>3D-Артист / 3D-модельер / 3D-аниматор / 3D-дизайнер</p>
+                            </div>
+                        </div>
+                        <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
+                            <a href="directions.html" class="index-basic-direction--btn link-arrow-white">Подробнее</a>
+                        </div>
+                        <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
+                            <div class="index-basic-direction--img" style="background: url('img/direction-2.png') no-repeat center; background-size: cover;"></div>
+                        </div>
                     </div>
-                </details>
-                <details class="multiple-select">
-                    <summary>
-                        <div class="multiple--title">Уровень</div>
-                        <div class="multiple--selected"></div>
-                    </summary>
-                    <div class="multiple-select-dropdown">
-                        <label>
-                            <input type="radio" hidden name="levl" value="Junior">
-                            <span class="content">Junior</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="levl" value="Middle">
-                            <span class="content">Middle</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="levl" value="High">
-                            <span class="content">High</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="levl" value="Pro">
-                            <span class="content">Pro</span>
-                        </label>
-                    </div>
-                </details>
-                <details class="multiple-select">
-                    <summary>
-                        <div class="multiple--title">Формат</div>
-                        <div class="multiple--selected"></div>
-                    </summary>
-                    <div class="multiple-select-dropdown">
-                        <label>
-                            <input type="radio" hidden name="format" value="Онлайн">
-                            <span class="content">Онлайн</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="format" value="Москва">
-                            <span class="content">Москва</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="format" value="Питер">
-                            <span class="content">Питер</span>
-                        </label>
-                    </div>
-                </details>
-                <details class="multiple-select">
-                    <summary>
-                        <div class="multiple--title">Длительность</div>
-                        <div class="multiple--selected"></div>
-                    </summary>
-                    <div class="multiple-select-dropdown">
-                        <label>
-                            <input type="radio" hidden name="duration" value="До трёх месяцев">
-                            <span class="content">До трёх месяцев</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="duration" value="3-6 месяцев">
-                            <span class="content">3-6 месяцев</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="duration" value="7-12 месяцев">
-                            <span class="content">7-12 месяцев</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="duration" value="Больше года">
-                            <span class="content">Больше года</span>
-                        </label>
-                    </div>
-                </details>
-                <details class="multiple-select">
-                    <summary>
-                        <div class="multiple--title">Стоимость</div>
-                        <div class="multiple--selected"></div>
-                    </summary>
-                    <div class="multiple-select-dropdown">
-                        <label>
-                            <input type="radio" hidden name="price" value="Бесплатно">
-                            <span class="content">Бесплатно</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="price" value="Сначала дешевле">
-                            <span class="content">Сначала дешевле</span>
-                        </label>
-                        <label>
-                            <input type="radio" hidden name="price" value="Сначала дороже">
-                            <span class="content">Сначала дороже</span>
-                        </label>
+                </div>
+            </div>
 
+            <div class="index-basic-direction__index">
+                <div class="container">
+                    <div class="flex-row align-center">
+                        <div class="flex-col-6 cust-col-tablet-8 cust-col-mobile-12 mobile-order-2">
+                            <div class="index-basic-direction--info">
+                                <div class="index-basic-direction--title">2D Графика</div>
+                                <div class="index-basic-direction--nomCourse">
+                                    19 курсов
+                                </div>
+                                <p>3D-Артист / 3D-модельер / 3D-аниматор / 3D-дизайнер</p>
+                            </div>
+                        </div>
+                        <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
+                            <a href="directions.html" class="index-basic-direction--btn link-arrow-white">Подробнее</a>
+                        </div>
+                        <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
+                            <div class="index-basic-direction--img" style="background: url('img/direction-3.png') no-repeat center; background-size: cover;"></div>
+                        </div>
                     </div>
-                </details>
-            </div>
-            <div class="flex-col-4 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
-                <form action="#" class="searchForm">
-                    <input type="search" placeholder="Поиск">
-                    <button type="submit"></button>
-                </form>
+                </div>
             </div>
         </div>
-        <div class="multiple-filter"></div>
+
+        <div class="container">
+    <div class="index-our-courses">
+        <div class="flex-row title-container align-center">
+            <div class="flex-col-12">
+                <div class="title">Наши курсы</div>
+            </div>
+        </div>
+        <div class="index-our-courses__filter">
+            <div class="flex-row">
+                <div class="flex-col-9 cust-col-tablet-12">
+                    <details class="multiple-select">
+                        <summary>
+                            <div class="multiple--title">Направление</div>
+                            <div class="multiple--selected"></div>
+                        </summary>
+                        <div class="multiple-select-dropdown">
+                            <label>
+                                <input type="radio" hidden name="napravlenie" value="Рисунок">
+                                <span class="content">Рисунок</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="napravlenie" value="2D Графика">
+                                <span class="content">2D Графика</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="napravlenie" value="3D Графика">
+                                <span class="content">3D Графика</span>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="multiple-select">
+                        <summary>
+                            <div class="multiple--title">Уровень</div>
+                            <div class="multiple--selected"></div>
+                        </summary>
+                        <div class="multiple-select-dropdown">
+                            <label>
+                                <input type="radio" hidden name="levl" value="Junior">
+                                <span class="content">Junior</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="levl" value="Middle">
+                                <span class="content">Middle</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="levl" value="High">
+                                <span class="content">High</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="levl" value="Pro">
+                                <span class="content">Pro</span>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="multiple-select">
+                        <summary>
+                            <div class="multiple--title">Формат</div>
+                            <div class="multiple--selected"></div>
+                        </summary>
+                        <div class="multiple-select-dropdown">
+                            <label>
+                                <input type="radio" hidden name="format" value="Онлайн">
+                                <span class="content">Онлайн</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="format" value="Москва">
+                                <span class="content">Москва</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="format" value="Питер">
+                                <span class="content">Питер</span>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="multiple-select">
+                        <summary>
+                            <div class="multiple--title">Длительность</div>
+                            <div class="multiple--selected"></div>
+                        </summary>
+                        <div class="multiple-select-dropdown">
+                            <label>
+                                <input type="radio" hidden name="duration" value="До трёх месяцев">
+                                <span class="content">До трёх месяцев</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="duration" value="3-6 месяцев">
+                                <span class="content">3-6 месяцев</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="duration" value="7-12 месяцев">
+                                <span class="content">7-12 месяцев</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="duration" value="Больше года">
+                                <span class="content">Больше года</span>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="multiple-select">
+                        <summary>
+                            <div class="multiple--title">Стоимость</div>
+                            <div class="multiple--selected"></div>
+                        </summary>
+                        <div class="multiple-select-dropdown">
+                            <label>
+                                <input type="radio" hidden name="price" value="Бесплатно">
+                                <span class="content">Бесплатно</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="price" value="Сначала дешевле">
+                                <span class="content">Сначала дешевле</span>
+                            </label>
+                            <label>
+                                <input type="radio" hidden name="price" value="Сначала дороже">
+                                <span class="content">Сначала дороже</span>
+                            </label>
+
+                        </div>
+                    </details>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                    <a class="link-arrow-white fullwidth" href="#">Все курсы</a>
+                </div>
+            </div>
+            <div class="multiple-filter"></div>
+        </div>
+        <div class="our-courses__list flex-row">
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__tags">
+                        <span class="sale-tag"></span>
+                    </div>
+                    <div class="our-courses__image">
+                        <img src="img/course-1.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__sale-price">- 30%</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                        <div class="our-courses__sale-credit">6 месяцев</div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-2.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-3.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Скетч от руки + перевод рисунка в цифровой вид
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-4.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-1.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-2.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-3.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
+                    <div class="our-courses__image">
+                        <img src="img/course-4.png" alt="">
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__old-price">12 250</div>
+                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a class="none tablet-block link-arrow-white fullwidth" href="#">Все курсы</a>
     </div>
-    <div class="our-courses__list flex-row">
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-1.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-2.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-3.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Скетч от руки + перевод рисунка в цифровой вид
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-4.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-1.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-2.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-3.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-        <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-            <a href="#" class="our-courses__item">
-                <div class="our-courses__image">
-                    <img src="img/course-4.png" alt="">
-                </div>
-                <div class="our-courses__name">
-                    Стилизованный 3D-персонаж
-                </div>
-                <div class="our-courses__prices">
-                    <div class="our-courses__old-price">12 250</div>
-                    <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <a class="see-all__link" href="#">Показать все курсы</a>
 </div>
-
+        <div class="container">
             <div class="index-works index-section">
-                <div class="title-container xl-flex xl-jst-btw xl-align-center">
-                    <div class="title">Работы наших Учеников</div>
-                    <div class="title__descr"> Какие работы делают наши выпускники после прохождения курсов.</div>
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-9 cust-col-tablet-12">
+                        <div class="title">Работы наших Учеников</div>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                        <a class="link-arrow-white fullwidth" href="#">Все работы</a>
+                    </div>
                 </div>
                 <div class="index-works__list masonry">
                     <div class="index-works__item">
@@ -542,91 +560,44 @@
                         </div>
                     </div>
                 </div>
-                <a class="see-all__link" href="#">Показать все работы</a>
+                <a class="none tablet-block link-arrow-white fullwidth" href="#">Все работы</a>
             </div>
+        </div>
 
-            <div class="index-feedbacks index-section">
-    <div class="flex-row">
-        <div class="flex-col-3 cust-col-tablet-12">
-            <div class="title">отзывы наших студентов</div>
-            <div class="title__descr">Слова благодарности от студентов, эмоции и их впечатления от обучения
-                в Skills Up School.</div>
-        </div>
-        <div class="flex-col-6 cust-col-tablet-12">
-            <div class="index-feedbacks__tags">
-                <a href="#">Рисунок</a>
-                <a href="#">2D Графика</a>
-                <a href="#">3D Графика</a>
+        <div class="container">
+    <div class="index-feedbacks index-section">
+        <div class="flex-row title-container align-center">
+            <div class="flex-col-9 cust-col-tablet-12">
+                <div class="title">отзывы наших студентов</div>
             </div>
-            <div class="index-feedbacks__list flex-row">
-                <div class="flex-col-6 cust-col-mobile-12">
-                    <a href="#" class="js-video" data-video="uvXMLWcHsdU">
-                        <img src="img/video-1.png" alt="">
-                    </a>
-                </div>
-                <div class="flex-col-6 cust-col-mobile-12">
-                    <a href="#" class="js-video" data-video="uvXMLWcHsdU">
-                        <img src="img/video-2.png" alt="">
-                    </a>
-                </div>
-                <div class="flex-col-6 cust-col-mobile-12">
-                    <a href="#" class="js-video" data-video="uvXMLWcHsdU">
-                        <img src="img/video-3.png" alt="">
-                    </a>
-                </div>
-                <div class="flex-col-6 cust-col-mobile-12">
-                    <a href="#" class="js-video" data-video="uvXMLWcHsdU">
-                        <img src="img/video-4.png" alt="">
-                    </a>
-                </div>
+            <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                <a class="link-arrow-white fullwidth" href="#">Все отзывы</a>
             </div>
         </div>
-        <div class="flex-col-3 tablet-none">
-            <div class="feedback-slider__control xl-flex xl-align-center">
-                <div class="feedback-slider__control__prev"></div>
-                <div class="feedback-slider__control__noms"> </div>
-                <div class="feedback-slider__control__next"></div>
+        <div class="index-feedbacks__list flex-row">
+            <div class="flex-col-3 cust-col-mobile-12">
+                <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                    <img src="img/video-1.png" alt="">
+                </a>
             </div>
-            <div class="feedback-slider slider">
-                <div>
-                    <p data-fancybox data-src="#feedback-1">Пятый и финальный день интенсива в skillsupschool. Я шла на
-                        этот интенсив с желанием
-                        понять мое ли это заниматься компьютерной графикой и смогу ли вообще. Да, это было в
-                        чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно
-                        что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно. Да, это
-                        было в чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все
-                        равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно...
-                    </p>
-                    <a class="feedback-slider__author">
-                        <img src="img/avatar-nastya.png" alt="">
-                        <div class="feedback-slider__author-text">
-                            <div class="author-name">Настя Макарова</div>
-                            <div class="author-course">Курс Рисунок Basic</div>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <p data-fancybox data-src="#feedback-2">Пятый и финальный день интенсива в skillsupschool. Я шла на
-                        этот интенсив с желанием
-                        понять мое ли это заниматься компьютерной графикой и смогу ли вообще. Да, это было в
-                        чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все равно
-                        что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно. Да, это
-                        было в чем-то тяжёлые пять дней, все было в новинку и и за пять часов занятия все
-                        равно что-то было не доделано и я доделывала уже дома. Но по итогу я знаю точно...
-                    </p>
-                    <a class="feedback-slider__author">
-                        <img src="img/avatar-nastya.png" alt="">
-                        <div class="feedback-slider__author-text">
-                            <div class="author-name">Настя Макарова</div>
-                            <div class="author-course">Курс Рисунок Basic</div>
-                        </div>
-                    </a>
-                </div>
+            <div class="flex-col-3 cust-col-mobile-12">
+                <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                    <img src="img/video-2.png" alt="">
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-mobile-12">
+                <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                    <img src="img/video-3.png" alt="">
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-mobile-12">
+                <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                    <img src="img/video-4.png" alt="">
+                </a>
             </div>
         </div>
+        <a class="none tablet-block link-arrow-white fullwidth" href="#">Все отзывы</a>
     </div>
-    <a class="see-all__link" href="#">Смотреть все отзывы</a>
-
     <div class="awg-popup">
         <div class="awg-popup__content">
             <div class="awg-popup__close js-close-popup"></div>
@@ -635,392 +606,327 @@
     </div>
 </div>
 
-            <div class="index-where-work-students index-section">
-    <div class="title-container xl-flex xl-jst-btw xl-align-center">
-        <div class="title">Где работают студенты</div>
-        <div class="title__descr"> Видеоотзывы и истории о том, как сложилась карьера после прохождения
-            курсов в Skills up school. </div>
-    </div>
-    <div class="logos-parnters__list xl-flex xl-flex-wrap">
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/gameloft.png" alt="">
-                <span>Gameloft</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
+        <div class="container">
+    <div class="index-where-work-students index-section">
+        <div class="flex-row title-container align-center">
+            <div class="flex-col-9 cust-col-tablet-12">
+                <div class="title">Где работают студенты</div>
             </div>
         </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/sparesoft.png" alt="">
-                <span>SPERASOFt</span>
+        <div class="logos-parnters__list flex-row">
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/playkot.png" alt="">
+                        <span>PLAYKOt</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/wargaming.png" alt="">
+                        <span>wargaming</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
             </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
+
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/gameloft.png" alt="">
+                        <span>Gameloft</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/playrix.png" alt="">
+                        <span>PLAYRIX</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/playkot.png" alt="">
-                <span>PLAYKOt</span>
+
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/sparesoft.png" alt="">
+                        <span>SPERASOFt</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/sunstrike.png" alt="">
+                        <span>sunstrike</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
             </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
+
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/mailgroup.png" alt="">
+                        <span>MAIL GROUP</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
+                <div class="logos-parnters__item">
+                    <div class="logos-parnters__v">
+                        <img src="img/partners/rocketjump.png" alt="">
+                        <span>rocket jump</span>
+                    </div>
+                    <div class="logos-parnters__d">
+                        <div class="logos-parnters__name">Анна Рыбкина</div>
+                        <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
+                            все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
+                            отдельное спасибо.</p>
+                        <a href="#">Читать больше</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/mailgroup.png" alt="">
-                <span>MAIL GROUP</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/wargaming.png" alt="">
-                <span>wargaming</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/crafiti.png" alt="">
-                <span>grafiti</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/playrix.png" alt="">
-                <span>PLAYRIX</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/rocketjump.png" alt="">
-                <span>rocket jump</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/crativem.png" alt="">
-                <span>crative m</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/sunstrike.png" alt="">
-                <span>sunstrike</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
-        </div>
-        <div class="logos-parnters__item">
-            <div class="logos-parnters__v">
-                <img src="img/partners/playme.png" alt="">
-                <span>playmee</span>
-            </div>
-            <div class="logos-parnters__d">
-                <div class="logos-parnters__name">Анна Рыбкина</div>
-                <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
-                    все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
-                    отдельное спасибо.</p>
-                <a href="#">Читать больше</a>
-            </div>
+
+
+
         </div>
     </div>
 </div>
 
+        <div class="container">
+            <div class="index-maps-test">
+                <div class="flex-row">
+                    <div class="flex-col-6 cust-col-tablet-12">
+                        <div class="index-maps-test__item index-map__item">
+                            <div class="index-map-text__title">Посмотри карту профессии художника по всем направлениям
+                            </div>
+                            <a class="link-arrow" href="#">Cмотреть карту</a>
+                        </div>
+                    </div>
+                    <div class="flex-col-6 cust-col-tablet-12">
+                        <div class="index-maps-test__item index-test__item">
+                            <div class="index-map-text__title">Пройди тест на совместимость профессии</div>
+                            <a class="link-arrow" href="#">Пройти тест</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
             <div class="index-events index-section">
-                <div class="flex-row">
-                    <div class="flex-col-12"><div class="border"></div></div>
-                    <div class="flex-col-6 cust-col-tablet-12">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-9 cust-col-tablet-12">
                         <div class="title">Skills up мероприятия</div>
-                        <div class="title__descr">Skills Up School появилась в Петербурге 9 лет назад и с тех пор
-                            открыла свои филиалы в Москве и онлайн по всему миру. </div>
-                        <div class="index-event__filter">
-                            <a class="index-event__filter-moscow">Москва</a>
-                            <a class="index-event__filter-spb">Санкт-Петербург</a>
-                            <a class="index-event__filter-online">Онлайн</a>
-                        </div>
                     </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" style="background: url('img/event-1.png') no-repeat center; background-size: cover;" href="#"> </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" style="background: url('img/event-1.png') no-repeat center; background-size: cover;" href="#"> </a>
-                    </div>
-                    <div class="flex-col-12"> <div class="border"></div></div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" style="background: url('img/event-2.png') no-repeat center; background-size: cover;" href="#"> </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" style="background: url('img/event-3.png') no-repeat center; background-size: cover;" href="#"> </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" style="background: url('img/event-4.png') no-repeat center; background-size: cover;" href="#"> </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <a class="index-event__item" style="background: url('img/event-5.png') no-repeat center; background-size: cover;" href="#"> </a>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                        <a class="link-arrow-white fullwidth" href="#">Все мероприятия</a>
                     </div>
                 </div>
-                <a class="see-all__link" href="#">Смотреть все мероприятия</a>
-            </div>
-
-            <div class="index-lecture index-section">
-                <div class="title-container xl-flex xl-jst-btw xl-align-center">
-                    <div class="title">Лекции</div>
-                    <div class="title__descr">Бесплатные и платные лекции по всем направлениям.</div>
-                </div>
-                <div class="index-list flex-row">
+                <div class="flex-row index-events__list">
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
                         <a href="#">
-                            <img src="img/lekciya-1.png" alt="">
-                            <div class="index-item__info">Рисуем стилизированную пальму</div>
+                            <img src="img/event-1.png" alt="">
+                            <div class="index-item__info">Мастер-класс «Мужская фигура. Атлетичная модель» в Москве.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/event-2.png" alt="">
+                            <div class="index-item__info">Можно ли научиться рисовать ПО УРОКАМ С ЮТУБА?</div>
                         </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
                         <a href="#">
-                            <img src="img/lekciya-2.png" alt="">
-                            <div class="index-item__info">Дарья Пельшер об анимации, альтернатианом мире “Сияния”</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
-                        <a href="#">
-                            <img src="img/lekciya-3.png" alt="">
-                            <div class="index-item__info">Дарья Пельшер об анимации, альтернатианом мире “Сияния”</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
-                        <a href="#">
-                            <img src="img/lekciya-4.png" alt="">
-                            <div class="index-item__info">Дарья Пельшер об анимации, альтернатианом мире “Сияния”</div>
-                        </a>
-                    </div>
-                </div>
-                <a class="see-all__link" href="#">Смотреть все лекции</a>
-            </div>
-
-            <div class="index-articles index-section">
-                <div class="title-container xl-flex xl-jst-btw xl-align-center">
-                    <div class="title">Полезные статьи</div>
-                    <div class="title__descr">Полезные и актуальные материалы по всем направлениям, специально для вас и
-                        бесплатно</div>
-                </div>
-                <div class="index-list flex-row">
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
-                        <a href="#">
-                            <img src="img/article-1.png" alt="">
-                            <div class="index-item__info">Пошаговое руководство по моделированию в zbrush. часть 2</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
-                        <a href="#">
-                            <img src="img/article-2.png" alt="">
-                            <div class="index-item__info">Классный и узнаваемый персонаж — какой он?</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
-                        <a href="#">
-                            <img src="img/article-3.png" alt="">
+                            <img src="img/event-3.png" alt="">
                             <div class="index-item__info">Теория цвета для художников: комплементарная цветовая схема
                             </div>
                         </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 index-item">
                         <a href="#">
-                            <img src="img/article-4.png" alt="">
+                            <img src="img/event-4.png" alt="">
                             <div class="index-item__info">Теория цвета для художников: комплементарная цветовая схема
                             </div>
                         </a>
                     </div>
                 </div>
-                <a class="see-all__link" href="#">Смотреть все лекции</a>
+                <a class="none tablet-block link-arrow-white fullwidth" href="#">Все отзывы</a>
             </div>
+        </div>
 
-            <div class="index-contacts">
+        <div class="container">
+            <div class="index-section">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <div class="title">Школа рисунка и цифровой графики</div>
+                    </div>
+                </div>
                 <div class="flex-row">
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="title">Контакты</div>
-                        <div class="title__descr">Напишите или позвоните нам, если у вас <a href="#">остались
-                                вопросы</a>.</div>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <div class="index-contacts__location">
-                            <span>Москва</span>
-                            <p>Шлюзовая наб., <br>д. 8 ст 1
-                                <a href="tel:+7 495 003 72 65">+7 495 003 72 65</a>
-                            </p>
-                            <a class="index-contacts__link" href="#">Как добраться</a>
-                        </div>
-                        <div class="index-contacts__location">
-                            <span>Время работы</span>
-                            <p>Ежедневно <br>
-                                10:00 — 22:00</p>
-                        </div>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                        <div class="index-contacts__location">
-                            <span>Санкт-Петербург</span>
-                            <p>Уральская улица, <br>д. 1, корп. 2, лит. А
-                                <a href="tel:+7 495 003 72 65">+7 495 003 72 65</a>
-                            </p>
-                            <a class="index-contacts__link" href="#">Как добраться</a>
-                        </div>
-                        <div class="index-contacts__location">
-                            <span>Социальные сети</span>
-                            <div class="index-contacts__socials">
-                                <a href="#">
-                                    <svg class="icon">
-                                        <use xlink:href="../img/svgsprite/sprite.svg#tg"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon">
-                                        <use xlink:href="../img/svgsprite/sprite.svg#vk"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon">
-                                        <use xlink:href="../img/svgsprite/sprite.svg#tube"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon">
-                                        <use xlink:href="../img/svgsprite/sprite.svg#mail"></use>
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg class="icon">
-                                        <use xlink:href="../img/svgsprite/sprite.svg#phone-real"></use>
-                                    </svg>
-                                </a>
+                    <div class="flex-col-6 cust-col-mobile-12">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <div class="index-about--image"
+                                style="background: url('img/main-about__tablet.jpg') no-repeat center; background-size: cover;">
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="flex-col-6 cust-col-mobile-12">
+                        <p>Мы обучаем онлайн, в Санкт - Петербурге и Москве. Мы предлагаем профессиональные курсы
+                            рисования
+                            и CG по самым актуальным направлениям: Рисунок, 2D графика, 3D графика.</p>
+                        <ul>
+                            <li>Обучение офлайн и онлайн по всему миру</li>
+                            <li>Актуальные и современные знания</li>
+                            <li>Удобная и пошаговая система обучения</li>
+                            <li>Кураторы с большим опытом работы в индустрии</li>
+                            <li>Возможность сделать крутое портфолио</li>
+                            <li>Большое комьюнити с интересными знакомствами</li>
+                        </ul>
+                        <p>Мы — не просто школа обучения рисованию. Вместе с вами мы создаем сообщество профессионалов,
+                            влюбленных в свое дело.Наша команда из преподавателей и студентов разделяет одну цель —
+                            рисовать
+                            много, классно и в удовольствие.</p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="subscribe-containter">
-    <div class="flex-row">
-        <div class="flex-col-6 cust-col-tablet-12">
-            <div class="title">подпишись сейчас на новости от skills up</div>
-            <div class="title__descr">Подпишитесь на рассылку, чтобы <a href="#">первыми узнавать</a>
-                новости о свежих поступлениях, <a href="#">скидках и распродажах</a>.</div>
-        </div>
-        <div class="flex-col-6 cust-col-tablet-12">
-            <form class="subscribe-form" action="#">
-                <input type="text" name="name" required placeholder="Введите Имя">
-                <input type="text" name="mail" required placeholder="Введите Email">
-                <div class="custom-checkbox">
-                    <input type="checkbox" checked id="checkbox-subscribe" name="checkbox-subscribe">
-                    <label for="checkbox-subscribe">
-                        <span>Нажимая на кнопку подписаться вы соглашаетесь с политикой
-                            конфидициальности.</span>
-                    </label>
-                </div>
-                <button class="subscribe-subtit" type="submit">Подписаться</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-        </div>
 
     </main>
     <footer class="footer">
     <div class="container">
-        <div class="flex-row footer-links">
-            <div class="flex-col-12"><div class="border"></div></div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="/" class="footer-logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">выбрать курс</a>
-                <a href="#" class="disabled-link">Карта профессий</a>
-                <a href="#" class="disabled-link">Пройти тест</a>
-                <a href="#">О школе</a>
-                <a href="#">Вопросы и ответы</a>
-                <a href="#" class="disabled-link">Skills up LAB</a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">Работы студентов</a>
-                <a href="#">отзывы</a>
-                <a href="#">Кураторы</a>
-                <a href="#">Лекторий</a>
-                <a href="#">Блог</a>
-                <a href="#">Мероприятия</a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#">Партнерам</a>
-                <a href="#">контакты</a>
-                <a href="#">Для компаний</a>
-                <a href="#" class="disabled-link">Вакансии</a>
-                <a href="#" class="disabled-link">клуб Skills up</a>
-                <a href="#">Подарочный Сертификат</a>
+        <div class="index-contacts">
+            <div class="flex-row">
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-1 border-mobile">
+                    <a href="/" class="footer-logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="index-contacts__location">
+                        <div class="index-contacts__socials">
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#tg"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#tube"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="../img/svgsprite/sprite.svg#mail"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-3 mobile-none">
+                    <a href="#">Выбрать курс</a>
+                    <a href="#">Работы студентов</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Кураторы</a>
+                    <a href="#">Партнерам</a>
+                    <a href="#">Подарочный Сертификат</a>
+                    <a href="#">Карта профессий</a>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-4 mobile-none">
+                    <a href="#">О школе</a>
+                    <a href="#">Мероприятия</a>
+                    <a href="#">Лекторий</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">контакты</a>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 footer-links order-tablet-4 none mobile-block">
+                    <div class="navigation navigation-footer">
+                        <div class="xl-flex xl-align-center xl-jst-btw x-block">
+                            <div class="nav xl-flex xl-align-center xl-jst-btw x-block">
+                                <a href="#">Работы студентов</a>
+                                <a href="#">Отзывы</a>
+                                <a href="#">Кураторы</a>
+                                <div class="nav__dropdown">
+                                    <span>Комьюнити</span>
+                                    <div class="dropdown">
+                                        <a href="#">О школе</a>
+                                        <a href="#">Мероприятия</a>
+                                        <a href="#">Лекторий</a>
+                                        <a href="#">Блог</a>
+                                        <a href="#">Skills up Lab</a>
+                                        <a href="#">Клуб Skills up</a>
+                                        <a href="#">Вопросы и ответы</a>
+                                    </div>
+                                </div>
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-2 border-mobile border-mobile-p-40">
+                    <div class="subscribe-containter">
+    <p><span>Подпишитесь на рассылку, чтобы</span> первыми узнавать <span>новости о свежих поступлениях</span>,
+        скидках и распродажах.</p>
+    <form class="subscribe-form" action="#">
+        <input type="email" name="mail" required placeholder="Email">
+        <button class="subscribe-subtit" type="submit">Подписаться</button>
+    </form>
+    <p class="subscribe-copy">Нажимая на кнопку подписаться вы соглашаетесь с политикой конфидициальности.</p>
+</div>
+                </div>
             </div>
         </div>
+
         <div class="flex-row footer-copy">
-           
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 © Skills Up School, 2013-2022
             </div>
