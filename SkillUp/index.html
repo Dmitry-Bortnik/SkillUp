@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <main class="main">
-        <section class="top-banner active">
+    <section class="top-banner active">
     <div class="top-banner-close">закрыть</div>
     <div>
         <source media="(min-width:992px)" srcset="img/main-slide-1.jpg">
@@ -49,9 +48,9 @@
                         <div class="nav__change-course">
                             <span>Выбрать курс</span>
                         </div>
-                        <a href="#">Работы студентов</a>
-                        <a href="#">Отзывы</a>
-                        <a href="#">Кураторы</a>
+                        <a href="works-students.html">Работы студентов</a>
+                        <a href="feedbacks.html">Отзывы</a>
+                        <a href="curators.html">Кураторы</a>
                         <div class="nav__dropdown">
                             <span>Комьюнити</span>
                             <div class="dropdown">
@@ -69,8 +68,70 @@
                         <a class="header__for-partners__link" href="#">Контакты</a>
                         <div class="header__basket">
                             <div class="basket">
-                                <span></span>
+                                <span class="active-basket"></span>
                             </div>
+                            <div class="basket__wrapper">
+    <div class="basket__container">
+        <div class="basket__head">
+            <div class="basket__title">Выбранные курсы</div>
+            <div class="basket__close">закрыть</div>
+        </div>
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-1.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-2.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <div class="basket__summ--title">
+                    Вся сумма
+                </div>
+                <div class="basket__summ--i">
+                    61 250 <span class="rouble">i</span>
+                </div>
+            </div>
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+            </div>
+            <div class="basket__summ--row">
+                <a id="continue-pay" class="btn-white" href="#">Продолжить покупки</a>
+            </div>
+        </div>
+
+       <!-- <div class="basket__head">
+            <div class="basket__title">В корзине ничего нет</div>
+        </div>
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="#">В каталог</a>
+            </div>
+        </div>-->
+
+    </div>
+</div>
                         </div>
                         <a class="header__mobile-callback" href="#">Заказать звонок</a>
                     </div>
@@ -134,6 +195,7 @@
         </div>
     </div>
 </header>
+    <main class="main">
         <div class="container">
             <div class="index-banner">
                 <div class="index-banner--top">
@@ -170,7 +232,7 @@
                             </div>
                         </div>
                         <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
-                            <a href="directions.html" class="index-basic-direction--btn link-arrow-white">Подробнее</a>
+                            <a href="directions.html" class="link-arrow-white">Подробнее</a>
                         </div>
                         <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
                             <div class="index-basic-direction--img" style="background: url('img/direction-1.png') no-repeat center; background-size: cover;"></div>
@@ -192,7 +254,7 @@
                             </div>
                         </div>
                         <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
-                            <a href="directions.html" class="index-basic-direction--btn link-arrow-white">Подробнее</a>
+                            <a href="directions.html" class="link-arrow-white">Подробнее</a>
                         </div>
                         <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
                             <div class="index-basic-direction--img" style="background: url('img/direction-2.png') no-repeat center; background-size: cover;"></div>
@@ -214,7 +276,7 @@
                             </div>
                         </div>
                         <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
-                            <a href="directions.html" class="index-basic-direction--btn link-arrow-white">Подробнее</a>
+                            <a href="directions.html" class="link-arrow-white">Подробнее</a>
                         </div>
                         <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
                             <div class="index-basic-direction--img" style="background: url('img/direction-3.png') no-repeat center; background-size: cover;"></div>
@@ -225,13 +287,13 @@
         </div>
 
         <div class="container">
-    <div class="index-our-courses">
+    <div class="our-courses">
         <div class="flex-row title-container align-center">
             <div class="flex-col-12">
                 <div class="title">Наши курсы</div>
             </div>
         </div>
-        <div class="index-our-courses__filter">
+        <div class="our-courses__filter">
             <div class="flex-row">
                 <div class="flex-col-9 cust-col-tablet-12">
                     <details class="multiple-select">
@@ -345,16 +407,16 @@
                     </details>
                 </div>
                 <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
-                    <a class="link-arrow-white fullwidth" href="#">Все курсы</a>
+                    <a class="link-arrow-white" href="#">Все курсы</a>
                 </div>
             </div>
             <div class="multiple-filter"></div>
         </div>
-        <div class="our-courses__list flex-row">
+        <div class="our-courses__list flex-row mt-xl-0">
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
                     <div class="our-courses__tags">
-                        <span class="sale-tag"></span>
+                        <span class="sale-tag">- 30%</span>
                     </div>
                     <div class="our-courses__image">
                         <img src="img/course-1.png" alt="">
@@ -364,14 +426,16 @@
                     </div>
                     <div class="our-courses__prices">
                         <div class="our-courses__old-price">12 250</div>
-                        <div class="our-courses__sale-price">- 30%</div>
-                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
-                        <div class="our-courses__sale-credit">6 месяцев</div>
+                        <div class="our-courses__new-sale-price">12 250 <span class="rouble">i</span></div>
+                        <div class="our-courses__sale-credit">Длительность 6 месяцев</div>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
+                    <div class="our-courses__tags">
+                        <span class="sale-tag">- 30%</span>
+                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-2.png" alt="">
                     </div>
@@ -380,7 +444,8 @@
                     </div>
                     <div class="our-courses__prices">
                         <div class="our-courses__old-price">12 250</div>
-                        <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                        <div class="our-courses__new-sale-price">12 250 <span class="rouble">i</span></div>
+                        <div class="our-courses__sale-credit">Длительность 6 месяцев</div>
                     </div>
                 </a>
             </div>
@@ -479,7 +544,7 @@
                         <div class="title">Работы наших Учеников</div>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
-                        <a class="link-arrow-white fullwidth" href="#">Все работы</a>
+                        <a class="link-arrow-white" href="#">Все работы</a>
                     </div>
                 </div>
                 <div class="index-works__list masonry">
@@ -571,7 +636,7 @@
                 <div class="title">отзывы наших студентов</div>
             </div>
             <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
-                <a class="link-arrow-white fullwidth" href="#">Все отзывы</a>
+                <a class="link-arrow-white" href="#">Все отзывы</a>
             </div>
         </div>
         <div class="index-feedbacks__list flex-row">
@@ -625,7 +690,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
                 <div class="logos-parnters__item">
@@ -638,7 +702,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
             </div>
@@ -654,7 +717,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
                 <div class="logos-parnters__item">
@@ -667,7 +729,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
 
@@ -684,7 +745,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
                 <div class="logos-parnters__item">
@@ -697,7 +757,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
             </div>
@@ -713,7 +772,6 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
                 <div class="logos-parnters__item">
@@ -726,13 +784,9 @@
                         <p>Я закончила онлайн обучение. Занятия были комфортными, нравился темп, нравилось, что на
                             все вопросы группа получала ответы. Помощь от куратора была очень мощной. За это ему
                             отдельное спасибо.</p>
-                        <a href="#">Читать больше</a>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </div>
@@ -764,7 +818,7 @@
                         <div class="title">Skills up мероприятия</div>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
-                        <a class="link-arrow-white fullwidth" href="#">Все мероприятия</a>
+                        <a class="link-arrow-white" href="#">Все мероприятия</a>
                     </div>
                 </div>
                 <div class="flex-row index-events__list">
@@ -810,7 +864,7 @@
                 <div class="flex-row">
                     <div class="flex-col-6 cust-col-mobile-12">
                         <a href="#" class="js-video" data-video="uvXMLWcHsdU">
-                            <div class="index-about--image"
+                            <div class="section-about--image"
                                 style="background: url('img/main-about__tablet.jpg') no-repeat center; background-size: cover;">
                             </div>
                         </a>
@@ -914,11 +968,11 @@
                 </div>
                 <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-2 border-mobile border-mobile-p-40">
                     <div class="subscribe-containter">
-    <p><span>Подпишитесь на рассылку, чтобы</span> первыми узнавать <span>новости о свежих поступлениях</span>,
-        скидках и распродажах.</p>
+    <p>Подпишитесь на рассылку, чтобы <span>первыми узнавать</span> новости о свежих поступлениях,
+        <span>скидках и распродажах.</span></p>
     <form class="subscribe-form" action="#">
         <input type="email" name="mail" required placeholder="Email">
-        <button class="subscribe-subtit" type="submit">Подписаться</button>
+        <button class="subscribe-subtit" type="submit"></button>
     </form>
     <p class="subscribe-copy">Нажимая на кнопку подписаться вы соглашаетесь с политикой конфидициальности.</p>
 </div>
@@ -928,7 +982,7 @@
 
         <div class="flex-row footer-copy">
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                © Skills Up School, 2013-2022
+                © Skills Up School, 2013-2023
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#">Пользовательское соглашение</a>
@@ -943,166 +997,14 @@
     </div>
 </footer>
 
-<div class="overflow-background"></div>
-    <div class="basket__wrapper">
-    <div class="basket__container">
-        <div class="basket__head">
-            <div class="basket__title">Выбранные курсы</div>
-            <div class="basket__close">закрыть</div>
-        </div>
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">2D ГРАФИКА MIDDLE</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">2D ГРАФИКА MIDDLE</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <div class="basket__summ--title">
-                    Вся сумма
-                </div>
-                <div class="basket__summ--i">
-                    61 250 <span class="rouble">i</span>
-                </div>
-            </div>
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
-            </div>
-            <div class="basket__summ--row">
-                <a id="continue-pay" class="btn" href="#">Продолжить покупки</a>
-            </div>
-        </div>
-
-        <div class="basket__head">
-            <div class="basket__title">Популярные курсы</div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
-            </div>
-            <div class="basket__course--href">
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
-            </div>
-            <div class="basket__course--href">
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
-            </div>
-            <div class="basket__course--href">
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
-            </div>
-        </div>
-
-        <div class="basket__head">
-            <div class="basket__title">В корзине ничего нет</div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="#">В каталог</a>
-            </div>
-        </div>
-
+<div class="awg-popup">
+    <div class="awg-popup__content">
+        <div class="awg-popup__close js-close-popup"></div>
+        <div class="awg-popup__video"></div>
     </div>
 </div>
+
+<div class="overflow-background"></div>
     <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
     <button data-remodal-action="close" class="remodal-close"></button>
     <form action="#" id="form-modal">

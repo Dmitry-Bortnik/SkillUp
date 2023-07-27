@@ -112,7 +112,6 @@ $("body").on("click", ".nav__change-course", function () {
 //
 
 $("body").on("click", ".toggle__nav, .header__m-toggle--close", function (event) {
-  $('.toggle__nav').toggleClass('active');
   $('.header__m-toggle').toggleClass('active');
   $('.overflow-background').toggleClass('active');
   $('body').toggleClass('no-scroll');
@@ -127,44 +126,120 @@ $(function () {
 });
 
 
-var $sliderResult = $('.result-slider');
-
-if ($sliderResult.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounter = document.createElement('div');
-  sliderCounter.classList.add('slider__counter');
-
-  var updateSliderCounter = function (slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounter).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
-  };
-
-  $sliderResult.on('init', function (event, slick) {
-    $('.result-slider__control__noms').append(sliderCounter);
-    updateSliderCounter(slick);
-  });
-
-  $sliderResult.on('afterChange', function (event, slick, currentSlide) {
-    updateSliderCounter(slick, currentSlide);
-  });
-
-  $(".result-slider").slick({
-    dots: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: true,
-    prevArrow: $('.result-slider__control__prev'),
-    nextArrow: $('.result-slider__control__next'),
-  });
-
+// выбор слайдера в зависимости от ширины экрана
+if (window.innerWidth > 768) {
+  var sliderResult = $('#result-slider');
+} else if (window.innerWidth < 769) {
+  var sliderResult = $('#result-slider-mobile');
 }
+
+var currentSlide;
+var slidesCount;
+var sliderCounter = document.createElement('div');
+sliderCounter.classList.add('slider__counter');
+
+var updateSliderCounter = function (slick, currentIndex) {
+  currentSlide = slick.slickCurrentSlide() + 1;
+  slidesCount = slick.slideCount;
+  $(sliderCounter).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+};
+
+sliderResult.on('init', function (event, slick) {
+  $('#result-slider-noms').append(sliderCounter);
+  updateSliderCounter(slick);
+});
+
+sliderResult.on('afterChange', function (event, slick, currentSlide) {
+  updateSliderCounter(slick, currentSlide);
+});
+
+sliderResult.slick({
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: false,
+  prevArrow: $('#result-slider-prev'),
+  nextArrow: $('#result-slider-next'),
+  responsive: [{
+      breakpoint: 769,
+      settings: {
+        dots: true,
+        slidesToShow: 0.5,
+        slidesToScroll: 0.5,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        dots: true,
+        slidesToShow: 0.5,
+        slidesToScroll: 0.5,
+      }
+    }
+  ]
+});
 
 //
 
-var $sliderWorksCurators = $('.works-curators-slider');
+// выбор слайдера в зависимости от ширины экрана
+if (window.innerWidth > 768) {
+  var sliderWorksCurators = $('#result-slider-2');
+} else if (window.innerWidth < 769) {
+  var sliderWorksCurators = $('#result-slider-2-mobile');
+}
+
+var currentSlide;
+var slidesCount;
+var sliderCounterWorks = document.createElement('div');
+sliderCounterWorks.classList.add('slider__counter');
+
+var updateSliderCounterWorks = function (slick, currentIndex) {
+  currentSlide = slick.slickCurrentSlide() + 1;
+  slidesCount = slick.slideCount;
+  $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+};
+
+sliderWorksCurators.on('init', function (event, slick) {
+  $('#works-curators-noms').append(sliderCounterWorks);
+  updateSliderCounterWorks(slick);
+});
+
+sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
+  updateSliderCounterWorks(slick, currentSlide);
+});
+
+sliderWorksCurators.slick({
+  dots: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: false,
+  prevArrow: $('#works-curators-prev'),
+  nextArrow: $('#works-curators-next'),
+  responsive: [{
+      breakpoint: 769,
+      settings: {
+        dots: true,
+        slidesToShow: 0.5,
+        slidesToScroll: 0.5,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        dots: true,
+        slidesToShow: 0.5,
+        slidesToScroll: 0.5,
+      }
+    }
+  ]
+});
+
+
+// feedbacks slider
+
+var $sliderWorksCurators = $('.feedbacks-slider');
 
 if ($sliderWorksCurators.length) {
   var currentSlide;
@@ -179,7 +254,7 @@ if ($sliderWorksCurators.length) {
   };
 
   $sliderWorksCurators.on('init', function (event, slick) {
-    $('.works-curators-slider__control__noms').append(sliderCounterWorks);
+    $('#feedback-noms').append(sliderCounterWorks);
     updateSliderCounterWorks(slick);
   });
 
@@ -187,17 +262,188 @@ if ($sliderWorksCurators.length) {
     updateSliderCounterWorks(slick, currentSlide);
   });
 
-  $(".works-curators-slider").slick({
+  $(".feedbacks-slider").slick({
     dots: false,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    fade: true,
-    prevArrow: $('.works-curators-slider__control__prev'),
-    nextArrow: $('.works-curators-slider__control__next'),
+    prevArrow: $('#feedback-prev'),
+    nextArrow: $('#feedback-next'),
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
   });
 }
 
+// authors slider
+
+var $sliderWorksCurators = $('.authors-slider');
+
+if ($sliderWorksCurators.length) {
+  var currentSlide;
+  var slidesCount;
+  var sliderCounterWorks = document.createElement('div');
+  sliderCounterWorks.classList.add('slider__counter');
+
+  var updateSliderCounterWorks = function (slick, currentIndex) {
+    currentSlide = slick.slickCurrentSlide() + 1;
+    slidesCount = slick.slideCount;
+    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+  };
+
+  $sliderWorksCurators.on('init', function (event, slick) {
+    $('#authors-noms').append(sliderCounterWorks);
+    updateSliderCounterWorks(slick);
+  });
+
+  $sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
+    updateSliderCounterWorks(slick, currentSlide);
+  });
+
+  $(".authors-slider").slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#authors-prev'),
+    nextArrow: $('#authors-next'),
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
+
+// how-earn slider
+
+var $sliderWorksCurators = $('.how-earn-slider');
+
+if ($sliderWorksCurators.length) {
+  var currentSlide;
+  var slidesCount;
+  var sliderCounterWorks = document.createElement('div');
+  sliderCounterWorks.classList.add('slider__counter');
+
+  var updateSliderCounterWorks = function (slick, currentIndex) {
+    currentSlide = slick.slickCurrentSlide() + 1;
+    slidesCount = slick.slideCount;
+    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+  };
+
+  $sliderWorksCurators.on('init', function (event, slick) {
+    $('#how-earn-noms').append(sliderCounterWorks);
+    updateSliderCounterWorks(slick);
+  });
+
+  $sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
+    updateSliderCounterWorks(slick, currentSlide);
+  });
+
+  $(".how-earn-slider").slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#how-earn-prev'),
+    nextArrow: $('#how-earn-next'),
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
+
+// curator course slider
+
+var $sliderWorksCurators = $('.curator-course--slider');
+
+if ($sliderWorksCurators.length) {
+  var currentSlide;
+  var slidesCount;
+  var sliderCounterWorks = document.createElement('div');
+  sliderCounterWorks.classList.add('slider__counter');
+
+  var updateSliderCounterWorks = function (slick, currentIndex) {
+    currentSlide = slick.slickCurrentSlide() + 1;
+    slidesCount = slick.slideCount;
+    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+  };
+
+  $sliderWorksCurators.on('init', function (event, slick) {
+    $('#curator-course-noms').append(sliderCounterWorks);
+    updateSliderCounterWorks(slick);
+  });
+
+  $sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
+    updateSliderCounterWorks(slick, currentSlide);
+  });
+
+  $(".curator-course--slider").slick({
+    dots: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#curator-course-prev'),
+    nextArrow: $('#curator-course-next'),
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
+  });
+}
 
 
 (function ($) {
@@ -224,20 +470,18 @@ $("#change-connect").on("change", function () {
 
 //
 
-$("body").on("click", ".header__basket", function () {
+$("body").on("click", ".basket", function () {
   $('.basket__wrapper').addClass('active');
-  $('.basket__container').addClass('active');
-  $('.overflow-background').addClass('active')
-  $('body').addClass('no-scroll');
-  $('.toggle__nav').removeClass('active');
-  $('.header__m-toggle').removeClass('active');
+  if (window.innerWidth < 1024) {
+    $('.header__m-toggle').removeClass('active');
+
+  }
 })
 
 function closeBasket() {
   $('.basket__wrapper').removeClass('active');
-  $('.basket__container').removeClass('active');
-  $('.overflow-background').removeClass('active')
   $('body').removeClass('no-scroll');
+  $('.overflow-background').removeClass('active');
 }
 
 $("body").on("click", ".basket__close, #continue-pay", function () {
@@ -288,17 +532,29 @@ closeBanner.addEventListener("click", () => {
 
 // sliders tablet
 
-
 function checkWindowWidth() {
   if (window.innerWidth < 1025) {
+
+    $(".logos-parnters__list").slick({
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
 
     $(".index-works__list").slick({
       dots: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 769,
           settings: {
             slidesToShow: 2,
@@ -320,8 +576,7 @@ function checkWindowWidth() {
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 769,
           settings: {
             slidesToShow: 2,
@@ -343,8 +598,7 @@ function checkWindowWidth() {
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 769,
           settings: {
             slidesToShow: 2,
@@ -361,12 +615,18 @@ function checkWindowWidth() {
       ]
     });
 
-    $(".logos-parnters__list").slick({
+    $(".what-learning").slick({
       dots: true,
-      slidesToShow: 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
-      responsive: [
+      responsive: [{
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
         {
           breakpoint: 480,
           settings: {
@@ -377,8 +637,43 @@ function checkWindowWidth() {
       ]
     });
 
-    console.log("Окно меньше 1024 пикселей в ширину");
-    // Дополнительные действия...
+    $(".similar-products-slider").slick({
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [{
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+  }
+
+  if (window.innerWidth < 480) {
+    $(".about-free--list").slick({
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+    });
+    $(".step-works-slider").slick({
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+    });
   }
 }
 
@@ -388,3 +683,28 @@ checkWindowWidth();
 // Добавляем слушатель события resize для проверки при изменении ширины окна
 window.addEventListener('resize', checkWindowWidth);
 
+
+// переключение тарифов форматов обучения
+
+const formatLink = document.querySelectorAll('.format-learning-controls a');
+const groupBlock = document.getElementById("groupValue");
+const individualBlock = document.getElementById("individualValue");
+const offlineBlock = document.getElementById("offlineValue");
+
+formatLink.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    for (const btn of formatLink) {
+      btn.classList.remove("active");
+    }
+    link.classList.add("active");
+    const button = event.target;
+    const groupValue = button.getAttribute("data-group");
+    const individualValue = button.getAttribute("data-individual");
+    const offlineValue = button.getAttribute("data-offline");
+
+    groupBlock.textContent = `${groupValue}`;
+    individualBlock.textContent = `${individualValue}`;
+    offlineBlock.textContent = `${offlineValue}`;
+  })
+})

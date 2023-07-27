@@ -10,215 +10,85 @@
 </head>
 
 <body>
+    @@include('_header.html')
     <main class="main">
         <div class="container">
             <div class="basket__page">
-                <div class="flex-row basket__page--row">
-                    <div class="flex-col-6 cust-col-tablet-12 order-tablet-2">
-                        <div class="basket__page--col">
-                            <div class="basket__page--logo">
-                                <a href="/"><img src="img/logo.svg" alt=""></a>
-                            </div>
-                            <div class="breadcrubms">
-                                <a href="#">Корзина</a>
-                                <a href="#">Информация</a>
-                                <span>Оплата</span>
-                            </div>
-                            <div class="flex-row basket__page--payments">
-                                <div class="flex-col-12 basket__page--payments--head">
-                                    <div>Оплата картой РФ</div>
-                                    <div>Зарубежная оплата</div>
+                <div class="basket__page--row">
+                    <div class="basket__page--col">
+                        <div class="basket__page--product-row">
+                            <div class="basket__course">
+                                <a href="#" class="basket__course--image">
+                                    <img src="img/course-1.png" alt="">
+                                </a>
+                                <div class="basket__course--info">
+                                    <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                    <a class="basket__course--delete" href="#">Удалить</a>
                                 </div>
-                                <div class="flex-col-8 cust-col-mobile-12 basket__page--payments--ru">
-                                    <div class="flex-row">
-                                        <div class="flex-col-6 cust-col-mobile-12">
-                                            <div class="basket__page--payments--item">
-                                                <p>Оставить заявку на бесплатную консультацию</p>
-                                            </div>
-                                        </div>
-                                        <div class="flex-col-6 cust-col-mobile-12">
-                                            <div class="basket__page--payments--item">
-                                                <p>В рассрочку в Тинькофф</p>
-                                                <div class="basket__page--payments--item--image">
-                                                    <img src="img/logo-tink.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-col-6 cust-col-mobile-12">
-                                            <div class="basket__page--payments--item">
-                                                <p>Оплатить всю сумму со скидкой 5%</p>
-                                                <div class="basket__page--payments--item--image">
-                                                    <img src="img/logo-mir.png" alt="">
-                                                    <img src="img/logo-visa.png" alt="">
-                                                    <img src="img/logo-mastercard.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="flex-col-6 cust-col-mobile-12">
-                                            <div class="basket__page--payments--item">
-                                                <p>Оплатить частями 50 на 50</p>
-                                                <div class="basket__page--payments--item--image">
-                                                    <img src="img/logo-mir.png" alt="">
-                                                    <img src="img/logo-visa.png" alt="">
-                                                    <img src="img/logo-mastercard.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex-col-4 cust-col-mobile-12 basket__page--payments--us">
-                                    <div class="flex-row">
-                                        <div class="flex-col-12">
-                                            <div class="basket__page--payments--item">
-                                                <p>Иностранная карта (Cloudpayments)</p>
-                                                <div class="basket__page--payments--item--image-cloud">
-                                                    <img src="img/logo-cloudpayments.png" alt="">
-                                                </div>
-                                                <a href="#">Не доступные для оплаты страны</a>
-                                            </div>
-                                        </div>
-                                        <div class="flex-col-12">
-                                            <div class="basket__page--payments--item">
-                                                <p>Иностранный банковский перевод</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="basket__course--price">
+                                    12 250 <span class="rouble">i</span>
                                 </div>
                             </div>
 
-                            <form class="main-form" action="#">
-                                <input type="text" name="name" required placeholder="Имя*">
-                                <input type="text" name="phone" required placeholder="Телефон*">
-                                <input type="email" name="email" required placeholder="Электронная почта*">
-                                <div class="channel-connect">
-                                    <select name="connect-name" id="change-connect">
-                                        <option value="Telegram" data-placeholder="@username">Telegram</option>
-                                        <option value="Vkontakte" data-placeholder="Ссылка на профиль">Vkontakte
-                                        </option>
-                                        <option value="Discord" data-placeholder="username123">Discord</option>
-                                    </select>
-                                    <input type="text" id="connect-input" name="connect" required
-                                        placeholder="@username">
+                            <div class="basket__course">
+                                <a href="#" class="basket__course--image">
+                                    <img src="img/course-2.png" alt="">
+                                </a>
+                                <div class="basket__course--info">
+                                    <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                    <a class="basket__course--delete" href="#">Удалить</a>
                                 </div>
-                                <input type="email" name="portfolio" required placeholder="Портфолио (не обязательно)">
-                                <div class="main-form--actions">
-                                    <p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных </p>
-                                    <button type="submit">Оставить заявку</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="flex-col-6 cust-col-tablet-12 order-tablet-1">
-                        <div class="basket__page--col">
-                            <div class="basket__page--product-row">
-                                <div class="basket__course">
-                                    <a href="#" class="basket__course--image">
-                                        <img src="img/course-1.png" alt="">
-                                    </a>
-                                    <div class="basket__course--info">
-                                        <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                                        <a class="basket__course--delete" href="#">Удалить</a>
-                                    </div>
-                                    <div class="basket__course--price">
-                                        12 250 <span class="rouble">i</span>
-                                    </div>
-                                </div>
-
-                                <div class="basket__course">
-                                    <a href="#" class="basket__course--image">
-                                        <img src="img/course-2.png" alt="">
-                                    </a>
-                                    <div class="basket__course--info">
-                                        <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                                        <a class="basket__course--delete" href="#">Удалить</a>
-                                    </div>
-                                    <div class="basket__course--price">
-                                        12 250 <span class="rouble">i</span>
-                                    </div>
-                                </div>
-
-                                <div class="basket__course">
-                                    <a href="#" class="basket__course--image">
-                                        <img src="img/course-3.png" alt="">
-                                    </a>
-                                    <div class="basket__course--info">
-                                        <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                                        <a class="basket__course--delete" href="#">Удалить</a>
-                                    </div>
-                                    <div class="basket__course--price">
-                                        12 250 <span class="rouble">i</span>
-                                    </div>
-                                </div>
-
-                                <div class="basket__course">
-                                    <a href="#" class="basket__course--image">
-                                        <img src="img/course-4.png" alt="">
-                                    </a>
-                                    <div class="basket__course--info">
-                                        <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                                        <a class="basket__course--delete" href="#">Удалить</a>
-                                    </div>
-                                    <div class="basket__course--price">
-                                        12 250 <span class="rouble">i</span>
-                                    </div>
-                                </div>
-
-                                <div class="basket__promo">
-                                    <form class="promocode" action="#">
-                                        <input type="text" placeholder="Промокод">
-                                        <button type="submit">Активировать</button>
-                                    </form>
-                                </div>
-
-                                <div class="basket__summ">
-                                    <div class="basket__summ--row">
-                                        <div class="basket__summ--title">
-                                            Вся сумма
-                                        </div>
-                                        <div class="basket__summ--i">
-                                            61 250 <span class="rouble">i</span>
-                                        </div>
-                                    </div>
+                                <div class="basket__course--price">
+                                    12 250 <span class="rouble">i</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="basket__page--col">
-                            <div class="basket__page--credit">
-                                <div class="basket__page--credit--left">
-                                    <div class="basket__page--credit-title">Рассрочка</div>
-                                    <div class="basket__page--credit-tabs">
-                                        <div class="basket__page--credit-tab tablinks active"  onclick="openPrice(event, '2years')">на 24 месяца</div> /
-                                        <div class="basket__page--credit-tab tablinks" onclick="openPrice(event, '10month')">на 10 месяцев </div>
-                                    </div>
-                                    <div class="basket__page--credit-title">без первого взноса</div>
-                                </div>
 
-                                <div class="basket__page--credit-content tabPrice" id="2years" style="display: block;">
-                                    <div class="basket__page--credit--price">
-                                        3 760 <span class="rouble">i</span>/ <span class="basket__page--credit--date">мес</span>
-                                    </div>
+                            <div class="basket__course">
+                                <a href="#" class="basket__course--image">
+                                    <img src="img/course-3.png" alt="">
+                                </a>
+                                <div class="basket__course--info">
+                                    <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                    <a class="basket__course--delete" href="#">Удалить</a>
                                 </div>
-                                <div class="basket__page--credit-content tabPrice" id="10month">
-                                    <div class="basket__page--credit--price">
-                                        5 760 <span class="rouble">i</span>/ <span class="basket__page--credit--date">мес</span>
+                                <div class="basket__course--price">
+                                    12 250 <span class="rouble">i</span>
+                                </div>
+                            </div>
+
+                            <div class="basket__course">
+                                <a href="#" class="basket__course--image">
+                                    <img src="img/course-4.png" alt="">
+                                </a>
+                                <div class="basket__course--info">
+                                    <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                    <a class="basket__course--delete" href="#">Удалить</a>
+                                </div>
+                                <div class="basket__course--price">
+                                    12 250 <span class="rouble">i</span>
+                                </div>
+                            </div>
+
+                            <div class="flex align-center">
+                                <div class="basket__summ--row gap-20">
+                                    <div class="basket__summ--title">
+                                        Вся сумма
+                                    </div>
+                                    <div class="basket__summ--i">
+                                        61 250 <span class="rouble">i</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="basket-page--footer">
-                <a class="back" href="#">Вернуться в корзину</a>
-                <div class="basket-page--footer-links">
-                    <a href="#">Пользовательское соглашение</a>
-                    <a href="#">Договор оферты</a>
-                    <a href="#">Реквизиты</a>
+                <div class="footer-finish-btns flex align-center wrap gap-20">
+                    <a href="#" class="btn btn-black">Продолжить покупки</a>
+                    <a href="#" class="btn-white">Оформить заказ</a>
                 </div>
             </div>
-        </div>
     </main>
+    @@include('_footer.html')
     @@include('_scripts.html')
 </body>
 

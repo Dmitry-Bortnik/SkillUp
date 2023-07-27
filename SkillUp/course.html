@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <main class="main">
-        <section class="top-banner active">
+    <section class="top-banner active">
     <div class="top-banner-close">закрыть</div>
     <div>
         <source media="(min-width:992px)" srcset="img/main-slide-1.jpg">
@@ -49,9 +48,9 @@
                         <div class="nav__change-course">
                             <span>Выбрать курс</span>
                         </div>
-                        <a href="#">Работы студентов</a>
-                        <a href="#">Отзывы</a>
-                        <a href="#">Кураторы</a>
+                        <a href="works-students.html">Работы студентов</a>
+                        <a href="feedbacks.html">Отзывы</a>
+                        <a href="curators.html">Кураторы</a>
                         <div class="nav__dropdown">
                             <span>Комьюнити</span>
                             <div class="dropdown">
@@ -69,8 +68,70 @@
                         <a class="header__for-partners__link" href="#">Контакты</a>
                         <div class="header__basket">
                             <div class="basket">
-                                <span></span>
+                                <span class="active-basket"></span>
                             </div>
+                            <div class="basket__wrapper">
+    <div class="basket__container">
+        <div class="basket__head">
+            <div class="basket__title">Выбранные курсы</div>
+            <div class="basket__close">закрыть</div>
+        </div>
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-1.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+        <div class="basket__course">
+            <a href="#" class="basket__course--image">
+                <img src="img/course-2.png" alt="">
+            </a>
+            <div class="basket__course--info">
+                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
+                <a class="basket__course--delete" href="#">Удалить</a>
+            </div>
+            <div class="basket__course--price">
+                12 250 <span class="rouble">i</span>
+            </div>
+        </div>
+
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <div class="basket__summ--title">
+                    Вся сумма
+                </div>
+                <div class="basket__summ--i">
+                    61 250 <span class="rouble">i</span>
+                </div>
+            </div>
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+            </div>
+            <div class="basket__summ--row">
+                <a id="continue-pay" class="btn-white" href="#">Продолжить покупки</a>
+            </div>
+        </div>
+
+       <!-- <div class="basket__head">
+            <div class="basket__title">В корзине ничего нет</div>
+        </div>
+
+        <div class="basket__summ">
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="#">В каталог</a>
+            </div>
+        </div>-->
+
+    </div>
+</div>
                         </div>
                         <a class="header__mobile-callback" href="#">Заказать звонок</a>
                     </div>
@@ -134,41 +195,97 @@
         </div>
     </div>
 </header>
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> / <a href="#">3D Графика</a> / <a href="#">Программы обучения</a> /
+                <span>Рисунок BASIC</span>
+            </div>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Программы обучения</a>
+        </div>
         <div class="container">
             <div class="course--main-banner">
                 <div class="flex-row">
                     <div class="flex-col-6 cust-col-tablet-12">
-                        <h1>ОФлайн Рисунок BASIC</h1>
-                        <p>Обучение рисованию начинается с хорошей базы. И эту базу вы найдете на курсе Рисунок Basic.
+                        <h1>Рисунок <br>BASIC</h1>
+                        <p>Обучение рисованию начинается
+                            с хорошей базы. И эту базу вы найдете
+                            на курсе Рисунок Basic.
                         </p>
-                        <a class="see-all__link" href="#">Записаться на курс</a>
+                        <a class="btn-black" href="#">Записаться на курс</a>
                     </div>
                 </div>
             </div>
-            <div class="index-about">
+            <div class="section-about">
                 <div class="flex-row">
                     <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="index-about__main-text">
+                        <div class="section-about__main-text">
                             <p>Программа направлена на освоение графических приёмов и техник рисования, формирование
                                 объемно-пространственного и концептуального мышления, изучение пластической анатомии и
                                 фундаментальных законов композиции.
                             </p>
                         </div>
-                        <div class="flex-row">
-                            <div class="flex-col-6 cust-col-mobile-12">
-                                <p>Курс рисунка подходит для начинающих и опытных художников: студентов и абитуриентов
-                                    художественных училищ и ВУЗов, дизайнеров, иллюстраторов, 2D/3D художников.
-                                </p>
+                        <div class="about-free--list flex-row">
+                            <div class="flex-col-6">
+                                <div class="about-free--item">
+                                    <img src="img/global.svg" alt="">
+                                    <p>Возможность проходить курс из любой точки мира</p>
+                                    <div class="about-free--drop">
+                                        <p>Рисуйте, сидя на берегу моря, на красивом холме или в кофейне с видом на
+                                            узкие мощеные улочки и яркие черепичные крыши.</p>
+                                    </div>
+                                </div>
+                                <div class="about-free--item">
+                                    <img src="img/fire.svg" alt="">
+                                    <p>Поддержка комьюнити</p>
+                                    <div class="about-free--drop">
+                                        <p>Новые знакомства, обмен опытом, совместные проекты — мы всегда говорим про
+                                            важность комьюнити, скажем и сейчас!</p>
+                                    </div>
+                                </div>
+
+                                <div class="about-free--item">
+                                    <img src="img/message.svg" alt="">
+                                    <p>Чат для общения с другими студентами и куратором</p>
+                                    <div class="about-free--drop">
+                                        <p>Если ровная линия не получается или рендер не запускается, всегда можно
+                                            попросить
+                                            совет и поддержку у одногруппников и куратора.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex-col-6 cust-col-mobile-12">
-                                <p>В рамках курса проводятся дополнительные мероприятия: зарисовки с натуры, лекции и
-                                    мастер-классы.
-                                </p>
+                            <div class="flex-col-6">
+                                <div class="about-free--item">
+                                    <img src="img/mobile.svg" alt="">
+                                    <p>Устойчивая база в любом направлении</p>
+                                    <div class="about-free--drop">
+                                        <p>...необходимая не только художнику, но и дизайнеру, архитектору, тату-мастеру
+                                            и другому специалисту, занимающемуся прикладным творчеством.</p>
+                                    </div>
+                                </div>
+                                <div class="about-free--item">
+                                    <img src="img/appstoreAdd.svg" alt="">
+                                    <p>Системный подход</p>
+                                    <div class="about-free--drop">
+                                        <p>Программы курсов выстроены от простого к сложному: благодаря этому даже тот,
+                                            кто никогда не рисовал, быстро схватывает материал и начинает создавать
+                                            первые иллюстрации, 3D-модели, наброски уже в первый месяц обучения.</p>
+                                    </div>
+                                </div>
+                                <div class="about-free--item">
+                                    <img src="img/rise.svg" alt="">
+                                    <p>Новые проекты в портфолио и скиллы в резюме</p>
+                                    <div class="about-free--drop">
+                                        <p>Навыки, которые вы получите на курсах, релевантны навыкам в вакансиях, а
+                                            каждый проект оформляется так, что вы можете сразу загрузить его в свое
+                                            портфолио.&nbsp;</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="index-about--image video--image js-video"
+                        <div class="section-about--image video--image js-video"
                             style="background: url('img/video.jpg') no-repeat center; background-size: cover;"
                             data-video="uvXMLWcHsdU">
                             <div class="video-title">Коротко о курсе</div>
@@ -193,42 +310,42 @@
                     </div>
                     <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
                         <div class="result-slider__control xl-flex xl-align-center">
-                            <div class="result-slider__control__prev"></div>
-                            <div class="result-slider__control__noms"> </div>
-                            <div class="result-slider__control__next"></div>
+                            <div id="result-slider-prev" class="result-slider__control__prev"></div>
+                            <div id="result-slider-noms" class="result-slider__control__noms"> </div>
+                            <div id="result-slider-next" class="result-slider__control__next"></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="result-slider slider">
+                <!--слайдер для десктопа-->
+                <div id="result-slider" class="result-slider slider">
                     <div>
                         <div class="flex-row">
-                            <div class="flex-col-6 cust-col-v-tablet-12 cust-col-mobile-12">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-1.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-2.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-3.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-4.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-6 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-5.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-6.jpg" alt="">
                                 </div>
@@ -237,32 +354,32 @@
                     </div>
                     <div>
                         <div class="flex-row">
-                            <div class="flex-col-6 cust-col-v-tablet-12 cust-col-mobile-12">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-1.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-2.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-3.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-4.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-6 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-5.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-6.jpg" alt="">
                                 </div>
@@ -270,6 +387,48 @@
                         </div>
                     </div>
                 </div>
+                <!--слайдер для мобилы-->
+                <div id="result-slider-mobile" class="result-slider slider">
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
             </div>
         </div>
 
@@ -277,22 +436,59 @@
             <div class="who-need-course index-section">
                 <div class="flex-row title-container align-center">
                     <div class="flex-col-9 cust-col-tablet-12">
-                        <div class="title">Кому подойдет обучение</div>
+                        <div class="title">Как проходит обучение</div>
                     </div>
                 </div>
                 <div class="flex-row">
-                    <div class="flex-col-12">
-                        <div class="border"></div>
+                    <div class="flex-col-3 cust-col-v-tablet-12 cust-col-mobile-12">
+                        <div class="how-training--item">
+                            <p>Смотрите видео-лекцию и выполняете домашнее задание</p>
+                            <div class="how-training--nom">
+                                <span>01</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-col-6 cust-col-mobile-12">
-                        <p>Обучение в школе Рисунки и цифровой графики подойдет как начинающим художникам, так и
-                            профессионалам. Наши программы разработаны таким образом, чтобы удовлетворить
-                            потребности студентов разных уровней и опыта. Если вам нравится рисовать и хотите
-                            улучшить свои навыки в цифровой графике, мы будем рады помочь вам в этом!</p>
+                    <div class="flex-col-3 cust-col-v-tablet-12 cust-col-mobile-12">
+                        <div class="how-training--item">
+                            <p>Получаете советы от куратора и вносите правки</p>
+                            <div class="how-training--nom">
+                                <span>02</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-col-6 cust-col-mobile-12">
-                        <div class="index-about--image"
-                            style="background: url('img/who-need-course-image.jpg') no-repeat center; background-size: cover;">
+                    <div class="flex-col-3 cust-col-v-tablet-12 cust-col-mobile-12">
+                        <div class="how-training--item">
+                            <p>Получаете знания и нарабатываете портфолио</p>
+                            <div class="how-training--nom how-training--gal">
+                                <span>03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-3 cust-col-v-tablet-12 cust-col-mobile-12">
+                        <div class="how-training--item how-training--img">
+                            <img src="img/step-learning.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row how-training--second-row">
+                    <div class="flex-col-6 cust-col-v-tablet-12 order-v-tablet-2">
+                        <div class="how-training--item how-training--img">
+                            <img src="img/why-try-format.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex-col-6 cust-col-v-tablet-12 order-v-tablet-1">
+                        <div class="how-training--item how-training--item--auto">
+                            <h4>Кому подходит обучение:</h4>
+                            <ul>
+                                <li>Для тех, кто планирует отпуск и не хочет прерывать обучение</li>
+                                <li>Для тех, у кого очень активное лето — встречи, поездки на природу, концерты, и есть
+                                    страх, что не получится совместить все это с учебой</li>
+                                <li>Для тех, кто работает и не может выделять на обучение больше 10 часов в неделю</li>
+                                <li>Для тех, у кого нет возможности проходить обучение по строгому расписанию</li>
+                                <li>Для людей из дальних регионов, у кого часовой пояс не совпадает с московским</li>
+                                <li>Для молодых родителей, фрилансеров с ненормированным графиком, гуру прокрастинации и
+                                    просто тех, кто живет вне рамок и сроков :)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -302,13 +498,20 @@
         <div class="container">
             <div class="curator-course index-section">
                 <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
+                    <div class="flex-col-9 cust-col-tablet-12">
                         <div class="title">Кураторы курса</div>
                     </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="curator-course-prev" class="result-slider__control__prev"></div>
+                            <div id="curator-course-noms" class="result-slider__control__noms"> </div>
+                            <div id="curator-course-next" class="result-slider__control__next"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row curator-course--slider">
                     <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="curator-course--item ">
+                        <div class="curator-course--item">
                             <div class="flex-row">
                                 <div class="flex-col-6 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
                                     <div class="curator-course--image">
@@ -410,42 +613,43 @@
                         <div class="title">Работы Кураторов</div>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
-                        <div class="works-curators-slider__control xl-flex xl-align-center">
-                            <div class="works-curators-slider__control__prev"></div>
-                            <div class="works-curators-slider__control__noms"> </div>
-                            <div class="works-curators-slider__control__next"></div>
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="works-curators-prev" class="result-slider__control__prev"></div>
+                            <div id="works-curators-noms" class="result-slider__control__noms"> </div>
+                            <div id="works-curators-next" class="result-slider__control__next"></div>
                         </div>
                     </div>
                 </div>
-                <div class="works-curators-slider slider">
+                <!--слайдер для десктопа-->
+                <div id="result-slider-2" class="result-slider slider">
                     <div>
                         <div class="flex-row">
-                            <div class="flex-col-6 cust-col-v-tablet-12 cust-col-mobile-12">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-1.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-2.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-3.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-4.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-6 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-5.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-6.jpg" alt="">
                                 </div>
@@ -454,32 +658,32 @@
                     </div>
                     <div>
                         <div class="flex-row">
-                            <div class="flex-col-6 cust-col-v-tablet-12 cust-col-mobile-12">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-1.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-2.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-3.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-4.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-6 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-6">
                                 <div class="result--item">
                                     <img src="img/result-5.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="flex-col-3 cust-col-v-tablet-6 v-tablet-none">
+                            <div class="flex-col-3">
                                 <div class="result--item">
                                     <img src="img/result-6.jpg" alt="">
                                 </div>
@@ -487,259 +691,139 @@
                         </div>
                     </div>
                 </div>
+                <!--слайдер для мобилы-->
+                <div id="result-slider-2-mobile" class="result-slider slider">
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
             </div>
         </div>
 
         <div class="container">
             <div class="format-learning index-section">
                 <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
-                        <div class="title">Форматы ОФЛАЙН обучения</div>
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <div class="flex-col-12">
-                        <div class="border"></div>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-12 ">
-                        <div class="format-learning--image"><img src="img/format-learning-image.jpg" alt=""></div>
-                    </div>
-                    <div class="flex-col-9 cust-col-tablet-12">
-                        <div class="tabs">
-                            <div class="tab">
-                                <button class="btn tablinks active">Санкт-Петербург</button>
-                                <button class="btn tablinks">Москва</button>
-                            </div>
-                            <div class="tabcontent active">
-                                <p>Небольшая группа до 6 человек. Каждую неделю вам открывается доступ к учебному
-                                    материалу,
-                                    в конце каждой недели куратор собирает группу и дает фидбэк по каждому домашнему
-                                    заданию.</p>
-                                <p>Длительность курса 6 месяцев.</p>
-                                <div class="flex-row format-learning--desct">
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold">Живое общение с группой и куратором</p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Требует времени</p>
-                                        <div class="step-points">
-                                            <div class="point active"></div>
-                                            <div class="point active"></div>
-                                            <div class="point active"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold">Строгие дедлайны курса</p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Уровень сложности</p>
-                                        <div class="step-points">
-                                            <div class="point active"></div>
-                                            <div class="point active"></div>
-                                            <div class="point"></div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold">Вы видите разборы домашних заданий всей группы</p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Скорость обучения</p>
-                                        <div class="step-points">
-                                            <div class="point active"></div>
-                                            <div class="point"></div>
-                                            <div class="point"></div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold"> </p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Дата старта обучения</p>
-                                        <p>24.02.23</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tabcontent">
-                                <p>Небольшая группа до 6 человек. Каждую неделю вам открывается доступ к учебному
-                                    материалу,
-                                    в конце каждой недели куратор собирает группу и дает фидбэк по каждому домашнему
-                                    заданию.</p>
-                                <p>Длительность курса 6 месяцев.</p>
-                                <div class="flex-row format-learning--desct">
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold">Живое общение с группой и куратором</p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Требует времени</p>
-                                        <div class="step-points">
-                                            <div class="point active"></div>
-                                            <div class="point active"></div>
-                                            <div class="point active"></div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold">Вы видите разборы домашних заданий всей группы</p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Скорость обучения</p>
-                                        <div class="step-points">
-                                            <div class="point active"></div>
-                                            <div class="point"></div>
-                                            <div class="point"></div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-8 cust-col-tablet-6 cust-col-mobile-12">
-                                        <p class="bold"> </p>
-                                    </div>
-                                    <div
-                                        class="flex-col-4 cust-col-tablet-6 cust-col-mobile-12 flex align-center jst-btw">
-                                        <p>Дата старта обучения</p>
-                                        <p>24.02.23</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex-col-12">
-                        <div class="border"></div>
-                    </div>
                     <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="price-course">
-                            <div class="price-course--left">
-                                <div class="price-course--title">Стоимость обучения</div>
-                                <div class="price-course--tabs">
-                                    <div class="price-course--item tablinks active"
-                                        onclick="openPrice(event, '2years')">24
-                                        месяца</div> /
-                                    <div class="price-course--item tablinks" onclick="openPrice(event, '1years')">12
-                                        месяца</div>
-                                    /
-                                    <div class="price-course--item tablinks" onclick="openPrice(event, 'fullPrice')">Вся
-                                        стоимость</div>
-                                </div>
-                            </div>
-                            <div class="price-course--content tabPrice" id="2years" style="display: block;">
-                                <div class="price-course--price">
-                                    3 760 <span class="rouble">i</span>/ <span class="price-course--date">мес</span>
-                                </div>
-                                <div class="price-course--content-descr">
-                                    <span>Рассрочка на 24 месяца</span>
-                                    <span>Без первого взноса</span>
-                                </div>
-                            </div>
-                            <div class="price-course--content tabPrice" id="1years">
-                                <div class="price-course--price">
-                                    4 760 <span class="rouble">i</span>/ <span class="price-course--date">мес</span>
-                                </div>
-                                <div class="price-course--content-descr">
-                                    <span>Рассрочка на 12 месяцев</span>
-                                    <span>Без первого взноса</span>
-                                </div>
-                            </div>
-                            <div class="price-course--content tabPrice" id="fullPrice">
-                                <div class="price-course--price">
-                                    12 760 <span class="rouble">i</span>
-                                </div>
-                                <div class="price-course--content-descr">
-                                    <span>Полная сумма за курс</span>
-                                </div>
-                            </div>
+                        <div class="title">Форматы обучения</div>
+                    </div>
+                    <div class="flex-col-6 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
+                        <div class="format-learning-controls">
+                            <a id="month24" class="btn-white active" data-group="5000" data-individual="7000" data-offline="3000" href="#">24 месяцев</a>
+                            <a id="month12" class="btn-white" href="#" data-group="6000" data-individual="8000" data-offline="4000">12 месяцев</a>
+                            <a id="pay-now" class="btn-white" href="#" data-group="15000" data-individual="17000" data-offline="13000">Оплата сразу</a>
                         </div>
-                    </div>
-                    <div class="flex-col-6 cust-col-tablet-12 flex wrap add-course-btns">
-                        <a href="#" class="btn">Записаться</a>
-                        <a href="#" class="btn">Добавить в корзину</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="course-schedule index-section">
-                <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
-                        <div class="title">Расписание курсов</div>
                     </div>
                 </div>
                 <div class="flex-row">
-                    <div class="flex-col-12">
-                        <div class="tabs">
-                            <div class="tab">
-                                <button class="btn tablinks active">Санкт-Петербург</button>
-                                <button class="btn tablinks">Москва</button>
-                            </div>
-                            <div class="tabcontent active">
-                                <div class="table-scroll">
-                                    <table class="shedule">
-                                        <tr>
-                                            <th>Куратор</th>
-                                            <th>День недели</th>
-                                            <th>Время</th>
-                                            <th>Аудитория</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Ринат Хабиров</td>
-                                            <td>Воскресенье</td>
-                                            <td>11:00 - 16:00</td>
-                                            <td>1Б</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ринат Хабиров</td>
-                                            <td>Понедельник, четверг </td>
-                                            <td>11:00 - 16:00</td>
-                                            <td>1Б</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ринат Хабиров</td>
-                                            <td>Воскресенье</td>
-                                            <td>11:00 - 16:00</td>
-                                            <td>1Б</td>
-                                        </tr>
-                                    </table>
+                    <div class="flex-col-4 cust-col-tablet-12">
+                        <div class="format-learning--item">
+                            <div class="format-learning--item-title">Групповой</div>
+                            <div class="format-learning--item-text">
+                                <ul>
+                                    <li>Онлайн в группе студентов с куратором</li>
+                                    <li>Длительность 6 месяцев</li>
+                                    <li>Строгие дедлайны</li>
+                                </ul>
+                                <div class="format-learning-bottom">
+                                    <div class="format-learning--content-price">
+                                        <div class="format-learning--price"><span id="groupValue">3 760</span> ₽ /</div>
+                                        <div class="format-learning--price-month">мес</div>
+                                    </div>
+                                    <div class="format-learning--footer">
+                                        <span>Рассрочка на 24 месяцев</span>
+                                        <span>Без первого взноса</span>
+                                    </div>
+                                    <a href="#" class="btn-white">Добавить в корзину</a>
                                 </div>
                             </div>
-                            <div class="tabcontent">
-                                <div class="table-scroll">
-                                    <table class="shedule">
-                                        <tr>
-                                            <th>Куратор</th>
-                                            <th>День недели</th>
-                                            <th>Время</th>
-                                            <th>Аудитория</th>
-                                        </tr>
-                                        <tr>
-                                            <td>Иван Иванов</td>
-                                            <td>Воскресенье</td>
-                                            <td>11:00 - 16:00</td>
-                                            <td>1Б</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Иван Иванов</td>
-                                            <td>Понедельник, четверг </td>
-                                            <td>11:00 - 16:00</td>
-                                            <td>1Б</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Иван Иванов</td>
-                                            <td>Воскресенье</td>
-                                            <td>11:00 - 16:00</td>
-                                            <td>1Б</td>
-                                        </tr>
-                                    </table>
+                        </div>
+                    </div>
+                    <div class="flex-col-4 cust-col-tablet-12">
+                        <div class="format-learning--item">
+                            <div class="format-learning--item-title blue-color">Индивидуальный
+                                <div class="format-learning--item-title-sale">– 30%</div>
+                            </div>
+                            <div class="format-learning--item-text">
+                                <ul>
+                                    <li>Онлайн с куратором</li>
+                                    <li>Длительность 6 месяцев</li>
+                                    <li>Индивидуальные дедлайны</li>
+                                </ul>
+                                <div class="format-learning-bottom">
+                                    <div class="format-learning--content-price">
+                                        <div class="format-learning--price"><span id="individualValue">3 760</span> ₽ /</div>
+                                        <div class="format-learning--price-month">мес</div>
+                                    </div>
+                                    <div class="format-learning--footer">
+                                        <span>Рассрочка на 24 месяцев</span>
+                                        <span>Без первого взноса</span>
+                                    </div>
+                                    <a href="#" class="btn-white btn-blue">Добавить в корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-4 cust-col-tablet-12">
+                        <div class="format-learning--item">
+                            <div class="format-learning--item-title">Офлайн</div>
+                            <div class="format-learning--item-text">
+                                <ul>
+                                    <li>В Москве или в Петербурге</li>
+                                    <li>Длительность 1 год</li>
+                                    <li>Строгие дедлайны</li>
+                                </ul>
+                                <div class="format-learning-bottom">
+                                    <div class="format-learning--content-price">
+                                        <div class="format-learning--price"><span id="offlineValue">3 760</span> ₽ /</div>
+                                        <div class="format-learning--price-month">мес</div>
+                                    </div>
+                                    <div class="format-learning--footer">
+                                        <span>Рассрочка на 24 месяцев</span>
+                                        <span>Без первого взноса</span>
+                                    </div>
+                                    <a href="#" class="btn-white">Добавить в корзину</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
@@ -750,7 +834,7 @@
                         <div class="title">Чему научитесь</div>
                     </div>
                 </div>
-                <div class="flex-row">
+                <div class="flex-row what-learning">
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <div class="simple-card">
                             <p>Создавать реалистичные и стилизованные иллюстрации любой сложности</p>
@@ -790,20 +874,15 @@
                 <div class="flex-row">
                     <div class="flex-col-12">
                         <div class="toggle-data">
-                            <div class="toggle-data--title">1. Неделя. Начало</div>
+                            <div class="toggle-data--title">1. Первая неделя</div>
                             <div class="toggle-data--body" style="display: none;">
                                 <p>В нашей школе учебный год разделён на два семестра: сентябрь - декабрь (4 месяца) и
                                     февраль - июнь (5 месяцев).Записываться на курс необходимо заранее. При наличии
                                     свободных мест в группах есть возможность присоединиться к обучению в любое время и
                                     после старта семестра.О наличии свободных мест можно узнать по телефону: +7 812
                                     200-49-07</p>
-                                <p>В нашей школе учебный год разделён на два семестра: сентябрь - декабрь (4 месяца) и
-                                    февраль - июнь (5 месяцев).Записываться на курс необходимо заранее. При наличии
-                                    свободных мест в группах есть возможность присоединиться к обучению в любое время и
-                                    после старта семестра.О наличии свободных мест можно узнать по телефону: +7 812
-                                    200-49-07</p>
                                 <div class="step-works">
-                                    <div class="step-works--title">Работы студентов на этом этапе</div>
+                                    <div class="step-works--title">Портфолио студентов</div>
                                     <div class="flex-row">
                                         <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
                                             <div class="step-works--item">
@@ -837,7 +916,7 @@
 
                     <div class="flex-col-12">
                         <div class="toggle-data">
-                            <div class="toggle-data--title">2. Лекция</div>
+                            <div class="toggle-data--title">2. Вторая неделя</div>
                             <div class="toggle-data--body" style="display: none;">
                                 <p>В нашей школе учебный год разделён на два семестра: сентябрь - декабрь (4 месяца) и
                                     февраль - июнь (5 месяцев).Записываться на курс необходимо заранее. При наличии
@@ -870,30 +949,70 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <a class="see-all__link" href="#">Записаться на курс</a>
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="sertifikat">
-                <div class="flex-row title-container align-center">
-                    <div class="flex-col-12 cust-col-tablet-12">
-                        <div class="title">Сертификат об обучении</div>
+                    <div class="flex-col-12">
+                        <div class="toggle-data">
+                            <div class="toggle-data--title active">Сертификат</div>
+                            <div class="toggle-data--body">
+                                <div class="flex-row mt-0">
+                                    <div class="flex-col-6 cust-col-tablet-12">
+                                        <p>Сертификат выдается выпускникам программы, которые успешно прошли все этапы
+                                            обучения и продемонстрировали высокий уровень знаний и навыков.</p>
+                                        <p>Сертификат является документом, подтверждающим профессиональные навыки и
+                                            компетенции выпускника в области искусства и дизайна</p>
+                                        <p>Мы фиксируем выдчу всех сертификатов и работодатель всегда сможет проверить
+                                            его актуальность и подлинность.</p>
+                                    </div>
+                                    <div class="flex-col-6 cust-col-tablet-12">
+                                        <div class="sertificate"><img src="img/sertifikat.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex-row">
-                    <div class="flex-col-6 cust-col-v-tablet-12">
-                        <img src="img/sertifikat.png" alt="">
+
+                    <div class="flex-col-12">
+                        <div class="toggle-data">
+                            <div class="toggle-data--title active">Портфолио</div>
+                            <div class="toggle-data--body">
+                                <p>В нашей школе учебный год разделён на два семестра: сентябрь - декабрь (4 месяца) и
+                                    февраль - июнь (5 месяцев).Записываться на курс необходимо заранее. При наличии
+                                    свободных мест в группах есть возможность присоединиться к обучению в любое время и
+                                    после старта семестра.О наличии свободных мест можно узнать по телефону: +7 812
+                                    200-49-07</p>
+                                <div class="step-works">
+                                    <div class="step-works--title">Портфолио студентов</div>
+                                    <div class="flex-row step-works-slider">
+                                        <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                                            <div class="step-works--item">
+                                                <img src="img/faq-portfolio-1.jpg" alt="">
+                                                <p>1 неделя</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                                            <div class="step-works--item">
+                                                <img src="img/faq-portfolio-2.jpg" alt="">
+                                                <p>2 неделя</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                                            <div class="step-works--item">
+                                                <img src="img/faq-portfolio-3.jpg" alt="">
+                                                <p>3 неделя</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-col-3 cust-col-v-tablet-6 cust-col-mobile-12">
+                                            <div class="step-works--item">
+                                                <img src="img/faq-portfolio-4.jpg" alt="">
+                                                <p>4 неделя</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-col-6 cust-col-v-tablet-12">
-                        <p>Сертификат выдается выпускникам программы, которые успешно прошли все этапы обучения и
-                            продемонстрировали высокий уровень знаний и навыков.</p>
-                        <p>Сертификат является документом, подтверждающим профессиональные навыки и компетенции
-                            выпускника в области искусства и дизайна.</p>
-                        <p>Мы фиксируем выдчу всех сертификатов и работодатель
-                            всегда сможет проверить его актуальность и подлинность.</p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -901,9 +1020,8 @@
         <div class="container">
     <div class="faq-questions">
         <div class="faq-questions--left">
-            <div class="faq-questions--title">можем ответить на любой вопрос</div>
-            <div class="faq-questions--text">Если у вас остались вопросы или хотите уточнить любую информацию , то
-                можете заполнить форму и мы с вами свяжемся.</div>
+            <div class="faq-questions--title">Помочь подобрать обучение?</div>
+            <div class="faq-questions--text">Если у вас остались вопросы или хотите уточнить любую информацию , то можете заполнить форму и мы с вами свяжемся.</div>
         </div>
         <div class="faq-questions--right">
             <form class="main-form" action="#">
@@ -980,13 +1098,19 @@
         <div class="container">
             <div class="similar-products">
                 <div class="flex-row title-container align-center">
-                    <div class="flex-col-12 cust-col-tablet-12">
+                    <div class="flex-col-9 cust-col-tablet-12">
                         <div class="title">С этим курсом покупают</div>
                     </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                        <a class="link-arrow-white" href="#">Все курсы</a>
+                    </div>
                 </div>
-                <div class="our-courses__list flex-row">
+                <div class="our-courses__list similar-products-slider flex-row">
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <a href="#" class="our-courses__item">
+                            <div class="our-courses__tags">
+                                <span class="sale-tag">- 30%</span>
+                            </div>
                             <div class="our-courses__image">
                                 <img src="img/course-1.png" alt="">
                             </div>
@@ -995,12 +1119,16 @@
                             </div>
                             <div class="our-courses__prices">
                                 <div class="our-courses__old-price">12 250</div>
-                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__new-sale-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__sale-credit">Длительность 6 месяцев</div>
                             </div>
                         </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <a href="#" class="our-courses__item">
+                            <div class="our-courses__tags">
+                                <span class="sale-tag">- 30%</span>
+                            </div>
                             <div class="our-courses__image">
                                 <img src="img/course-2.png" alt="">
                             </div>
@@ -1009,26 +1137,34 @@
                             </div>
                             <div class="our-courses__prices">
                                 <div class="our-courses__old-price">12 250</div>
-                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__new-sale-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__sale-credit">Длительность 6 месяцев</div>
                             </div>
                         </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <a href="#" class="our-courses__item">
+                            <div class="our-courses__tags">
+                                <span class="sale-tag">- 30%</span>
+                            </div>
                             <div class="our-courses__image">
                                 <img src="img/course-3.png" alt="">
                             </div>
                             <div class="our-courses__name">
-                                Скетч от руки + перевод рисунка в цифровой вид
+                                Стилизованный 3D-персонаж
                             </div>
                             <div class="our-courses__prices">
                                 <div class="our-courses__old-price">12 250</div>
-                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__new-sale-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__sale-credit">Длительность 6 месяцев</div>
                             </div>
                         </a>
                     </div>
                     <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                         <a href="#" class="our-courses__item">
+                            <div class="our-courses__tags">
+                                <span class="sale-tag">- 30%</span>
+                            </div>
                             <div class="our-courses__image">
                                 <img src="img/course-4.png" alt="">
                             </div>
@@ -1037,12 +1173,12 @@
                             </div>
                             <div class="our-courses__prices">
                                 <div class="our-courses__old-price">12 250</div>
-                                <div class="our-courses__new-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__new-sale-price">12 250 <span class="rouble">i</span></div>
+                                <div class="our-courses__sale-credit">Длительность 6 месяцев</div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <a class="see-all__link" href="#">Показать все курсы</a>
             </div>
         </div>
 
@@ -1123,11 +1259,11 @@
                 </div>
                 <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12 order-tablet-2 border-mobile border-mobile-p-40">
                     <div class="subscribe-containter">
-    <p><span>Подпишитесь на рассылку, чтобы</span> первыми узнавать <span>новости о свежих поступлениях</span>,
-        скидках и распродажах.</p>
+    <p>Подпишитесь на рассылку, чтобы <span>первыми узнавать</span> новости о свежих поступлениях,
+        <span>скидках и распродажах.</span></p>
     <form class="subscribe-form" action="#">
         <input type="email" name="mail" required placeholder="Email">
-        <button class="subscribe-subtit" type="submit">Подписаться</button>
+        <button class="subscribe-subtit" type="submit"></button>
     </form>
     <p class="subscribe-copy">Нажимая на кнопку подписаться вы соглашаетесь с политикой конфидициальности.</p>
 </div>
@@ -1137,7 +1273,7 @@
 
         <div class="flex-row footer-copy">
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                © Skills Up School, 2013-2022
+                © Skills Up School, 2013-2023
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#">Пользовательское соглашение</a>
@@ -1152,166 +1288,14 @@
     </div>
 </footer>
 
-<div class="overflow-background"></div>
-    <div class="basket__wrapper">
-    <div class="basket__container">
-        <div class="basket__head">
-            <div class="basket__title">Выбранные курсы</div>
-            <div class="basket__close">закрыть</div>
-        </div>
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">2D ГРАФИКА MIDDLE</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">2D ГРАФИКА MIDDLE</a>
-                <a class="basket__course--delete" href="#">Удалить</a>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <div class="basket__summ--title">
-                    Вся сумма
-                </div>
-                <div class="basket__summ--i">
-                    61 250 <span class="rouble">i</span>
-                </div>
-            </div>
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
-            </div>
-            <div class="basket__summ--row">
-                <a id="continue-pay" class="btn" href="#">Продолжить покупки</a>
-            </div>
-        </div>
-
-        <div class="basket__head">
-            <div class="basket__title">Популярные курсы</div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
-            </div>
-            <div class="basket__course--href">
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
-            </div>
-            <div class="basket__course--href">
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-3.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">SKETCHING ЭКСПРЕСС</a>
-            </div>
-            <div class="basket__course--href">
-                <a href="#">Подробнее</a>
-            </div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
-            </div>
-        </div>
-
-        <div class="basket__head">
-            <div class="basket__title">В корзине ничего нет</div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="#">В каталог</a>
-            </div>
-        </div>
-
+<div class="awg-popup">
+    <div class="awg-popup__content">
+        <div class="awg-popup__close js-close-popup"></div>
+        <div class="awg-popup__video"></div>
     </div>
 </div>
+
+<div class="overflow-background"></div>
     <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
     <button data-remodal-action="close" class="remodal-close"></button>
     <form action="#" id="form-modal">

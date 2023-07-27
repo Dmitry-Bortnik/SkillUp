@@ -1,0 +1,381 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Up School - Работы студентов</title>
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> / <span>Результаты студентов</span>
+            </div>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Главная</a>
+        </div>
+        <div class="container">
+            <div class="results section--inner">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <div class="title">Результаты студентов</div>
+                    </div>
+                    <div class="flex-col-9 mt-auto cust-col-tablet-12">
+                        <details class="multiple-select">
+                            <summary>
+                                <div class="multiple--title">Направление</div>
+                                <div class="multiple--selected"></div>
+                            </summary>
+                            <div class="multiple-select-dropdown">
+                                <label>
+                                    <input type="radio" hidden name="napravlenie" value="Рисунок">
+                                    <span class="content">Рисунок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="napravlenie" value="2D Графика">
+                                    <span class="content">2D Графика</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="napravlenie" value="3D Графика">
+                                    <span class="content">3D Графика</span>
+                                </label>
+                            </div>
+                        </details>
+                        <details class="multiple-select">
+                            <summary>
+                                <div class="multiple--title">Уровень</div>
+                                <div class="multiple--selected"></div>
+                            </summary>
+                            <div class="multiple-select-dropdown">
+                                <label>
+                                    <input type="radio" hidden name="levl" value="Junior">
+                                    <span class="content">Junior</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="levl" value="Middle">
+                                    <span class="content">Middle</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="levl" value="High">
+                                    <span class="content">High</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="levl" value="Pro">
+                                    <span class="content">Pro</span>
+                                </label>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="flex-col-3 mt-auto cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="result-slider-prev" class="result-slider__control__prev"></div>
+                            <div id="result-slider-noms" class="result-slider__control__noms"> </div>
+                            <div id="result-slider-next" class="result-slider__control__next"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--слайдер для десктопа-->
+                <div id="result-slider" class="result-slider slider">
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--слайдер для мобилы-->
+                <div id="result-slider-mobile" class="result-slider slider">
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="results section--inner">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <div class="title">Работы Кураторов</div>
+                    </div>
+                    <div class="flex-col-9 mt-auto cust-col-tablet-12">
+                        <details class="multiple-select">
+                            <summary>
+                                <div class="multiple--title">Направление</div>
+                                <div class="multiple--selected"></div>
+                            </summary>
+                            <div class="multiple-select-dropdown">
+                                <label>
+                                    <input type="radio" hidden name="napravlenie" value="Рисунок">
+                                    <span class="content">Рисунок</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="napravlenie" value="2D Графика">
+                                    <span class="content">2D Графика</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="napravlenie" value="3D Графика">
+                                    <span class="content">3D Графика</span>
+                                </label>
+                            </div>
+                        </details>
+                        <details class="multiple-select">
+                            <summary>
+                                <div class="multiple--title">Уровень</div>
+                                <div class="multiple--selected"></div>
+                            </summary>
+                            <div class="multiple-select-dropdown">
+                                <label>
+                                    <input type="radio" hidden name="levl" value="Junior">
+                                    <span class="content">Junior</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="levl" value="Middle">
+                                    <span class="content">Middle</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="levl" value="High">
+                                    <span class="content">High</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="levl" value="Pro">
+                                    <span class="content">Pro</span>
+                                </label>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="works-curators-prev" class="result-slider__control__prev"></div>
+                            <div id="works-curators-noms" class="result-slider__control__noms"> </div>
+                            <div id="works-curators-next" class="result-slider__control__next"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--слайдер для десктопа-->
+                <div id="result-slider-2" class="result-slider slider">
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--слайдер для мобилы-->
+                <div id="result-slider-2-mobile" class="result-slider slider">
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex-row">
+                            <div class="flex-col-6">
+                                <div class="result--item">
+                                    <img src="img/result-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="flex-col-3">
+                                <div class="result--item">
+                                    <img src="img/result-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+
+        @@include('_related-courses.html')
+
+    </main>
+    @@include('_footer.html')
+    @@include('_modal.html')
+    @@include('_feedbacks-modal.html')
+    @@include('_scripts.html')
+</body>
+
+</html>
