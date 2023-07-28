@@ -5632,7 +5632,7 @@ form input {
   .header__m-toggle.active {
     display: block;
     right: 0px;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
