@@ -686,25 +686,48 @@ window.addEventListener('resize', checkWindowWidth);
 
 // переключение тарифов форматов обучения
 
-const formatLink = document.querySelectorAll('.format-learning-controls a');
 const groupBlock = document.getElementById("groupValue");
 const individualBlock = document.getElementById("individualValue");
 const offlineBlock = document.getElementById("offlineValue");
 
-formatLink.forEach((link) => {
+const btnDataGroup = document.querySelectorAll('[data-group]');
+btnDataGroup.forEach((link) => {
   link.addEventListener('click', function (event) {
     event.preventDefault();
-    for (const btn of formatLink) {
+    for (const btn of btnDataGroup) {
       btn.classList.remove("active");
     }
     link.classList.add("active");
     const button = event.target;
     const groupValue = button.getAttribute("data-group");
-    const individualValue = button.getAttribute("data-individual");
-    const offlineValue = button.getAttribute("data-offline");
-
     groupBlock.textContent = `${groupValue}`;
+  })
+})
+//
+const btnDataIndividual = document.querySelectorAll('[data-individual]');
+btnDataIndividual.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    for (const btn of btnDataIndividual) {
+      btn.classList.remove("active");
+    }
+    link.classList.add("active");
+    const button = event.target;
+    const individualValue = button.getAttribute("data-individual");
     individualBlock.textContent = `${individualValue}`;
+  })
+})
+// 
+const btnDataOffline = document.querySelectorAll('[data-offline]');
+btnDataOffline.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    for (const btn of btnDataOffline) {
+      btn.classList.remove("active");
+    }
+    link.classList.add("active");
+    const button = event.target;
+    const offlineValue = button.getAttribute("data-offline");
     offlineBlock.textContent = `${offlineValue}`;
   })
 })

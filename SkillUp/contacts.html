@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Up School - Кураторы</title>
+    <title>Skills Up School - Контакты</title>
     <link rel="stylesheet" href="css/style.css?v=1">
 </head>
 
@@ -196,28 +196,139 @@
 </header>
     <main class="main">
         <div class="container">
-            <a class="breadcrumbs-m desctop" href="#" onclick="window.history.back()">Главная</a>
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> / <span>Контакты</span>
+            </div>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Главная</a>
         </div>
-        <div class="page-404">
-            <div class="container">
+
+        <div class="container">
+            <div class="contacts">
                 <div class="flex-row">
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <div class="empty-404">
-                            <h3>Такой страницы нет</h3>
-                            <p>Ссылка, по которой вы перешли, никуда не ведет.<br>
-                                Возможно, в ней была опечатка, или эта страница была удалена. </p>
-                            <a class="link-arrow-black" href="/">Перейти на главную</a>
+                    <div class="flex-col-6 cust-col-mobile-12">
+                        <h1>Контакты</h1>
+                        <div class="title-description">Напишите или позвоните нам, если у вас <br>
+                            <a href="#">остались вопросы</a>.</div>
+                    </div>
+                    <div class="flex-col-6 cust-col-mobile-12">
+                        <div class="flex-row">
+                            <div class="flex-col-6 cust-col-mobile-12">
+                                <div class="contact-item">
+                                    <div class="contact-subtitle">Москва</div>
+                                    <p>Шлюзовая наб., д. 8 ст 1<br>
+                                        +7 495 003 72 65</p>
+                                    <a class="d-link-border" href="#">Как добраться</a>
+                                </div>
+                            </div>
+                            <div class="flex-col-6 cust-col-mobile-12">
+                                <div class="contact-item">
+                                    <div class="contact-subtitle">Санкт-Петербург</div>
+                                    <p>Уральская улица, д. 1, корп. 2, лит. А<br>
+                                        +7 495 003 72 65</p>
+                                    <a class="d-link-border" href="#">Как добраться</a>
+                                </div>
+                            </div>
+                            <div class="flex-col-6 cust-col-mobile-12">
+                                <div class="contact-item">
+                                    <div class="contact-subtitle">Время работы</div>
+                                    <p>Ежедневно<br />
+                                        10:00 — 22:00</p>
+                                </div>
+                            </div>
+                            <div class="flex-col-6 cust-col-mobile-12">
+                                <div class="contact-item mb-0">
+                                    <div class="contact-subtitle">Социальные сети</div>
+                                    <div class="index-contacts__socials">
+                                        <a href="#">
+                                            <svg class="icon">
+                                                <use xlink:href="../img/svgsprite/sprite.svg#tg"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg class="icon">
+                                                <use xlink:href="../img/svgsprite/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg class="icon">
+                                                <use xlink:href="../img/svgsprite/sprite.svg#tube"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg class="icon">
+                                                <use xlink:href="../img/svgsprite/sprite.svg#mail"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex-col-6 cust-col-tablet-12">
-                        <picture>
-                            <source srcset="img/404.jpg" media="(min-width: 480px)" />
-                            <img src="img/404-mobile.jpg" alt="" />
-                        </picture>
+                </div>
+
+                <div class="flex-row mt-100 mt-80-xs">
+                    <div class="flex-col-6 cust-col-mobile-12">
+                        <h2>Реквизиты</h2>
+                    </div>
+                    <div class="flex-col-6 cust-col-mobile-12">
+                        <div class="contact-requezites">
+                            <p>ИП Нургалеев А. М.</p>
+                            <p>БИК: 044030786</p>
+                            <p>ИНН: 590412671859</p>
+                            <p>ОГРНИП: 317470400004401</p>
+                            <p>ОКПО: 0109080505</p>
+                        </div>
+                        <div class="contact-requezites">
+                            <p>Расчетный счет: 40802810232230001508</p>
+                            <p>Банк: ФИЛИАЛ "САНКТ-ПЕТЕРБУРГСКИЙ" АО "АЛЬФА-БАНК"</p>
+                            <p>Корр. счет: 30101810600000000786</p>
+                            <p>Адрес: 188662, Ленинградская обл, Всеволожский р-н, Мурино</p>
+                            <p>п, Охтинская аллея, дом № 14, квартира 20</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="contacts-map-block mt-100 mt-80-xs">
+                    <div class="contacts-map-header flex wrap align-center gap-20">
+                        <div class="contacts-map-title">Как добраться</div>
+                        <div class="contacts-map-control">
+                            <a href="#" onclick="showLocation(1)" class="location-btn btn-white active">Москва</a>
+                            <a href="#" onclick="showLocation(2)" class="location-btn btn-white">Санкт-Петербург</a>
+                        </div>
+                    </div>
+                    <div id="map"></div>
+                </div>
+
+               
             </div>
         </div>
+        <div class="container">
+    <div class="faq-questions mb-50-xl">
+        <div class="faq-questions--left">
+            <div class="faq-questions--title">Помочь подобрать обучение?</div>
+            <div class="faq-questions--text">Если у вас остались вопросы или хотите уточнить любую информацию , то можете заполнить форму и мы с вами свяжемся.</div>
+        </div>
+        <div class="faq-questions--right">
+            <form class="main-form" action="#">
+                <input type="text" name="name" required placeholder="Имя*">
+                <input type="text" name="phone" required placeholder="Телефон*">
+                <input type="email" name="email" required placeholder="Электронная почта*">
+                <div class="channel-connect">
+                    <select name="connect-name" id="change-connect">
+                        <option value="Telegram" data-placeholder="@username">Telegram</option>
+                        <option value="Vkontakte" data-placeholder="Ссылка на профиль">Vkontakte</option>
+                        <option value="Discord" data-placeholder="username123">Discord</option>
+                    </select>
+                    <input type="text" id="connect-input" name="connect" required placeholder="@username">
+                </div>
+                <div class="main-form--actions">
+                    <button type="submit">Отправить</button>
+                    <p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
     </main>
     <footer class="footer">
     <div class="container">
@@ -392,6 +503,42 @@
         </div>
     </a>
 </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8b8efb5a-dbc8-40b1-a56f-39ad105a5fc0&lang=ru_RU" type="text/javascript"></script>
+    <script>
+        var myMap;
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64], 
+                zoom: 10 
+            });
+            function showLocation(locationNumber) {
+                event.preventDefault();
+                var locationButtons = document.getElementsByClassName("location-btn");
+                for (var i = 0; i < locationButtons.length; i++) {
+                    locationButtons[i].classList.remove("active");
+                }
+
+                var currentButton = document.querySelector('[onclick="showLocation(' + locationNumber + ')"]');
+                currentButton.classList.add("active");
+                myMap.geoObjects.removeAll();
+
+                var location1Coords = [55.76, 37.64];
+                var location2Coords = [45.75, 37.65];
+                var location1Caption = 'Локация 1';
+                var location2Caption = 'Локация 2';
+
+                if (locationNumber === 1) {
+                myMap.geoObjects.add(new ymaps.Placemark(location1Coords, { hintContent: location1Caption }));
+                myMap.setCenter(location1Coords, 10);
+                } else if (locationNumber === 2) {
+                myMap.geoObjects.add(new ymaps.Placemark(location2Coords, { hintContent: location2Caption }));
+                myMap.setCenter(location2Coords, 10);
+                }
+            }
+            window.showLocation = showLocation;
+        }
+        ymaps.ready(init);
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/jquery.maskedinput.js"></script>
 <script src="js/slick.min.js"></script>
