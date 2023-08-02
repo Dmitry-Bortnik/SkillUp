@@ -1573,7 +1573,7 @@ header a {
 // END HEADER
 
 .main {
-    flex: 1 0 auto;
+    flex: auto;
     @media (max-width:1024px) {
         overflow: hidden;
     }
@@ -2939,7 +2939,7 @@ iframe {
 
 
 .footer {
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 0px 0px;
     flex: 0 0 auto;
     @media (max-width:768px) {
         margin-bottom: 25px;
@@ -2964,6 +2964,7 @@ iframe {
             margin-top: 0px;
         }
         .footer-copy {
+            margin-bottom: 50px;
             &.flex-row [class^=flex-col] {
                 margin-top: 20px;
             }
@@ -3002,6 +3003,7 @@ iframe {
     opacity: 0.5;
     margin-top: 5px;
     font-size: 14px;
+    margin-bottom: 50px;
     a {
         color: #646464;
         text-decoration: none;

@@ -2353,8 +2353,8 @@ header a {
 
 .main {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .main .container:last-child .index-section {
@@ -3548,7 +3548,7 @@ iframe {
 }
 
 .footer {
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 0px 0px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -3573,6 +3573,7 @@ iframe {
   opacity: 0.5;
   margin-top: 5px;
   font-size: 14px;
+  margin-bottom: 50px;
 }
 
 .footer-copy a {
@@ -6923,6 +6924,10 @@ form input {
 
   .footer .flex-row [class^=flex-col] {
     margin-top: 0px;
+  }
+
+  .footer .footer-copy {
+    margin-bottom: 50px;
   }
 
   .footer .footer-copy.flex-row [class^=flex-col] {
