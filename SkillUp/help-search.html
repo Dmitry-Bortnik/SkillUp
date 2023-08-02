@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Up School - Кураторы</title>
+    <title>Skills Up School - Подарочный Сертификат</title>
     <link rel="stylesheet" href="css/style.css?v=1">
 </head>
 
@@ -197,304 +197,59 @@
     <main class="main">
         <div class="container">
             <div class="breadcrumbs">
-                <a href="#">Главная</a> / <span>Кураторы</span>
+                <a href="#">Главная</a> / <span>Вопрос - ответ</span>
             </div>
-            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Главная</a>
-        </div>
-
-        <div class="container">
-            <div class="results section--inner section--mobile-slider">
-                <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
-                        <div class="title">Работы кураторов</div>
-                    </div>
-                    <div class="flex-col-9 mt-auto cust-col-tablet-12">
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Направление</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="Рисунок">
-                                    <span class="content">Рисунок</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="2D Графика">
-                                    <span class="content">2D Графика</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="3D Графика">
-                                    <span class="content">3D Графика</span>
-                                </label>
-                            </div>
-                        </details>
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Уровень</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Junior">
-                                    <span class="content">Junior</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Middle">
-                                    <span class="content">Middle</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="High">
-                                    <span class="content">High</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Pro">
-                                    <span class="content">Pro</span>
-                                </label>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="flex-col-3 mt-auto cust-col-tablet-12 xl-flex xl-jst-end x-jst-start none-tablet">
-                        <div class="result-slider__control xl-flex xl-align-center">
-                            <div id="result-slider-prev" class="result-slider__control__prev"></div>
-                            <div id="result-slider-noms" class="result-slider__control__noms"> </div>
-                            <div id="result-slider-next" class="result-slider__control__next"></div>
-                        </div>
-                    </div>
-                </div>
-                <!--слайдер для десктопа-->
-                <div id="result-slider" class="result-slider slider">
-                    <div>
-                        <div class="flex-row">
-                            <div class="flex-col-6">
-                                <div class="result--item">
-                                    <img src="img/result-1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-2.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-3.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-4.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-6">
-                                <div class="result--item">
-                                    <img src="img/result-5.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-6.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex-row">
-                            <div class="flex-col-6">
-                                <div class="result--item">
-                                    <img src="img/result-1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-2.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-3.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-4.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-6">
-                                <div class="result--item">
-                                    <img src="img/result-5.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-6.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--слайдер для мобилы-->
-                <div id="result-slider-mobile" class="result-slider slider">
-                    <div>
-                        <div class="flex-row">
-                            <div class="flex-col-6">
-                                <div class="result--item">
-                                    <img src="img/result-1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-2.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-3.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex-row">
-                            <div class="flex-col-6">
-                                <div class="result--item">
-                                    <img src="img/result-1.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-2.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="flex-col-3">
-                                <div class="result--item">
-                                    <img src="img/result-3.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!---->
-            </div>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Вопрос - ответ</a>
         </div>
 
         <div class="container">
             <div class="section--inner">
-                <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
-                        <div class="title">Кураторы</div>
-                    </div>
-                    <div class="flex-col-12 mt-auto">
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Направление</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="Рисунок">
-                                    <span class="content">Рисунок</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="2D Графика">
-                                    <span class="content">2D Графика</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="3D Графика">
-                                    <span class="content">3D Графика</span>
-                                </label>
-                            </div>
-                        </details>
-                    </div>
-                </div>
                 <div class="flex-row">
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/1.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
+                    <div class="flex-col-3 cust-col-tablet-12 order-tablet-2">
+                        <div class="help-fixed sticky-top" style="top: 30px;">
+                            <div>
+                                <div class="help-item-small">
+                                    <div class="help-title-small">Категории вопросов</div>
+                                    <div class="help-anchors">
+                                        <a href="/#main" class="anckorLink"> <span><img src="img/svgsprite/help-icon-1.svg" alt=""></span> Общая информация</a>
+                                        <a href="/#learning" class="anckorLink"> <span><img src="img/svgsprite/help-icon-2.svg" alt=""></span> Вопросы по обучению</a>
+                                        <a href="/#pay" class="anckorLink"> <span><img src="img/svgsprite/help-icon-3.svg" alt=""></span> Вопросы по оплате</a>
+                                        <a href="/#tech" class="anckorLink"> <span><img src="img/svgsprite/help-icon-4.svg" alt=""></span> Технические вопросы</a>
+                                    </div>
+                                </div>
+                                <div class="help-item-x-small">
+                                    <div class="help-item-x-small-title">
+                                        Ответим на любой вопрос
+                                    </div>
+                                    <a href="#" class="link-arrow-black">Связаться с нами</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/2.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/3.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/4.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/5.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/6.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/7.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/8.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="#" class="authors--item">
-                            <img src="img/courstors/9.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/10.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/11.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-4 cust-col-v-tablet-6 cust-col-mobile-12">
-                        <a href="curator-page.html" class="authors--item">
-                            <img src="img/courstors/12.jpg" alt="">
-                            <div class="authors--name">Татьяна Нажимова</div>
-                            <div class="author-descr">Куратор курса 2D Графика Basic</div>
-                        </a>
+                    <div class="flex-col-9 cust-col-tablet-12 mt-0-md order-tablet-1">
+                        <div class="help-item" id="main">
+                            <div class="help-search-title">Нашли 7 вопросов по вашему запросу: “Обучение”</div>
+                            <div class="help-search">
+                                <form action="#">
+                                    <input type="search" placeholder="Поиск для помощи">
+                                    <button type="submit"></button>
+                                </form>
+                            </div>
+                            <div class="help-list">
+                                <p>Ничего не найдено</p>
+                                <a href="help-page.html">Что такое Skills Up School и почему нам можно доверять?</a>
+                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
+                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
+                                <a href="#">Какие курсы подойдут для новичка?</a>
+                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
+                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     </main>
     <footer class="footer">

@@ -488,12 +488,6 @@ $("body").on("click", ".basket__close, #continue-pay", function () {
   closeBasket()
 })
 
-// $(document).on('click', function (e) {
-//   if ((!$(e.target).closest(".header__basket").length) && (!$(e.target).closest(".basket__container").length)) {
-//     closeBasket()
-//   }
-//   e.stopPropagation();
-// });
 
 $("body").on("click", ".basket__page--payments--item", function () {
   $('.basket__page--payments--item').removeClass('active');
@@ -731,3 +725,19 @@ btnDataOffline.forEach((link) => {
     offlineBlock.textContent = `${offlineValue}`;
   })
 })
+
+// плавный скролл до якоря
+
+$('.anckorLink').on('click', function() {
+
+  let href = $(this).attr('href');
+
+  $('html, body').animate({
+      scrollTop: $(href).offset().top - 30
+  }, {
+      duration: 370,    
+      easing: "linear" 
+  });
+
+  return false;
+});

@@ -1,0 +1,118 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Up School - Подарочный Сертификат</title>
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> / <span>Вопрос - ответ</span>
+            </div>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Вопрос - ответ</a>
+        </div>
+
+        <div class="container">
+            <div class="help-cover">
+                <h1>Раздел Помощи</h1>
+                <div class="help-search">
+                    <form action="help-search.html">
+                        <input type="search" placeholder="Поиск для помощи">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section--inner">
+                <div class="flex-row">
+                    <div class="flex-col-3 cust-col-tablet-12">
+                        <div class="help-fixed sticky-top" style="top: 30px;">
+                            <div>
+                                <div class="help-item-small">
+                                    <div class="help-title-small">Категории вопросов</div>
+                                    <div class="help-anchors">
+                                        <a href="#main" class="anckorLink"> <span><img src="img/svgsprite/help-icon-1.svg" alt=""></span> Общая информация</a>
+                                        <a href="#learning" class="anckorLink"> <span><img src="img/svgsprite/help-icon-2.svg" alt=""></span> Вопросы по обучению</a>
+                                        <a href="#pay" class="anckorLink"> <span><img src="img/svgsprite/help-icon-3.svg" alt=""></span> Вопросы по оплате</a>
+                                        <a href="#tech" class="anckorLink"> <span><img src="img/svgsprite/help-icon-4.svg" alt=""></span> Технические вопросы</a>
+                                    </div>
+                                </div>
+                                <div class="help-item-x-small">
+                                    <div class="help-item-x-small-title">
+                                        Ответим на любой вопрос
+                                    </div>
+                                    <a href="#" class="link-arrow-black">Связаться с нами</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-9 cust-col-tablet-12">
+                        <div class="help-item" id="main">
+                            <div class="help-title">Общая информация о Skills Up School</div>
+                            <div class="help-list">
+                                <a href="help-page.html">Что такое Skills Up School и почему нам можно доверять?</a>
+                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
+                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
+                                <a href="#">Какие курсы подойдут для новичка?</a>
+                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
+                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
+                            </div>
+                        </div>
+
+                        <div class="help-item" id="learning">
+                            <div class="help-title">Вопросы по обучению</div>
+                            <div class="help-list">
+                                <a href="#">Что такое Skills Up School и почему нам можно доверять?</a>
+                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
+                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
+                                <a href="#">Какие курсы подойдут для новичка?</a>
+                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
+                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
+                            </div>
+                        </div>
+
+                        <div class="help-item" id="pay">
+                            <div class="help-title">Вопросы по оплате</div>
+                            <div class="help-list">
+                                <a href="#">Что такое Skills Up School и почему нам можно доверять?</a>
+                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
+                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
+                                <a href="#">Какие курсы подойдут для новичка?</a>
+                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
+                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
+                            </div>
+                        </div>
+
+                        <div class="help-item" id="tech">
+                            <div class="help-title">Технические вопросы</div>
+                            <div class="help-list">
+                                <a href="#">Что такое Skills Up School и почему нам можно доверять?</a>
+                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
+                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
+                                <a href="#">Какие курсы подойдут для новичка?</a>
+                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
+                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    @@include('_footer.html')
+    @@include('_modal.html')
+    @@include('_feedbacks-modal.html')
+    @@include('_scripts.html')
+</body>
+
+</html>

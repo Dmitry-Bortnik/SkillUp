@@ -4368,6 +4368,12 @@ iframe {
   width: 100%;
 }
 
+.simple-card-xl {
+  background: #FFFFFF;
+  border-radius: var(--borderRadiusM);
+  padding: 2rem;
+}
+
 .toggle-data {
   background: #FFFFFF;
   border-radius: var(--borderRadiusM);
@@ -5335,6 +5341,174 @@ form input {
   height: 600px;
 }
 
+.help-cover {
+  background: url(../img/help-cover.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: var(--borderRadiusM);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 80px 20px;
+}
+
+.help-cover h1 {
+  text-align: center;
+  margin: 0px;
+  font-size: 56px;
+  font-family: var(--secondFont);
+  letter-spacing: 1.68px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.help-search {
+  max-width: 763px;
+  width: 100%;
+  position: relative;
+  margin: 40px 0px;
+}
+
+.help-search input {
+  width: 100%;
+  padding-right: 40px;
+  margin-bottom: 0px;
+}
+
+.help-search button {
+  background-color: white;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMDFfNzMwKSI+CjxwYXRoIGQ9Ik0xOS44MzMzIDE5LjMzMzRMMTQuNSAxNC4wMDAxTTkuMTY2NjMgMTYuNjY2N0M4LjExNjA1IDE2LjY2NjcgNy4wNzU3NiAxNi40NTk4IDYuMTA1MTYgMTYuMDU3OEM1LjEzNDU1IDE1LjY1NTcgNC4yNTI2NCAxNS4wNjY1IDMuNTA5NzcgMTQuMzIzNkMyLjc2NjkgMTMuNTgwNyAyLjE3NzYzIDEyLjY5ODggMS43NzU1OSAxMS43MjgyQzEuMzczNTUgMTAuNzU3NiAxLjE2NjYzIDkuNzE3MzIgMS4xNjY2MyA4LjY2Njc1QzEuMTY2NjMgNy42MTYxNyAxLjM3MzU1IDYuNTc1ODkgMS43NzU1OSA1LjYwNTI4QzIuMTc3NjMgNC42MzQ2OCAyLjc2NjkgMy43NTI3NiAzLjUwOTc3IDMuMDA5ODlDNC4yNTI2NCAyLjI2NzAzIDUuMTM0NTUgMS42Nzc3NSA2LjEwNTE2IDEuMjc1NzFDNy4wNzU3NiAwLjg3MzY3NCA4LjExNjA1IDAuNjY2NzQ4IDkuMTY2NjMgMC42NjY3NDhDMTEuMjg4NCAwLjY2Njc0OCAxMy4zMjMyIDEuNTA5NiAxNC44MjM1IDMuMDA5ODlDMTYuMzIzOCA0LjUxMDE4IDE3LjE2NjYgNi41NDUwMiAxNy4xNjY2IDguNjY2NzVDMTcuMTY2NiAxMC43ODg1IDE2LjMyMzggMTIuODIzMyAxNC44MjM1IDE0LjMyMzZDMTMuMzIzMiAxNS44MjM5IDExLjI4ODQgMTYuNjY2NyA5LjE2NjYzIDE2LjY2NjdaIiBzdHJva2U9IiMyODI4MjgiIHN0cm9rZS13aWR0aD0iMS4zMzMzMyIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyMDFfNzMwIj4KPHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41KSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.help-search-title {
+  color: #282828;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.help-item {
+  padding: 30px;
+  border-radius: var(--borderRadiusM);
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.help-item .help-title {
+  font-size: 30px;
+  font-family: 500;
+  margin-bottom: 30px;
+}
+
+.help-item .help-list a {
+  padding: 30px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  color: var(--mainColor);
+  border-top: 1px solid #E8E8E8;
+  text-decoration: none;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMyAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDQuOTk5OTdMNy43MDc0OSA5TTEyIDQuOTk5OTdMNy43MDc1NSAxTTEyIDQuOTk5OTdMMSA0Ljk5OTk3IiBzdHJva2U9IiMyQjE4RkYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  padding-right: 30px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.help-item .help-list a:hover {
+  opacity: 0.85;
+}
+
+.help-item .help-list a:last-child {
+  padding-bottom: 0px;
+}
+
+.help-item .help-search input {
+  height: 38px;
+}
+
+.help-item .help-search button {
+  top: 9px;
+}
+
+.help-item-small {
+  padding: 40px;
+  border-radius: var(--borderRadiusM);
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.help-item-small .help-title-small {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.help-item-small .help-anchors a {
+  display: block;
+  padding: 20px 0px;
+  font-size: 16px;
+  color: var(--mainColor);
+  border-top: 1px solid #E8E8E8;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.help-item-small .help-anchors a:hover {
+  opacity: 0.85;
+}
+
+.help-item-small .help-anchors a:last-child {
+  padding-bottom: 0px;
+}
+
+.help-item-x-small {
+  padding: 25px;
+  border-radius: var(--borderRadiusM);
+  background: #fff;
+}
+
+.help-item-x-small-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.help-page h2 {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
 @media (min-width: 480px) {
   .index-basic-direction__index .container .flex-row {
     width: 100%;
@@ -5389,21 +5563,29 @@ form input {
   }
 }
 
-@media only screen and (min-width: 1025px) {
-  .masonry {
-    -moz-column-count: 4;
-    -webkit-column-count: 4;
-    column-count: 4;
-  }
-}
-
 @media (min-width: 1025px) {
+  .mt-0-xl {
+    margin-top: 0px !important;
+  }
+
   .logos-parnters__item:nth-child(5) {
     margin-left: 40px;
   }
 
   .logos-parnters__item:nth-child(7) {
     margin-right: 40px;
+  }
+
+  .sticky-top {
+    position: sticky;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .masonry {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
   }
 }
 
@@ -5485,6 +5667,10 @@ form input {
 }
 
 @media (max-width: 1024px) {
+  .mt-0-md {
+    margin-top: 0px !important;
+  }
+
   .flex-row [class^=flex-col] {
     padding-left: 15px;
     padding-right: 15px;
@@ -6203,6 +6389,10 @@ form input {
 
   .slick-list .flex-col-3 {
     margin-top: 25px;
+  }
+
+  .help-item {
+    margin-bottom: 10px;
   }
 }
 
@@ -7113,6 +7303,30 @@ form input {
 
   #map {
     height: 200px;
+  }
+
+  .help-cover {
+    gap: 30px;
+  }
+
+  .help-cover h1 {
+    text-transform: none;
+  }
+
+  .help-item {
+    padding: 20px;
+  }
+
+  .help-item .help-list a {
+    font-size: 16px;
+  }
+
+  .help-item-small {
+    padding: 20px;
+  }
+
+  .help-item-x-small {
+    padding: 20px;
   }
 }
 
