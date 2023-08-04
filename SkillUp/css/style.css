@@ -1256,14 +1256,6 @@ body.no-scroll {
 
 body {
   background: var(--mainBg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
   color: var(--mainColor);
 }
 
@@ -4101,6 +4093,8 @@ iframe {
           align-items: flex-start;
   gap: 60px;
   margin: 0rem 0rem 6.25rem 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .curator-page--item-img {
@@ -4117,6 +4111,8 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0px 0px 20px 0px;
 }
 
@@ -6302,6 +6298,14 @@ form input {
     gap: 0px;
   }
 
+  .curator-page--item {
+    gap: 30px;
+  }
+
+  .curator-page--item-name {
+    font-size: 30px;
+  }
+
   .video--image.js-video {
     padding: 0px;
     height: 400px;
@@ -6601,6 +6605,18 @@ form input {
 
   .how-training--second-row {
     margin-top: -20px;
+  }
+
+  .curator-page--item {
+    padding: 20px;
+  }
+
+  .curator-page--item-info {
+    width: 100%;
+  }
+
+  .curator-page--item-name {
+    font-size: 20px;
   }
 
   .step-works .slick-dots {

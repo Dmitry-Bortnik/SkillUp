@@ -40,9 +40,6 @@ body {
 
 body {
     background: var(--mainBg);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     color: var(--mainColor);
 }
 
@@ -3730,22 +3727,39 @@ iframe {
     align-items: flex-start;
     gap: 60px;
     margin: 0rem 0rem 6.25rem 0rem;
+    flex-wrap: wrap;
+    @media (max-width:1024px) {
+        gap: 30px;
+    }
+    @media (max-width:768px) {
+        padding: 20px;
+    }
     &-img {
         max-width: 350px;
         width: 100%;
     }
     &-info {
         width: calc(100% - 410px);
+        @media (max-width:768px) {
+            width: 100%;
+        }
     }
     &-head {
         display: flex;
         gap: 15px;
+        flex-wrap: wrap;
         margin: 0px 0px 20px 0px;
     }
     &-name {
         font-family: var(--secondFont);
         font-weight: 500;
         font-size: 38px;
+        @media (max-width:1024px) {
+            font-size: 30px;
+        }
+        @media (max-width:768px) {
+            font-size: 20px;
+        }
     }
     &-socials {
         border-radius: var(--borderRadiusM);
