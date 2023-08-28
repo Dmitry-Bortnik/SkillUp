@@ -127,11 +127,8 @@ $(function () {
 
 
 // выбор слайдера в зависимости от ширины экрана
-if (window.innerWidth > 768) {
-  var sliderResult = $('#result-slider');
-} else if (window.innerWidth < 769) {
-  var sliderResult = $('#result-slider-mobile');
-}
+
+var sliderResult = $('#result-slider');
 
 var currentSlide;
 var slidesCount;
@@ -159,22 +156,26 @@ sliderResult.slick({
   slidesToScroll: 1,
   arrows: true,
   fade: false,
+  slidesToShow: 1,
+  // centerMode: true,
+  variableWidth: true,
   prevArrow: $('#result-slider-prev'),
   nextArrow: $('#result-slider-next'),
   responsive: [{
       breakpoint: 769,
       settings: {
         dots: true,
-        slidesToShow: 0.5,
-        slidesToScroll: 0.5,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
       }
     },
     {
       breakpoint: 480,
       settings: {
         dots: true,
-        slidesToShow: 0.5,
-        slidesToScroll: 0.5,
+        slidesToShow: 2,
+        slidesToScroll: 1,
       }
     }
   ]
@@ -183,11 +184,8 @@ sliderResult.slick({
 //
 
 // выбор слайдера в зависимости от ширины экрана
-if (window.innerWidth > 768) {
-  var sliderWorksCurators = $('#result-slider-2');
-} else if (window.innerWidth < 769) {
-  var sliderWorksCurators = $('#result-slider-2-mobile');
-}
+
+var sliderWorksCurators = $('#result-slider-2');
 
 var currentSlide;
 var slidesCount;
@@ -215,25 +213,27 @@ sliderWorksCurators.slick({
   slidesToScroll: 1,
   arrows: true,
   fade: false,
+  variableWidth: true,
   prevArrow: $('#works-curators-prev'),
   nextArrow: $('#works-curators-next'),
   responsive: [{
-      breakpoint: 769,
-      settings: {
-        dots: true,
-        slidesToShow: 0.5,
-        slidesToScroll: 0.5,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        dots: true,
-        slidesToShow: 0.5,
-        slidesToScroll: 0.5,
-      }
+    breakpoint: 769,
+    settings: {
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
     }
-  ]
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+    }
+  }
+]
 });
 
 

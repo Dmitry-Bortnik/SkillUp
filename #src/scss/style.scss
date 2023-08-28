@@ -2417,6 +2417,17 @@ iframe {
     }
      .slick-list {
         margin: 0px -15px;
+        .result--item {
+            margin: 0px 15px;
+           @media (max-width:768px) {
+            width: 320px;
+            height: 380px;
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+           }
+        }
     }
     @media (max-width: 768px) {
         .flex-row {
@@ -2448,21 +2459,6 @@ iframe {
         }
     }
 }
-
-#result-slider, #result-slider-2 {
-    display: block;
-    @media (max-width: 768px) {
-        display: none;
-    }
-}
-#result-slider-mobile, #result-slider-2-mobile {
-    display: none;
-    @media (max-width: 768px) {
-        display: block;
-
-    }
-}
-
 
 .feedback-slider__control, .result-slider__control, .works-curators-slider__control {
     margin-bottom: 0px;
