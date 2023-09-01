@@ -130,28 +130,28 @@ $(function () {
 
 var sliderResult = $('#result-slider');
 
-var currentSlide;
-var slidesCount;
-var sliderCounter = document.createElement('div');
-sliderCounter.classList.add('slider__counter');
+var currentSlideResult;
+var slidesCountResult;
+var sliderCounterResult = document.createElement('div');
+sliderCounterResult.classList.add('slider__counter');
 
-var updateSliderCounter = function (slick, currentIndex) {
-  currentSlide = slick.slickCurrentSlide() + 1;
-  slidesCount = slick.slideCount;
-  $(sliderCounter).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+var updateSliderCounterResult = function (slick, currentIndex) {
+  currentSlideResult = slick.slickCurrentSlide() + 1;
+  slidesCountResult = slick.slideCount;
+  $(sliderCounterResult).html('<span>' + currentSlideResult + '</span>/' + slidesCountResult)
 };
 
 sliderResult.on('init', function (event, slick) {
-  $('#result-slider-noms').append(sliderCounter);
-  updateSliderCounter(slick);
+  $('#result-slider-noms').append(sliderCounterResult);
+  updateSliderCounterResult(slick);
 });
 
-sliderResult.on('afterChange', function (event, slick, currentSlide) {
-  updateSliderCounter(slick, currentSlide);
+sliderResult.on('afterChange', function (event, slick, currentSlideResult) {
+  updateSliderCounterResult(slick, currentSlideResult);
 });
 
 sliderResult.slick({
-  dots: true,
+  dots: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
@@ -164,7 +164,7 @@ sliderResult.slick({
   responsive: [{
       breakpoint: 769,
       settings: {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -173,7 +173,7 @@ sliderResult.slick({
     {
       breakpoint: 480,
       settings: {
-        dots: true,
+        dots: false,
         slidesToShow: 2,
         slidesToScroll: 1,
       }
@@ -185,30 +185,30 @@ sliderResult.slick({
 
 // выбор слайдера в зависимости от ширины экрана
 
-var sliderWorksCurators = $('#result-slider-2');
+var sliderResult2 = $('#result-slider-2');
 
-var currentSlide;
-var slidesCount;
-var sliderCounterWorks = document.createElement('div');
-sliderCounterWorks.classList.add('slider__counter');
+var currentSlideResult2;
+var slidesCountResult2;
+var sliderCounterResult2 = document.createElement('div');
+sliderCounterResult2.classList.add('slider__counter');
 
-var updateSliderCounterWorks = function (slick, currentIndex) {
-  currentSlide = slick.slickCurrentSlide() + 1;
-  slidesCount = slick.slideCount;
-  $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+var updateSliderCounterResult2 = function (slick, currentIndex) {
+  currentSlideResult2 = slick.slickCurrentSlide() + 1;
+  slidesCountResult2 = slick.slideCount;
+  $(sliderCounterResult2).html('<span>' + currentSlideResult2 + '</span>/' + slidesCountResult2)
 };
 
-sliderWorksCurators.on('init', function (event, slick) {
-  $('#works-curators-noms').append(sliderCounterWorks);
-  updateSliderCounterWorks(slick);
+sliderResult2.on('init', function (event, slick) {
+  $('#works-curators-noms').append(sliderCounterResult2);
+  updateSliderCounterResult2(slick);
 });
 
-sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
-  updateSliderCounterWorks(slick, currentSlide);
+sliderResult2.on('afterChange', function (event, slick, currentSlideResult2) {
+  updateSliderCounterResult2(slick, currentSlideResult2);
 });
 
-sliderWorksCurators.slick({
-  dots: true,
+sliderResult2.slick({
+  dots: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
@@ -219,7 +219,7 @@ sliderWorksCurators.slick({
   responsive: [{
     breakpoint: 769,
     settings: {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -228,7 +228,7 @@ sliderWorksCurators.slick({
   {
     breakpoint: 480,
     settings: {
-      dots: true,
+      dots: false,
       slidesToShow: 2,
       slidesToScroll: 1,
     }
@@ -239,30 +239,30 @@ sliderWorksCurators.slick({
 
 // feedbacks slider
 
-var $sliderWorksCurators = $('.feedbacks-slider');
+var $sliderFeedbackSlider = $('.feedbacks-slider');
 
-if ($sliderWorksCurators.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounterWorks = document.createElement('div');
-  sliderCounterWorks.classList.add('slider__counter');
+if ($sliderFeedbackSlider.length) {
+  var currentSlideFeedback;
+  var slidesCountFeedback;
+  var sliderCounterFeedback = document.createElement('div');
+  sliderCounterFeedback.classList.add('slider__counter');
 
-  var updateSliderCounterWorks = function (slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+  var updateSliderCounterFeedback = function (slick, currentIndex) {
+    currentSlideFeedback = slick.slickCurrentSlide() + 1;
+    slidesCountFeedback = slick.slideCount;
+    $(sliderCounterFeedback).html('<span>' + currentSlideFeedback + '</span>/' + slidesCountFeedback)
   };
 
-  $sliderWorksCurators.on('init', function (event, slick) {
-    $('#feedback-noms').append(sliderCounterWorks);
-    updateSliderCounterWorks(slick);
+  $sliderFeedbackSlider.on('init', function (event, slick) {
+    $('#feedback-noms').append(sliderCounterFeedback);
+    updateSliderCounterFeedback(slick);
   });
 
-  $sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
-    updateSliderCounterWorks(slick, currentSlide);
+  $sliderFeedbackSlider.on('afterChange', function (event, slick, currentSlideFeedback) {
+    updateSliderCounterFeedback(slick, currentSlideFeedback);
   });
 
-  $(".feedbacks-slider").slick({
+  $sliderFeedbackSlider.slick({
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -302,7 +302,7 @@ if ($sliderWorksCurators.length) {
   var updateSliderCounterWorks = function (slick, currentIndex) {
     currentSlide = slick.slickCurrentSlide() + 1;
     slidesCount = slick.slideCount;
-    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+    $(sliderCounterWorks).html('<span>' + currentSlide + '</span>/' + slidesCount)
   };
 
   $sliderWorksCurators.on('init', function (event, slick) {
@@ -343,30 +343,30 @@ if ($sliderWorksCurators.length) {
 
 // how-earn slider
 
-var $sliderWorksCurators = $('.how-earn-slider');
+var $sliderHowEarn = $('.how-earn-slider');
 
-if ($sliderWorksCurators.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounterWorks = document.createElement('div');
-  sliderCounterWorks.classList.add('slider__counter');
+if ($sliderHowEarn.length) {
+  var currentSlideHowEarn;
+  var slidesCountHowEarn;
+  var sliderCounterHowEarn = document.createElement('div');
+  sliderCounterHowEarn.classList.add('slider__counter');
 
   var updateSliderCounterWorks = function (slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+    currentSlideHowEarn = slick.slickCurrentSlide() + 1;
+    slidesCountHowEarn = slick.slideCount;
+    $(sliderCounterHowEarn).html('<span>' + currentSlideHowEarn + '</span>/' + slidesCountHowEarn)
   };
 
-  $sliderWorksCurators.on('init', function (event, slick) {
-    $('#how-earn-noms').append(sliderCounterWorks);
+  $sliderHowEarn.on('init', function (event, slick) {
+    $('#how-earn-noms').append(sliderCounterHowEarn);
     updateSliderCounterWorks(slick);
   });
 
-  $sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
-    updateSliderCounterWorks(slick, currentSlide);
+  $sliderHowEarn.on('afterChange', function (event, slick, currentSlideHowEarn) {
+    updateSliderCounterWorks(slick, currentSlideHowEarn);
   });
 
-  $(".how-earn-slider").slick({
+  $sliderHowEarn.slick({
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -395,30 +395,30 @@ if ($sliderWorksCurators.length) {
 
 // curator course slider
 
-var $sliderWorksCurators = $('.curator-course--slider');
+var $sliderWorksCuratorsCourse = $('.curator-course--slider');
 
-if ($sliderWorksCurators.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounterWorks = document.createElement('div');
-  sliderCounterWorks.classList.add('slider__counter');
+if ($sliderWorksCuratorsCourse.length) {
+  var currentSlideCuratorsCourse;
+  var slidesCountCuratorsCourse;
+  var sliderCounterCuratorsCourse = document.createElement('div');
+  sliderCounterCuratorsCourse.classList.add('slider__counter');
 
-  var updateSliderCounterWorks = function (slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounterWorks).html('<span>0' + currentSlide + '</span>/0' + slidesCount)
+  var updateSliderCounterCuratorsCourse = function (slick, currentIndex) {
+    currentSlideCuratorsCourse = slick.slickCurrentSlide() + 1;
+    slidesCountCuratorsCourse = slick.slideCount;
+    $(sliderCounterCuratorsCourse).html('<span>' + currentSlideCuratorsCourse + '</span>/' + slidesCountCuratorsCourse)
   };
 
-  $sliderWorksCurators.on('init', function (event, slick) {
-    $('#curator-course-noms').append(sliderCounterWorks);
-    updateSliderCounterWorks(slick);
+  $sliderWorksCuratorsCourse.on('init', function (event, slick) {
+    $('#curator-course-noms').append(sliderCounterCuratorsCourse);
+    updateSliderCounterCuratorsCourse(slick);
   });
 
-  $sliderWorksCurators.on('afterChange', function (event, slick, currentSlide) {
-    updateSliderCounterWorks(slick, currentSlide);
+  $sliderWorksCuratorsCourse.on('afterChange', function (event, slick, currentSlideCuratorsCourse) {
+    updateSliderCounterCuratorsCourse(slick, currentSlideCuratorsCourse);
   });
 
-  $(".curator-course--slider").slick({
+  $sliderWorksCuratorsCourse.slick({
     dots: false,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -515,12 +515,15 @@ function openPrice(evt, tab) {
 
 // close top banner
 
+
 const closeBanner = document.querySelector(".top-banner-close");
 
-closeBanner.addEventListener("click", () => {
-  const banner = document.querySelector(".top-banner");
-  banner.classList.remove("active");
-});
+if (closeBanner) {
+  closeBanner.addEventListener("click", () => {
+    const banner = document.querySelector(".top-banner");
+    banner.classList.remove("active");
+  });
+}
 
 
 
@@ -741,3 +744,22 @@ $('.anckorLink').on('click', function() {
 
   return false;
 });
+
+
+// переключание рассрочки в order.html
+
+const creditPrice = document.getElementById("price-credit");
+const creditTab = document.querySelectorAll('.basket__page--credit-tab');
+
+creditTab.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    for (const btn of creditTab) {
+      btn.classList.remove("active");
+    }
+    link.classList.add("active");
+    const button = event.target;
+    const offlineValue = button.getAttribute("data-price");
+    creditPrice.textContent = `${offlineValue}`;
+  })
+})

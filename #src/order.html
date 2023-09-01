@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Up School - Оформление заказа</title>
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="payment__page">
+                <div class="flex-row">
+                    <div class="flex-col-6 cust-col-tablet-12">
+                        <div class="basket__page--col">
+                            <div class="logo-order"><img src="img/logo.svg" alt=""></div>
+                            <div class="breadcrumbs">
+                                <span><a href="#">Корзина</a></span>/<span><a href="#">Оформление заказа</a></span>/<span>Оплата</span>
+                            </div>
+                            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Программы обучения</a>
+                            <form class="payment-form" action="#">
+                                <div class="flex-row basket__page--payments">
+                                    <div class="flex-col-4 cust-col-v-tablet-6 cust-col-mobile-12">
+                                        <label class="payment-item--label" for="tinkoff">
+                                            <input type="radio" name="payment" checked id="tinkoff"> 
+                                            <div class="payment-item">
+                                                <div>
+                                                    <p>В рассрочку</p>
+                                                    <img src="img/logo-tink.png" alt="">
+                                                </div>
+                                                <div class="flex jst-btw">
+                                                    <p>Без переплат и без первоночального взноса</p>
+                                                    <a href="#">Подробнее</a>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="flex-col-4 cust-col-v-tablet-6 cust-col-mobile-12">
+                                        <label class="payment-item--label" for="payHalf">
+                                            <input type="radio" name="payment" id="payHalf"> 
+                                            <div class="payment-item">
+                                                <div>
+                                                    <p>Оплатить частями <br>50 на 50</p>
+                                                </div>
+                                                <div class="flex gap-10">
+                                                    <img src="img/logo-mir.png" alt="">
+                                                    <img src="img/logo-visa.png" alt="">
+                                                    <img src="img/logo-mastercard.png" alt="">
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="flex-col-4 cust-col-v-tablet-6 cust-col-mobile-12">
+                                        <label class="payment-item--label" for="cloudPayment">
+                                            <input type="radio" name="payment" id="cloudPayment"> 
+                                            <div class="payment-item">
+                                                <div>
+                                                    <p>Иностранная карта (Cloudpayments)</p>
+                                                    <img src="img/logo-cloudpayments.png" alt="">
+                                                </div>
+                                                <div>
+                                                    <a href="#">Не доступные для оплаты страны</a>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="flex-col-4 cust-col-v-tablet-6 cust-col-mobile-12">
+                                        <label class="payment-item--label" for="paymenySale">
+                                            <input type="radio" name="payment" id="paymenySale"> 
+                                            <div class="payment-item">
+                                                <div>
+                                                    <p>Оплатить всю сумму со <br>скидкой 5%</p>
+                                                </div>
+                                                <div class="flex gap-10">
+                                                    <img src="img/logo-mir.png" alt="">
+                                                    <img src="img/logo-visa.png" alt="">
+                                                    <img src="img/logo-mastercard.png" alt="">
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="flex-col-4 cust-col-v-tablet-6 cust-col-mobile-12">
+                                        <label class="payment-item--label" for="paymentCall">
+                                            <input type="radio" name="payment" id="paymentCall"> 
+                                            <div class="payment-item">
+                                                <div>
+                                                    <p>Оставить заявку <br>на бесплатную консультацию</p>
+                                                </div>
+                                                <div></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="flex-col-4 cust-col-v-tablet-6 cust-col-mobile-12">
+                                        <label class="payment-item--label" for="bankTransaktion">
+                                            <input type="radio" name="payment" id="bankTransaktion"> 
+                                            <div class="payment-item">
+                                                <div>
+                                                    <p>Иностранный банковский перевод</p>
+                                                </div>
+                                                <div></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <input type="text" name="name" required="" placeholder="Имя*">
+                                <input type="text" name="phone" required="" placeholder="Телефон*">
+                                <input type="email" name="email" required="" placeholder="Электронная почта*">
+                                <div class="channel-connect">
+                                    <select name="connect-name" id="change-connect">
+                                        <option value="Telegram" data-placeholder="@username">Telegram</option>
+                                        <option value="Vkontakte" data-placeholder="Ссылка на профиль">Vkontakte</option>
+                                        <option value="Discord" data-placeholder="username123">Discord</option>
+                                    </select>
+                                    <input type="text" id="connect-input" name="connect" required="" placeholder="@username">
+                                </div>
+                                <div class="main-form--actions">
+                                    <button type="submit">Отправить</button>
+                                    <p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных </p>
+                                </div>
+                            
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-col-6 cust-col-tablet-12">
+                        <div class="basket__page--col">
+                            <div class="basket__page--product-row">
+                                <div class="order-product--list">
+                                    <div class="order-products">
+                                        <div class="basket__course">
+                                            <a href="#" class="basket__course--image">
+                                                <img src="img/course-1.png" alt="">
+                                            </a>
+                                            <div class="basket__course--info">
+                                                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                            </div>
+                                            <div class="basket__course--price">
+                                                12 250 <span class="rouble">i</span>
+                                            </div>
+                                        </div>
+            
+                                        <div class="basket__course">
+                                            <a href="#" class="basket__course--image">
+                                                <img src="img/course-2.png" alt="">
+                                            </a>
+                                            <div class="basket__course--info">
+                                                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                            </div>
+                                            <div class="basket__course--price">
+                                                12 250 <span class="rouble">i</span>
+                                            </div>
+                                        </div>
+            
+                                        <div class="basket__course">
+                                            <a href="#" class="basket__course--image">
+                                                <img src="img/course-3.png" alt="">
+                                            </a>
+                                            <div class="basket__course--info">
+                                                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                            </div>
+                                            <div class="basket__course--price">
+                                                12 250 <span class="rouble">i</span>
+                                            </div>
+                                        </div>
+            
+                                        <div class="basket__course">
+                                            <a href="#" class="basket__course--image">
+                                                <img src="img/course-4.png" alt="">
+                                            </a>
+                                            <div class="basket__course--info">
+                                                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
+                                            </div>
+                                            <div class="basket__course--price">
+                                                12 250 <span class="rouble">i</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-products--footer">
+                                        <div class="basket__promo">
+                                            <form action="#">
+                                                <input type="text" placeholder="Промокод">
+                                                <button>Применить</button>
+                                            </form>
+                                        </div>
+            
+                                        <div class="flex align-center">
+                                            <div class="basket__summ--row jst-btw gap-20 w-100">
+                                                <div class="basket__summ--title basket__summ--title-big">
+                                                    Вся сумма
+                                                </div>
+                                                <div class="basket__summ--i basket__summ--i-big">
+                                                    61 250 <span class="rouble">i</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-6 cust-col-tablet-12 flex align-center">
+                        <a class="back" href="#">Вернуться в корзину</a>
+                    </div>
+                    <div class="flex-col-6 cust-col-tablet-12">
+                        <div class="basket__page--col mt-0">
+                            <div class="basket__page--credit">
+                                <div>Рассрочка</div>
+                                <div class="basket__page--credit-tabs">
+                                    <a class="basket__page--credit-tab active" data-price="3 900" href="#">на 24 месяца</a> / 
+                                    <a class="basket__page--credit-tab" data-price="10 900" href="#">на 10 месяцев </a>
+                                </div>
+                                <div>без первого взноса</div>
+                                <div class="basket__page--credit--price">
+                                    <span id="price-credit">3 900</span>
+                                    <span class="rouble">i</span>/ 
+                                    <div class="basket__page--credit--date">мес.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="small-footer">
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Договор оферты</a>
+                <a href="#">Реквизиты</a>
+            </div>
+        </div>
+    </main>
+
+    @@include('_scripts.html')
+</body>
+
+</html>
