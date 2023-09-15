@@ -274,7 +274,7 @@ if ($sliderFeedbackSlider.length) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         }
       },
       {
@@ -282,7 +282,59 @@ if ($sliderFeedbackSlider.length) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
+        }
+      }
+    ]
+  });
+}
+
+// podcasts slider
+
+var $sliderPodcasts = $('.podcasts-slider');
+
+if ($sliderPodcasts.length) {
+  var currentSlidePodcasts;
+  var slidesCountPodcasts;
+  var sliderCounterPodcasts = document.createElement('div');
+  sliderCounterPodcasts.classList.add('slider__counter');
+
+  var updateSliderCounterPodcasts = function (slick, currentIndex) {
+    currentSlidePodcasts = slick.slickCurrentSlide() + 1;
+    slidesCountPodcasts = slick.slideCount;
+    $(sliderCounterPodcasts).html('<span>' + currentSlidePodcasts + '</span>/' + slidesCountPodcasts)
+  };
+
+  $sliderPodcasts.on('init', function (event, slick) {
+    $('#podcasts-noms').append(sliderCounterPodcasts);
+    updateSliderCounterPodcasts(slick);
+  });
+
+  $sliderPodcasts.on('afterChange', function (event, slick, currentSlidePodcasts) {
+    updateSliderCounterPodcasts(slick, currentSlidePodcasts);
+  });
+
+  $sliderPodcasts.slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#podcasts-prev'),
+    nextArrow: $('#podcasts-next'),
+    responsive: [{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
         }
       }
     ]
@@ -445,6 +497,126 @@ if ($sliderWorksCuratorsCourse.length) {
   });
 }
 
+// article slider
+
+var $sliderArticles = $('.article-slider');
+
+if ($sliderArticles.length) {
+  var currentSlideArticles;
+  var slidesCountArticles;
+  var sliderCounterArticles = document.createElement('div');
+  sliderCounterArticles.classList.add('slider__counter');
+
+  var updateSliderCounterArticles = function (slick, currentIndex) {
+    currentSlideArticles = slick.slickCurrentSlide() + 1;
+    slidesCountArticles = slick.slideCount;
+    $(sliderCounterArticles).html('<span>' + currentSlideArticles + '</span>/' + slidesCountArticles)
+  };
+
+  $sliderArticles.on('init', function (event, slick) {
+    $('#article-noms').append(sliderCounterArticles);
+    updateSliderCounterArticles(slick);
+  });
+
+  $sliderArticles.on('afterChange', function (event, slick, currentSlideArticles) {
+    updateSliderCounterArticles(slick, currentSlideArticles);
+  });
+
+  $sliderArticles.slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#article-prev'),
+    nextArrow: $('#article-next'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      }
+    ]
+  });
+}
+
+// shors video slider
+
+var $sliderShorts = $('.shorts-slider');
+
+if ($sliderShorts.length) {
+  var currentSlideShorts;
+  var slidesCountShorts;
+  var sliderCounterShorts = document.createElement('div');
+  sliderCounterShorts.classList.add('slider__counter');
+
+  var updateSliderCounterShorts = function (slick, currentIndex) {
+    currentSlideShorts = slick.slickCurrentSlide() + 1;
+    slidesCountShorts = slick.slideCount;
+    $(sliderCounterShorts).html('<span>' + currentSlideShorts + '</span>/' + slidesCountShorts)
+  };
+
+  $sliderShorts.on('init', function (event, slick) {
+    $('#shorts-noms').append(sliderCounterShorts);
+    updateSliderCounterShorts(slick);
+  });
+
+  $sliderShorts.on('afterChange', function (event, slick, currentSlideShorts) {
+    updateSliderCounterShorts(slick, currentSlideShorts);
+  });
+
+  $sliderShorts.slick({
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('#shorts-prev'),
+    nextArrow: $('#shorts-next'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },{
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      }
+    ]
+  });
+}
+
 
 (function ($) {
   $(function () {
@@ -474,7 +646,7 @@ $("body").on("click", ".basket", function () {
   $('.basket__wrapper').addClass('active');
   if (window.innerWidth < 1024) {
     $('.header__m-toggle').removeClass('active');
-
+    $('.overflow-background').addClass('active');
   }
 })
 
@@ -763,3 +935,57 @@ creditTab.forEach((link) => {
     creditPrice.textContent = `${offlineValue}`;
   })
 })
+
+// выбор языков
+
+const toggleLanguages = document.querySelectorAll(".toggleLanguage");
+
+toggleLanguages.forEach(function (toggleLanguage) {
+    const toggleLanguageDrop = toggleLanguage.querySelector(".toggleLanguage__drop");
+    toggleLanguage.addEventListener("click", function () {
+        toggleLanguageDrop.classList.toggle("open");
+    });
+
+    toggleLanguageDrop.addEventListener("click", function (e) {
+      e.stopPropagation();
+        if (e.target.tagName === "SPAN") {
+            const selectedLanguage = e.target.textContent;
+
+            const parentContainer = e.currentTarget;
+            const siblings = parentContainer.querySelectorAll(".toggleLanguage__drop > span");
+
+            siblings.forEach(function (sibling) {
+                sibling.classList.remove("active");
+            });
+            const clickedClass = e.target.classList.value;
+            e.target.classList.add("active");
+            console.log(`Выбран язык: ${selectedLanguage}`);
+            toggleLanguage.querySelector("span").textContent = selectedLanguage;
+            while (toggleLanguage.querySelector("span").classList.length > 0) {
+              toggleLanguage.querySelector("span").classList.remove(toggleLanguage.querySelector("span").classList.item(0));
+            }
+            if (clickedClass)
+              toggleLanguage.querySelector("span").classList.add(clickedClass)
+            toggleLanguageDrop.classList.remove("open");
+        }
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!toggleLanguage.contains(e.target)) {
+          toggleLanguageDrop.classList.remove("open");
+      }
+  });
+});
+
+
+//
+
+$(function(){
+  var topPos = $('.header').first().offset().top;
+  console.log(topPos);
+  $(window).scroll(function() { 
+   var top = $(document).scrollTop();
+   if (top > topPos) $('.header').addClass('fixed'); 
+   else $('.header').removeClass('fixed');
+  });
+ });

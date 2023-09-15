@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Up School - Подарочный Сертификат</title>
+    <title>Skills Up School - Библиотека</title>
     <link rel="stylesheet" href="css/style.css?v=1">
 </head>
 
@@ -219,100 +219,288 @@
     <main class="main">
         <div class="container">
             <div class="breadcrumbs">
-                <a href="#">Главная</a> / <span>Вопрос - ответ</span>
+                <a href="#">Главная</a> / <span>Видео-отзывы выпускников</span>
             </div>
-            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Вопрос - ответ</a>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Главная</a>
         </div>
 
         <div class="container">
-            <div class="help-cover">
-                <h1>Раздел Помощи</h1>
-                <div class="help-search">
-                    <form action="help-search.html">
-                        <input type="search" placeholder="Поиск для помощи">
-                        <button type="submit"></button>
-                    </form>
+            <div class="section--inner">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <div class="title">Библиотека</div>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-9 mt-auto cust-col-tablet-12">
+                        <details class="multiple-select">
+                            <summary>
+                                <div class="multiple--title">Статьи</div>
+                                <div class="multiple--selected"></div>
+                            </summary>
+                            <div class="multiple-select-dropdown">
+                                <label>
+                                    <input type="radio" hidden name="articles" value="">
+                                    <span class="content">Статьи</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="articles" value="">
+                                    <span class="content">Туториалы</span>
+                                </label>
+                                <label>
+                                    <input type="radio" hidden name="articles" value="">
+                                    <span class="content">Интервью</span>
+                                </label>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start mt-0">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="article-prev" class="result-slider__control__prev"></div>
+                            <div id="article-noms" class="result-slider__control__noms"> </div>
+                            <div id="article-next" class="result-slider__control__next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-slider flex-row mt-0">
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-1.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-2.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-3.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-4.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-1.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-2.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-3.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="event-page.html" class="event-item">
+                            <div class="event-img"><img src="img/event-4.jpg" alt=""></div>
+                            <div class="event-title">Спидпеинт по кадру мультфильма</div>
+                            <div class="event-date">6 июля, 18:00</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container">
             <div class="section--inner">
-                <div class="flex-row">
-                    <div class="flex-col-3 cust-col-tablet-12">
-                        <div class="help-fixed sticky-top" style="top: 30px;">
-                            <div>
-                                <div class="help-item-small">
-                                    <div class="help-title-small">Категории вопросов</div>
-                                    <div class="help-anchors">
-                                        <a href="#main" class="anckorLink"> <span><img src="img/svgsprite/help-icon-1.svg" alt=""></span> Общая информация</a>
-                                        <a href="#learning" class="anckorLink"> <span><img src="img/svgsprite/help-icon-2.svg" alt=""></span> Вопросы по обучению</a>
-                                        <a href="#pay" class="anckorLink"> <span><img src="img/svgsprite/help-icon-3.svg" alt=""></span> Вопросы по оплате</a>
-                                        <a href="#tech" class="anckorLink"> <span><img src="img/svgsprite/help-icon-4.svg" alt=""></span> Технические вопросы</a>
-                                    </div>
-                                </div>
-                                <div class="help-item-x-small">
-                                    <div class="help-item-x-small-title">
-                                        Ответим на любой вопрос
-                                    </div>
-                                    <a href="#" class="link-arrow-black">Связаться с нами</a>
-                                </div>
-                            </div>
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-9 cust-col-tablet-12">
+                        <div class="title">короткие видео</div>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="shorts-prev" class="result-slider__control__prev"></div>
+                            <div id="shorts-noms" class="result-slider__control__noms"> </div>
+                            <div id="shorts-next" class="result-slider__control__next"></div>
                         </div>
                     </div>
-                    <div class="flex-col-9 cust-col-tablet-12">
-                        <div class="help-item" id="main">
-                            <div class="help-title">Общая информация о Skills Up School</div>
-                            <div class="help-list">
-                                <a href="help-page.html">Что такое Skills Up School и почему нам можно доверять?</a>
-                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
-                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
-                                <a href="#">Какие курсы подойдут для новичка?</a>
-                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
-                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
-                            </div>
-                        </div>
+                </div>
 
-                        <div class="help-item" id="learning">
-                            <div class="help-title">Вопросы по обучению</div>
-                            <div class="help-list">
-                                <a href="#">Что такое Skills Up School и почему нам можно доверять?</a>
-                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
-                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
-                                <a href="#">Какие курсы подойдут для новичка?</a>
-                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
-                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
-                            </div>
-                        </div>
-
-                        <div class="help-item" id="pay">
-                            <div class="help-title">Вопросы по оплате</div>
-                            <div class="help-list">
-                                <a href="#">Что такое Skills Up School и почему нам можно доверять?</a>
-                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
-                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
-                                <a href="#">Какие курсы подойдут для новичка?</a>
-                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
-                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
-                            </div>
-                        </div>
-
-                        <div class="help-item" id="tech">
-                            <div class="help-title">Технические вопросы</div>
-                            <div class="help-list">
-                                <a href="#">Что такое Skills Up School и почему нам можно доверять?</a>
-                                <a href="#">Кто преподает в Skills Up School и какой у них опыт?</a>
-                                <a href="#">С какого возраста можно начать обучение в Skills Up?</a>
-                                <a href="#">Какие курсы подойдут для новичка?</a>
-                                <a href="#">Можно ли присоединиться к курсу в середине семестра?</a>
-                                <a href="#">Что я получаю после курса? Каков итог обучения?</a>
-                            </div>
-                        </div>
+                <div class="shorts-slider flex-row">
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/short-4.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="container">
+            <div class="section--inner">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-9 cust-col-tablet-12">
+                        <div class="title">Актуальные подкасты</div>
+                    </div>
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="podcasts-prev" class="result-slider__control__prev"></div>
+                            <div id="podcasts-noms" class="result-slider__control__noms"> </div>
+                            <div id="podcasts-next" class="result-slider__control__next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcasts-slider flex-row">
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="feedbacks section--inner">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-9 cust-col-tablet-12">
+                        <div class="title">Интервью</div>
+                    </div>
+                   
+                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
+                        <div class="result-slider__control xl-flex xl-align-center">
+                            <div id="feedback-prev" class="result-slider__control__prev"></div>
+                            <div id="feedback-noms" class="result-slider__control__noms"> </div>
+                            <div id="feedback-next" class="result-slider__control__next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedbacks-slider flex-row">
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="flex-col-3">
+                        <a href="#" class="js-video" data-video="uvXMLWcHsdU">
+                            <img src="img/video-4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
     <footer class="footer">

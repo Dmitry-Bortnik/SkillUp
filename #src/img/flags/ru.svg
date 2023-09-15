@@ -1,0 +1,41 @@
+<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="10" height="8" fill="#1E1E1E"/>
+<g id="C &#208;&#164;&#208;&#187;&#208;&#176;&#208;&#179;&#208;&#190;&#208;&#188;">
+<path d="M-1256 -168C-1256 -169.105 -1255.1 -170 -1254 -170H1892C1893.1 -170 1894 -169.105 1894 -168V2447C1894 2448.1 1893.1 2449 1892 2449H-1254C-1255.1 2449 -1256 2448.1 -1256 2447V-168Z" fill="#404040"/>
+<g id="Group 4">
+<g id="MENU/MENU">
+<rect width="1440" height="108" transform="translate(-1148 -23)" fill="#F3F3F3"/>
+<g id="service_menu_container">
+<rect width="1440" height="54" transform="translate(-1148 -23)" fill="#E8E8E8"/>
+<g id="service_menu_content">
+<g id="Frame 738002577">
+<g id="Frame 738002581">
+<g id="Button">
+<g id=" russian-federation" clip-path="url(#clip0_1495_3113)">
+<g id="artwork">
+<g clip-path="url(#clip1_1495_3113)">
+<rect y="0.5" width="10" height="7" rx="0.909091" fill="#1A47B8"/>
+<path id="vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.16663H10V7.49996H0V5.16663Z" fill="#F93939"/>
+<path id="vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 0.5H10V2.83333H0V0.5Z" fill="white"/>
+</g>
+</g>
+</g>
+<rect x="-40.5" y="-11.5" width="66" height="31" rx="11.5" stroke="#A0A0A0"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<path d="M-1254 -169H1892V-171H-1254V-169ZM1893 -168V2447H1895V-168H1893ZM1892 2448H-1254V2450H1892V2448ZM-1255 2447V-168H-1257V2447H-1255ZM-1254 2448C-1254.55 2448 -1255 2447.55 -1255 2447H-1257C-1257 2448.66 -1255.66 2450 -1254 2450V2448ZM1893 2447C1893 2447.55 1892.55 2448 1892 2448V2450C1893.66 2450 1895 2448.66 1895 2447H1893ZM1892 -169C1892.55 -169 1893 -168.552 1893 -168H1895C1895 -169.657 1893.66 -171 1892 -171V-169ZM-1254 -171C-1255.66 -171 -1257 -169.657 -1257 -168H-1255C-1255 -168.552 -1254.55 -169 -1254 -169V-171Z" fill="white" fill-opacity="0.1"/>
+</g>
+<defs>
+<clipPath id="clip0_1495_3113">
+<rect width="10" height="7" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+<clipPath id="clip1_1495_3113">
+<rect y="0.5" width="10" height="7" rx="0.909091" fill="white"/>
+</clipPath>
+</defs>
+</svg>
