@@ -853,54 +853,6 @@ checkWindowWidth();
 window.addEventListener('resize', checkWindowWidth);
 
 
-// переключение тарифов форматов обучения
-
-const groupBlock = document.getElementById("groupValue");
-const individualBlock = document.getElementById("individualValue");
-const offlineBlock = document.getElementById("offlineValue");
-
-const btnDataGroup = document.querySelectorAll('[data-group]');
-btnDataGroup.forEach((link) => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
-    for (const btn of btnDataGroup) {
-      btn.classList.remove("active");
-    }
-    link.classList.add("active");
-    const button = event.target;
-    const groupValue = button.getAttribute("data-group");
-    groupBlock.textContent = `${groupValue}`;
-  })
-})
-//
-const btnDataIndividual = document.querySelectorAll('[data-individual]');
-btnDataIndividual.forEach((link) => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
-    for (const btn of btnDataIndividual) {
-      btn.classList.remove("active");
-    }
-    link.classList.add("active");
-    const button = event.target;
-    const individualValue = button.getAttribute("data-individual");
-    individualBlock.textContent = `${individualValue}`;
-  })
-})
-// 
-const btnDataOffline = document.querySelectorAll('[data-offline]');
-btnDataOffline.forEach((link) => {
-  link.addEventListener('click', function (event) {
-    event.preventDefault();
-    for (const btn of btnDataOffline) {
-      btn.classList.remove("active");
-    }
-    link.classList.add("active");
-    const button = event.target;
-    const offlineValue = button.getAttribute("data-offline");
-    offlineBlock.textContent = `${offlineValue}`;
-  })
-})
-
 // плавный скролл до якоря
 
 $('.anckorLink').on('click', function() {
@@ -989,3 +941,23 @@ $(function(){
    else $('.header').removeClass('fixed');
   });
  });
+
+
+ // выбор форматов обучения
+
+ function updatePrice(event, button) {
+  event.stopPropagation();
+  var groupPrice = button.getAttribute('data-gpoup');
+  var individualPrice = button.getAttribute('data-ind');
+  var offlinePrice = button.getAttribute('data-off');
+  var buttons = document.querySelectorAll('.format-learning-controls a');
+    buttons.forEach(function(btn) {
+      btn.classList.remove('active');
+  });
+
+  button.classList.add('active');
+
+  document.getElementById('groupValue').textContent = groupPrice;
+  document.getElementById('individualValue').textContent = individualPrice;
+  document.getElementById('offlineValue').textContent = offlinePrice;
+}

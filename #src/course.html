@@ -397,8 +397,15 @@
         <div class="container">
             <div class="section--inner">
                 <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
+                    <div class="flex-col-8">
                         <div class="title">Форматы обучения</div>
+                    </div>
+                    <div class="flex-col-4">
+                        <div class="format-learning-controls">
+                            <a data-gpoup="3000" data-ind="5000" data-off="10000" class="btn-white active" onclick="updatePrice(event, this)">24 месяцев</a>
+                            <a data-gpoup="4000" data-ind="6000" data-off="11000" class="btn-white" onclick="updatePrice(event, this)">12 месяцев</a>
+                            <a data-gpoup="5000" data-ind="7000" data-off="12000" class="btn-white" onclick="updatePrice(event, this)">Оплата сразу</a>
+                        </div>
                     </div>
                 </div>
                 <div class="flex-row">
@@ -406,17 +413,13 @@
                         <div class="format-learning--item">
                             <div class="format-learning--item-title">Групповой</div>
                             <div class="format-learning--item-text">
-                                <ul>
+                                <p class="bold-text mb-10">Ключевые преимущества:</p>
+                                <ul class="pt-0">
                                     <li>Онлайн в группе студентов с куратором</li>
                                     <li>Длительность 6 месяцев</li>
                                     <li>Строгие дедлайны</li>
                                 </ul>
                                 <div class="format-learning-bottom">
-                                    <div class="format-learning-controls">
-                                        <a id="month24" class="btn-white active" href="#" data-group="5000">24 месяцев</a>
-                                        <a id="month12" class="btn-white" href="#" data-group="6000">12 месяцев</a>
-                                        <a id="pay-now" class="btn-white" href="#" data-group="15000" >Оплата сразу</a>
-                                    </div>
                                     <div class="format-learning--content-price">
                                         <div class="format-learning--price"><span id="groupValue">3 760</span> ₽ /</div>
                                         <div class="format-learning--price-month">мес</div>
@@ -425,7 +428,10 @@
                                         <span>Рассрочка на 24 месяцев</span>
                                         <span>Без первого взноса</span>
                                     </div>
-                                    <a href="#" class="btn-white mt-20">Добавить в корзину</a>
+                                    <div class="format-btns gap-10">
+                                        <a href="#" class="btn-white mt-20">Подробнее о формате</a>
+                                        <a href="#" class="btn-white mt-20">Добавить в корзину</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -436,17 +442,13 @@
                                 <div class="format-learning--item-title-sale">– 30%</div>
                             </div>
                             <div class="format-learning--item-text">
-                                <ul>
+                                <p class="bold-text mb-10">Ключевые преимущества:</p>
+                                <ul class="pt-0">
                                     <li>Онлайн с куратором</li>
                                     <li>Длительность 6 месяцев</li>
                                     <li>Индивидуальные дедлайны</li>
                                 </ul>
                                 <div class="format-learning-bottom">
-                                    <div class="format-learning-controls">
-                                        <a id="month24" class="btn-white active" href="#" data-individual="7000">24 месяцев</a>
-                                        <a id="month12" class="btn-white" href="#" data-individual="8000">12 месяцев</a>
-                                        <a id="pay-now" class="btn-white" href="#" data-individual="17000">Оплата сразу</a>
-                                    </div>
                                     <div class="format-learning--content-price">
                                         <div class="format-learning--price"><span id="individualValue">3 760</span> ₽ /</div>
                                         <div class="format-learning--price-month">мес</div>
@@ -455,7 +457,10 @@
                                         <span>Рассрочка на 24 месяцев</span>
                                         <span>Без первого взноса</span>
                                     </div>
-                                    <a href="#" class="btn-white btn-blue mt-20">Добавить в корзину</a>
+                                    <div class="format-btns gap-10">
+                                        <a href="#" class="btn-white mt-20">Подробнее о формате</a>
+                                        <a href="#" class="btn-white btn-blue mt-20">Добавить в корзину</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -464,17 +469,13 @@
                         <div class="format-learning--item">
                             <div class="format-learning--item-title">Офлайн</div>
                             <div class="format-learning--item-text">
-                                <ul>
+                                <p class="bold-text mb-10">Ключевые преимущества:</p>
+                                <ul class="pt-0">
                                     <li>В Москве или в Петербурге</li>
                                     <li>Длительность 1 год</li>
                                     <li>Строгие дедлайны</li>
                                 </ul>
                                 <div class="format-learning-bottom">
-                                    <div class="format-learning-controls">
-                                        <a id="month24" class="btn-white active" href="#" data-offline="3000">24 месяцев</a>
-                                        <a id="month12" class="btn-white" href="#" data-offline="4000">12 месяцев</a>
-                                        <a id="pay-now" class="btn-white" href="#" data-offline="13000">Оплата сразу</a>
-                                    </div>
                                     <div class="format-learning--content-price">
                                         <div class="format-learning--price"><span id="offlineValue">3 760</span> ₽ /</div>
                                         <div class="format-learning--price-month">мес</div>
@@ -483,7 +484,10 @@
                                         <span>Рассрочка на 24 месяцев</span>
                                         <span>Без первого взноса</span>
                                     </div>
-                                    <a href="#" class="btn-white mt-20">Добавить в корзину</a>
+                                    <div class="format-btns gap-10">
+                                        <a href="#" class="btn-white mt-20">Подробнее о формате</a>
+                                        <a href="#" class="btn-white mt-20">Добавить в корзину</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1332,6 +1332,10 @@ ul li {
   width: 100%;
 }
 
+.pt-0 {
+  padding-top: 0px !important;
+}
+
 /* grid */
 
 .flex-row {
@@ -1466,6 +1470,10 @@ a {
 
 .mb-0 {
   margin-bottom: 0px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
 }
 
 .gap-10 {
@@ -1801,6 +1809,7 @@ a {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .btn-white:hover,
@@ -4331,7 +4340,6 @@ iframe {
 .format-learning--content-price {
   position: relative;
   display: inline-block;
-  margin-top: 20px;
 }
 
 .format-learning--content-price .format-learning--price {
@@ -4370,21 +4378,25 @@ iframe {
   opacity: 0.4;
 }
 
+.format-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .format-learning-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   gap: 10px;
 }
 
-.format-learning-controls .btn-white {
-  padding: 2px 12px;
-  font-size: 14px;
-  height: auto;
-  white-space: nowrap;
+.format-learning-controls a {
+  cursor: pointer;
+  display: block;
 }
 
 .simple-card {
@@ -6427,6 +6439,16 @@ form input {
   .faq-questions {
     padding: 2rem 5rem;
   }
+
+  .format-btns {
+    margin-top: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .format-btns > * {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -8014,10 +8036,6 @@ form input {
     height: 200px;
     overflow: hidden;
     border-radius: var(--borderRadiusM);
-  }
-
-  .format-learning-controls {
-    gap: 6px;
   }
 
   .you-learn {
