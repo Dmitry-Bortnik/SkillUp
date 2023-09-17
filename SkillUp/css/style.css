@@ -1772,6 +1772,24 @@ a {
   color: var(--mainColor);
 }
 
+.btn-yellow {
+  padding: 8px 15px;
+  border-radius: 12px;
+  background: #FC0;
+  border: 1px solid #FC0;
+  color: #000;
+  text-decoration: none;
+  margin-top: 30px;
+  height: 38px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-yellow:hover {
+  opacity: 0.85;
+}
+
 .btn-white {
   padding: 8px 15px;
   border-radius: 12px;
@@ -2138,7 +2156,6 @@ header a {
   color: #FFFFFF;
   padding: 5px 15px;
   cursor: pointer;
-  margin-right: 15px;
   line-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2496,7 +2513,7 @@ header a {
   padding: 10px;
   font-weight: 500;
   font-size: 47px;
-  line-height: 85.5%;
+  line-height: 130%;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -3838,6 +3855,10 @@ iframe {
   padding: 0px 20px;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+.main-form input.error {
+  border: 1px solid #FF0000;
 }
 
 .faq-questions--title {
@@ -5214,7 +5235,7 @@ form input {
 
 .event-img {
   width: 100%;
-  height: 320px;
+  height: 260px;
 }
 
 .event-img img {
@@ -5883,6 +5904,10 @@ form input {
   margin-top: 30px;
 }
 
+.ready-work--item .js-video img {
+  border-radius: var(--borderRadiusM);
+}
+
 .dividing-line {
   background: var(--greyColor);
   width: 100%;
@@ -5979,6 +6004,16 @@ form input {
   width: 100%;
 }
 
+.step-works--item p.step-works--item-p {
+  color: var(--mainColor);
+  position: relative;
+  opacity: 0.5;
+  text-align: center;
+  background: none;
+  right: auto;
+  margin-top: 10px;
+}
+
 .dop-spec h2 {
   margin: 0px 0px 30px 0px;
   font-size: 38px;
@@ -6021,6 +6056,7 @@ form input {
   font-size: 14px;
   color: #A0A0A0;
   text-decoration: line-through;
+  white-space: nowrap;
 }
 
 .dop-spec--price-container .dop-spec--price-s {
@@ -6028,6 +6064,7 @@ form input {
   background: #FFEF5F;
   padding: 5px;
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .dop-spec--price-container .dop-spec--price-new {
@@ -6036,6 +6073,7 @@ form input {
   width: 100%;
   margin-top: 15px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .main-banner {
@@ -6056,8 +6094,13 @@ form input {
 
 .main-banner p {
   color: #FFF;
-  font-size: 16px;
+  font-size: 20px;
   margin: 30px 0px 0px 0px;
+  max-width: 460px;
+}
+
+.partner--item {
+  font-size: 20px;
 }
 
 .partner--item p {
@@ -6214,6 +6257,23 @@ form input {
 
 .basket-mobile-link {
   display: none;
+}
+
+.wpcf7-spinner {
+  margin-right: 0px;
+  min-width: 24px;
+}
+
+.result-simple--item {
+  height: 320px;
+  border-radius: var(--borderRadiusM);
+  overflow: hidden;
+}
+
+.result-simple--item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 480px) {
@@ -7455,10 +7515,6 @@ form input {
     margin-bottom: 3.125rem;
   }
 
-  .main-banner h1 {
-    font-size: 38px;
-  }
-
   .partner-info .flex-row {
     margin-top: 0px;
   }
@@ -7629,7 +7685,7 @@ form input {
   }
 
   .top-banner-close {
-    top: 16px;
+    top: 8px;
     right: 16px;
   }
 
@@ -8275,8 +8331,31 @@ form input {
     padding: 3.125rem 1.875rem 3.125rem 1.875rem;
   }
 
+  .main-banner .btn-black {
+    width: 270px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    display: block;
+  }
+
+  .main-banner .btn-yellow {
+    width: 270px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    display: block;
+  }
+
   .main-banner h1 {
-    font-size: 30px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .main-banner p {
+    text-align: center;
+  }
+
+  .result-simple--item {
+    height: 260px;
   }
 }
 
