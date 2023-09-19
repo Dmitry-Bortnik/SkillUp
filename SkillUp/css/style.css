@@ -3599,7 +3599,7 @@ iframe {
 }
 
 .footer {
-  margin: 50px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -3997,6 +3997,7 @@ iframe {
   padding: 6.25rem 1.875rem 6.25rem 1.875rem;
   background: url(../img/course_cover.jpg) no-repeat center;
   background-size: cover;
+  min-height: 490px;
 }
 
 .course--main-banner h1 {
@@ -5521,6 +5522,10 @@ form input {
   border-bottom: 1px solid transparent;
 }
 
+.contacts .contact-item a {
+  color: var(--mainColor);
+}
+
 .contacts .contacts-map-header .contacts-map-title {
   color: var(--mainColor);
   font-family: var(--secondFont);
@@ -6093,6 +6098,7 @@ form input {
   border-radius: var(--borderRadiusM);
   margin: 1.875rem 0rem 4.6875rem 0rem;
   padding: 6.25rem 1.875rem 6.25rem 1.875rem;
+  min-height: 490px;
 }
 
 .main-banner h1 {
@@ -7470,6 +7476,7 @@ form input {
 
   .footer {
     margin-bottom: 25px;
+    margin-top: 50px;
   }
 
   .courses--main-banner {
@@ -7493,6 +7500,10 @@ form input {
 
   .faq-questions--right {
     width: 100%;
+  }
+
+  .course--main-banner {
+    min-height: none;
   }
 
   .results,
@@ -7570,6 +7581,7 @@ form input {
 
   .main-banner {
     margin-bottom: 3.125rem;
+    min-height: none;
   }
 
   .partner-info .flex-row {
