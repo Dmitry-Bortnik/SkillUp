@@ -1803,7 +1803,7 @@ header a {
         padding: 10px;
         font-weight: 500;
         font-size: 47px;
-        line-height: 130%;
+        line-height: normal;
         text-align: center;
         letter-spacing: -0.03em;
         text-transform: uppercase;
@@ -3922,6 +3922,7 @@ iframe {
             width: auto;
             min-height: 100%;
             min-width: 100%;
+            height: 100%;
         }
     }
     &--name {
@@ -6025,5 +6026,39 @@ form {
     img {
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.shorts-slider img, .podcasts-slider img {
+    border-radius: var(--borderRadiusM);
+}
+
+#primary-menu {
+    @media (max-width:1024px) {
+        padding-left: 0px;
+        border-bottom: 1px solid var(--greyColor);
+        .menu-item {
+            margin: 0px;
+            display: block;
+        }
+        .sub-menu {
+            position: relative;
+            border: none;
+            border-radius: 0px;
+            padding: 0px;
+            margin-bottom: 0px;
+            display: none;
+            border-bottom: 1px solid var(--greyColor);
+            a {
+                padding: 20px 0px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#primary-menu .menu-item-has-children .active {
+    @media (max-width:1024px) {
+        display: block;
     }
 }
