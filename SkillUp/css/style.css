@@ -1810,6 +1810,7 @@ a {
   -o-transition: all 0.2s;
   transition: all 0.2s;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .btn-white:hover,
@@ -1829,6 +1830,12 @@ a {
   border: 1px solid #406AFF;
   background: #406AFF;
   opacity: 0.8;
+}
+
+.btn-add-card {
+  opacity: 0.85;
+  background: #f2f2f2;
+  pointer-events: none;
 }
 
 .multiple-select {
@@ -2021,6 +2028,25 @@ summary::marker {
 .header {
   position: relative;
   z-index: 3;
+  top: 0px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.header.fixed {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: var(--mainBg);
+  position: sticky;
+}
+
+.header.fixed .header__top {
+  padding: 15px 0px;
+}
+
+.header.fixed .toggle__nav__item {
+  top: 7px;
 }
 
 .header__top {
@@ -2071,6 +2097,7 @@ summary::marker {
 .header__basket {
   margin-left: 1rem;
   cursor: pointer;
+  position: relative;
 }
 
 .header__phone {
@@ -2960,7 +2987,7 @@ iframe {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .awg-popup__content {
@@ -4386,6 +4413,10 @@ iframe {
   display: flex;
 }
 
+.format-btns .btn-white {
+  font-size: 14px;
+}
+
 .format-learning-controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4577,11 +4608,6 @@ iframe {
 
 .basket__container.active {
   right: 0px;
-}
-
-.basket {
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .basket__head {
@@ -6300,6 +6326,94 @@ form input {
   border-radius: var(--borderRadiusM);
 }
 
+.fancybox-content {
+  overflow: initial;
+}
+
+.dialog-formats.fancybox-content {
+  width: 100%;
+  padding: 30px;
+  overflow: initial;
+  border-radius: 12px;
+}
+
+.dialog-formats--header {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
+}
+
+.dialog-formats--header h2 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.dialog-formats--body {
+  margin-top: 20px;
+  padding: 10px 0px;
+}
+
+.dialog-formats--body .flex-col-6 {
+  margin-top: 0px;
+}
+
+.dialog-formats--body p {
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.dialog-formats--body .dialog-formats--text {
+  position: relative;
+}
+
+.dialog-formats--body .dialog-formats--text .dialog-formats--footer {
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.dialog-formats--body .dialog-formats--text .dialog-formats--footer > div {
+  width: 50%;
+}
+
+.header-add-product {
+  position: absolute;
+  background: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  color: #fff;
+  font-size: 14px;
+  right: -10px;
+  white-space: nowrap;
+  padding: 5px 10px;
+  top: 160%;
+  border-radius: 4px;
+}
+
+.header-add-product::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  border: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: -10px;
+  left: 83%;
+  border-bottom: 10px solid var(--mainColor);
+  top: -10px;
+}
+
 @media (min-width: 480px) {
   .index-basic-direction__index .container .flex-row {
     width: 100%;
@@ -6587,23 +6701,7 @@ form input {
   }
 
   .header {
-    position: sticky;
-    top: 0px;
     margin: 10px 0px;
-  }
-
-  .header.fixed {
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    background: var(--mainBg);
-  }
-
-  .header.fixed .header__top {
-    padding: 15px 0px;
-  }
-
-  .header.fixed .toggle__nav__item {
-    top: 7px;
   }
 
   .header__top {
@@ -6842,6 +6940,10 @@ form input {
     content: "Корзина ";
     margin-right: 20px;
     position: absolute;
+  }
+
+  .header__basket .header-add-product {
+    display: none;
   }
 
   .logo {
@@ -7266,6 +7368,11 @@ form input {
 
   #primary-menu .menu-item-has-children .active {
     display: block;
+  }
+
+  .fancybox-slide--html .fancybox-close-small {
+    right: -10px;
+    top: -40px;
   }
 }
 
@@ -8421,6 +8528,22 @@ form input {
 
   .result-simple--item {
     height: 260px;
+  }
+
+  .dialog-formats.fancybox-content {
+    padding: 16px;
+  }
+
+  .dialog-formats--header {
+    padding-bottom: 10px;
+  }
+
+  .dialog-formats--header h2 {
+    font-size: 20px;
+  }
+
+  .dialog-formats--body p {
+    font-size: 16px;
   }
 }
 

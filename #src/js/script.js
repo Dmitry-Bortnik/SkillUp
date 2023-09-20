@@ -929,20 +929,6 @@ toggleLanguages.forEach(function (toggleLanguage) {
   });
 });
 
-
-//
-
-$(function(){
-  var topPos = $('.header').first().offset().top;
-  console.log(topPos);
-  $(window).scroll(function() { 
-   var top = $(document).scrollTop();
-   if (top > topPos) $('.header').addClass('fixed'); 
-   else $('.header').removeClass('fixed');
-  });
- });
-
-
  // выбор форматов обучения
 
  function updatePrice(event, button) {
@@ -960,4 +946,39 @@ $(function(){
   document.getElementById('groupValue').textContent = groupPrice;
   document.getElementById('individualValue').textContent = individualPrice;
   document.getElementById('offlineValue').textContent = offlinePrice;
+}
+
+// header
+
+$(function(){
+  $(window).on('load', function() { // Добавляем обработчик после загрузки страницы
+    var topPos = $('.header').first().offset().top;
+    console.log(topPos);
+    $(window).scroll(function() { 
+      var top = $(document).scrollTop();
+      if (top > topPos) {
+        $('.header').addClass('fixed'); 
+      } else {
+        $('.header').removeClass('fixed');
+      }
+    });
+  });
+});
+
+
+let prevScrollPos = window.pageYOffset;
+
+if (window.innerWidth > 1024) {
+  window.onscroll = function() {
+      const currentScrollPos = window.pageYOffset;
+      if (document.querySelector(".header.fixed")) {
+        if (prevScrollPos > currentScrollPos) {
+            document.querySelector(".header.fixed").style.transform = "translateY(0)";
+        } else {
+            const headerHeight = document.querySelector(".header.fixed").offsetHeight + 60;
+            document.querySelector(".header.fixed").style.transform = `translateY(-${headerHeight}px)`;
+        }
+      }
+      prevScrollPos = currentScrollPos;
+  }
 }

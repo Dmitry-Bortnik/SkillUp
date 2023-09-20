@@ -763,6 +763,7 @@ a {
     height: 38px;
     transition: all 0.2s;
     white-space: nowrap;
+    cursor: pointer;
     &:hover, &.active {
         background: var(--mainColor);
         border: 1px solid var(--mainColor);
@@ -778,6 +779,12 @@ a {
             opacity: 0.8; 
         }
     }
+}
+
+.btn-add-card {
+    opacity: 0.85;
+    background: #f2f2f2;
+    pointer-events: none;
 }
 
 
@@ -966,20 +973,21 @@ summary::marker {
 .header {
     position: relative;
     z-index: 3;
+    
+    top: 0px;
+    transition: all .2s;
     @media (max-width:1024px) {
-        position: sticky;
-        top: 0px;
-       
         margin: 10px 0px;
-        &.fixed {
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            background: var(--mainBg);
-            .header__top {
-                padding: 15px 0px;
-            }
-            .toggle__nav__item {
-                top: 7px;
-            }
+    }
+    &.fixed {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background: var(--mainBg);
+        position: sticky;
+        .header__top {
+            padding: 15px 0px;
+        }
+        .toggle__nav__item {
+            top: 7px;
         }
     }
 }
@@ -1235,7 +1243,7 @@ summary::marker {
 .header__basket {
     margin-left: 1rem;
     cursor: pointer;
-    
+    position: relative;
    
     @media (max-width: 1024px) {
         padding: 20px 0px;
@@ -1256,6 +1264,9 @@ summary::marker {
             content: 'Корзина ';
             margin-right: 20px;
             position: absolute;
+        }
+        .header-add-product {
+            display: none;
         }
     }
 }
@@ -2340,7 +2351,7 @@ iframe {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 
     &__content {
         max-width: 760px;
@@ -4048,6 +4059,9 @@ iframe {
             margin-top: 0px;
         }
     }
+    .btn-white {
+        font-size: 14px;
+    }
 }
 
 .format-learning-controls {
@@ -4292,8 +4306,8 @@ iframe {
 }
 
 .basket {
-    overflow-y: auto;
-    overflow-x: hidden;
+    // overflow-y: auto;
+    // overflow-x: hidden;
     &__head {
         display: flex;
         align-items: center;
@@ -6070,5 +6084,102 @@ form {
 #primary-menu .menu-item-has-children .active {
     @media (max-width:1024px) {
         display: block;
+    }
+}
+
+// fancybox
+
+.fancybox-content {
+    overflow: initial;
+}
+
+.dialog-formats.fancybox-content {
+    width: 100%;
+    padding: 30px;
+    overflow: initial;
+    border-radius: 12px;
+    @media (max-width:480px) {
+        padding: 16px;
+    }
+}
+
+.dialog-formats {
+    &--header {
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 20px;
+        @media (max-width:480px) {
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 0px;
+            @media (max-width:480px) {
+                font-size: 20px;
+            }
+        }
+    }
+    &--body {
+        margin-top: 20px;
+        padding: 10px 0px;
+        .flex-col-6 {
+            margin-top: 0px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 28px;
+            @media (max-width:480px) {
+                font-size: 16px;
+            }
+        }
+        .dialog-formats--text {
+            position: relative;
+            .dialog-formats--footer {
+                position: absolute;
+                bottom: 0px;
+                left: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                > div {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    @media (max-width:1024px) {
+        right: -10px;
+        top: -40px;
+    }
+}
+
+.header-add-product {
+    position: absolute;
+    background: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    color: #fff;
+    font-size: 14px;
+    right: -10px;
+    white-space: nowrap;
+    padding: 5px 10px;
+    top: 160%;
+    border-radius: 4px;
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        border: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        margin-left: -10px;
+        left: 83%;
+        border-bottom: 10px solid var(--mainColor);
+        top: -10px;
     }
 }

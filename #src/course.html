@@ -429,8 +429,8 @@
                                         <span>Без первого взноса</span>
                                     </div>
                                     <div class="format-btns gap-10">
-                                        <a href="#" class="btn-white mt-20">Подробнее о формате</a>
-                                        <a href="#" class="btn-white mt-20">Добавить в корзину</a>
+                                        <a data-fancybox data-src="#dialog-content" class="btn-white mt-20">Подробнее о формате</a>
+                                        <a href="#" class="btn-white btn-add-card mt-20">Добавлено в корзину</a>
                                     </div>
                                 </div>
                             </div>
@@ -458,7 +458,7 @@
                                         <span>Без первого взноса</span>
                                     </div>
                                     <div class="format-btns gap-10">
-                                        <a href="#" class="btn-white mt-20">Подробнее о формате</a>
+                                        <a data-fancybox data-src="#dialog-content" class="btn-white mt-20">Подробнее о формате</a>
                                         <a href="#" class="btn-white btn-blue mt-20">Добавить в корзину</a>
                                     </div>
                                 </div>
@@ -485,7 +485,7 @@
                                         <span>Без первого взноса</span>
                                     </div>
                                     <div class="format-btns gap-10">
-                                        <a href="#" class="btn-white mt-20">Подробнее о формате</a>
+                                        <a data-fancybox data-src="#dialog-content" class="btn-white mt-20">Подробнее о формате</a>
                                         <a href="#" class="btn-white mt-20">Добавить в корзину</a>
                                     </div>
                                 </div>
@@ -820,6 +820,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!--modals-->
+        <div id="dialog-content" class="dialog-formats" style="display:none; max-width:1200px">
+          <div class="dialog-formats--header">
+            <h2>Групповой</h2>
+          </div>
+          <div class="flex-row dialog-formats--body">
+            <div class="flex-col-6 cust-col-tablet-12 dialog-formats--text">
+                <p>Небольшая группа до 6 человек. Каждую неделю вам открывается доступ к учебному материалу, в конце каждой недели куратор собирает группу и дает фидбэк по каждому домашнему заданию.</p>
+                <div class="dialog-formats--footer">
+                    <div>Дата старта обучения</div>
+                    <div class="dialog-formats--data">24.02.23</div>
+                </div>
+            </div>
+            <div class="flex-col-6 cust-col-tablet-12 dialog-formats--img">
+                <img src="img/dialog-format-img.png" alt="">
+            </div>
+          </div>
         </div>
 
     </main>
