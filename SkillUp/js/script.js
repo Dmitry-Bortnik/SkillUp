@@ -975,7 +975,7 @@ if (window.innerWidth > 1024) {
         if (prevScrollPos > currentScrollPos) {
             document.querySelector(".header.fixed").style.transform = "translateY(0)";
         } else {
-            const headerHeight = document.querySelector(".header.fixed").offsetHeight + 60;
+            const headerHeight = document.querySelector(".header.fixed").offsetHeight - 54;
             document.querySelector(".header.fixed").style.transform = `translateY(-${headerHeight}px)`;
         }
       }
