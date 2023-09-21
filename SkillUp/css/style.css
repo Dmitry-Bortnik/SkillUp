@@ -4421,15 +4421,18 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 10px;
+  margin-bottom: 16px;
 }
 
 .format-learning-controls a {
   cursor: pointer;
   display: block;
+  padding: 4px 15px;
+  height: auto;
 }
 
 .simple-card {
@@ -6412,6 +6415,10 @@ form input {
   left: 83%;
   border-bottom: 10px solid var(--mainColor);
   top: -10px;
+}
+
+.laungage .woocommerce .wcml-dropdown.product {
+  margin: 0px;
 }
 
 @media (min-width: 480px) {

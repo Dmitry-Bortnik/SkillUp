@@ -4066,11 +4066,14 @@ iframe {
 
 .format-learning-controls {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 10px;
+    margin-bottom: 16px;
     a {
         cursor: pointer;
         display: block;
+        padding: 4px 15px;
+        height: auto;
     }
 }
 
@@ -6182,4 +6185,8 @@ form {
         border-bottom: 10px solid var(--mainColor);
         top: -10px;
     }
+}
+
+.laungage .woocommerce .wcml-dropdown.product {
+    margin: 0px;
 }
