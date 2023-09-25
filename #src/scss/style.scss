@@ -928,6 +928,14 @@ summary::marker {
     overflow: hidden;
     position: relative;
     display: none;
+    @media (max-width:768px) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 30px 0px;
+    }
     &.active {
         display: block;
     }
@@ -937,6 +945,8 @@ summary::marker {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        object-fit: cover;
+        height: 100%;
     }
 }
 
@@ -1806,7 +1816,9 @@ header a {
     flex-direction: column;
     top: 0px;
     left: 0px;
-
+    @media (max-width:768px) {
+        position: relative;
+    }
     .index-slider__title {
         font-family: var(--secondFont);
         background: rgba(255, 255, 255, 0.2);
