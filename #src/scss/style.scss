@@ -2228,6 +2228,9 @@ header a {
 .index-works {
     margin: 12.5rem 0rem;
     margin-bottom: -25px;
+    @media (min-width:769px) {
+        overflow: hidden;
+    }
     @media (max-width:480px) {
         margin: 6.25rem 0rem;
     }
@@ -2551,6 +2554,7 @@ iframe {
             img {
                 object-fit: cover;
                 height: 100%;
+                width: 100%;
             }
            }
         }

@@ -164,7 +164,7 @@ sliderResult.slick({
   responsive: [{
       breakpoint: 769,
       settings: {
-        dots: false,
+        dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -173,7 +173,7 @@ sliderResult.slick({
     {
       breakpoint: 480,
       settings: {
-        dots: false,
+        dots: true,
         slidesToShow: 2,
         slidesToScroll: 1,
       }
