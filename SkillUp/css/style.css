@@ -2632,6 +2632,12 @@ header a {
   border-radius: var(--borderRadiusM);
 }
 
+.section-about .flex-row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .index-basic-direction {
   margin: 4.68rem 0rem;
 }
