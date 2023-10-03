@@ -6211,3 +6211,20 @@ form {
 .laungage .woocommerce .wcml-dropdown.product {
     margin: 0px;
 }
+
+.result--item {
+    position: relative;
+}
+
+.course_search_datafetch_result {
+    max-width: 680px;
+    width: calc(100% - 32px);
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+.header__search-container {
+    position: relative;
+}
