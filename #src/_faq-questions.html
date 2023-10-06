@@ -6,9 +6,9 @@
         </div>
         <div class="faq-questions--right">
             <form class="main-form" action="#">
-                <input type="text" class="error" name="name" required placeholder="Имя*">
+                <input type="text" name="name" required placeholder="Имя*">
                 <input type="text" name="phone" required placeholder="Телефон*">
-                <input type="email" name="email" required placeholder="Электронная почта*">
+                <input type="email" class="error" name="email" required placeholder="Электронная почта*">
                 <div class="channel-connect">
                     <select name="connect-name" id="change-connect">
                         <option value="Telegram" data-placeholder="@username">Telegram</option>
@@ -22,6 +22,8 @@
                     <p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных </p>
                 </div>
             </form>
+            <div class="form-alert mt-20">Email не правильный</div>
+            <div class="faq-questions-submit">Спасибо, заявка успешно отправлена</div>
         </div>
     </div>
 </div>

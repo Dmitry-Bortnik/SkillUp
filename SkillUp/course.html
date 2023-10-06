@@ -901,9 +901,9 @@
         </div>
         <div class="faq-questions--right">
             <form class="main-form" action="#">
-                <input type="text" class="error" name="name" required placeholder="Имя*">
+                <input type="text" name="name" required placeholder="Имя*">
                 <input type="text" name="phone" required placeholder="Телефон*">
-                <input type="email" name="email" required placeholder="Электронная почта*">
+                <input type="email" class="error" name="email" required placeholder="Электронная почта*">
                 <div class="channel-connect">
                     <select name="connect-name" id="change-connect">
                         <option value="Telegram" data-placeholder="@username">Telegram</option>
@@ -917,6 +917,8 @@
                     <p>Нажимая на кнопку, я соглашаюсь на обработку персональных данных </p>
                 </div>
             </form>
+            <div class="form-alert mt-20">Email не правильный</div>
+            <div class="faq-questions-submit">Спасибо, заявка успешно отправлена</div>
         </div>
     </div>
 </div>
@@ -1098,7 +1100,7 @@
                             </a>
                             <a href="#">
                                 <svg class="icon">
-                                    <use xlink:href="../img/svgsprite/sprite.svg#mail"></use>
+                                    <use xlink:href="../img/svgsprite/sprite.svg#paint"></use>
                                 </svg>
                             </a>
                         </div>
@@ -1152,9 +1154,11 @@
     <p>Подпишитесь на рассылку, чтобы <span>первыми узнавать</span> новости о свежих поступлениях,
         <span>скидках и распродажах.</span></p>
     <form class="subscribe-form" action="#">
-        <input type="email" name="mail" required placeholder="Email">
+        <input class="error" type="email" name="mail" required placeholder="Email">
         <button class="subscribe-subtit" type="submit"></button>
     </form>
+    <div class="subscribe-form-submit">Форма успешно отправлена</div>
+    <div class="form-alert">Email не правильный</div>
     <p class="subscribe-copy">Нажимая на кнопку подписаться вы соглашаетесь с&nbsp;политикой конфидициальности.</p>
 </div>
                 </div>
