@@ -482,7 +482,7 @@ if ($sliderWorksCuratorsCourse.length) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         }
       },
       {
@@ -490,7 +490,7 @@ if ($sliderWorksCuratorsCourse.length) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         }
       }
     ]

@@ -546,7 +546,9 @@ a {
         align-items: center;
         flex-wrap: wrap;
         .title-container--link {
-            margin: 15px auto 10px auto;
+            @media (max-width:768px) {
+                margin: 15px auto 10px auto;
+            }
             a {
                 color: var(--mainColor);
                 opacity: 0.3;
@@ -3929,6 +3931,8 @@ iframe {
     &-img {
         max-width: 350px;
         width: 100%;
+        border-radius: var(--borderRadiusS);
+        overflow: hidden;
     }
     &-info {
         width: calc(100% - 410px);
@@ -6100,6 +6104,7 @@ form {
     @media (max-width:1024px) {
         display: block;
         margin-left: 20px;
+        cursor: pointer;
     }
 }
 
@@ -6271,4 +6276,18 @@ form {
 
 .header__search-container {
     position: relative;
+}
+
+.tab {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    .tablinks {
+        font-size: 16px;
+        &.active {
+            background: var(--mainColor);
+        }
+    }
 }
