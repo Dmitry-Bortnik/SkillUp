@@ -983,6 +983,7 @@ summary::marker {
         align-items: center;
         height: 100%;
         padding: 30px 0px;
+        max-height: 300px;
     }
     &.active {
         display: block;
@@ -3757,7 +3758,7 @@ iframe {
     }
     .btn-black {
         @media (max-width:480px) {
-            width: 270px;
+            max-width: 270px;
             margin: 30px auto 0px auto;
             text-align: center;
             display: block;
@@ -6293,4 +6294,201 @@ form {
             background: var(--mainColor);
         }
     }
+}
+
+// promocode order
+
+.wcml-dropdown a.wcml-cs-item-toggle:after {
+    display: none;
+}
+
+.woocommerce-form-coupon-toggle .woocommerce-info {
+    display: none;
+}
+.woocommerce form.checkout_coupon {
+    display: block !important;
+    width: calc(50% - 8px);
+    margin: 0px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: none;
+    @media (max-width:1024px) {
+        width: 100%;
+        gap: 16px;
+    }
+    p {
+        display: none;
+    }
+    .form-row.form-row-first {
+        width: calc(75% - 20px);
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        @media (max-width:768px) {
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            height: 38px;
+            border: 1px solid rgba(41, 41, 41, 0.2);
+            border-radius: var(--borderRadiusM);
+            padding: 0px 20px;
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+    }
+    .form-row.form-row-last {
+        width: 25%;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        @media (max-width:768px) {
+            width: 100%;
+        }
+        .button {
+            max-width: 323px;
+            color: #fff;
+            background: var(--mainColor);
+            border: 1px solid var(--mainColor);
+            border-radius: var(--borderRadiusM);
+            width: 100%;
+            height: 38px;
+            font-size: 14px;
+            cursor: pointer;
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            width: 100%;
+            margin-top: 0px;
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+    .clear {
+        display: none;
+    }
+}
+
+.basket__promo {
+    display: none;
+}
+
+
+// БЛОК ПОДАРОК
+
+.section-gift {
+    background: #F9F9F9;
+    background-size: cover;
+    padding: 20px;
+    border-radius: var(--borderRadiusS);
+    padding-right: 50%;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        background: url(../img/gift-bg.png) no-repeat;
+        width: 360px;
+        height: 240px;
+        position: absolute;
+        right: 150px;
+        top: 60px;
+    }
+    h3 {
+        font-size: 34px;
+        font-weight: 500;
+        margin: 30px 0px 0px 0px;
+        position: relative;
+        z-index: 1;
+    }
+    p {
+        margin: 20px 0px;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+    }
+    .gift-tags-list {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-gift {
+        padding-right: 40px;
+        h3 {
+            padding-right: 50px;
+        }
+        &::after {
+            content: "";
+            background: url(../img/gift-bg.png) no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 160px;
+            position: absolute;
+            right: -60px;
+            top: 20px;
+            z-index: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-gift {
+        padding-right: 20px;
+        &::after {
+            content: "";
+            background: url(../img/gift-bg.png) no-repeat;
+            background-size: cover;
+            width: 180px;
+            height: 160px;
+            position: absolute;
+            right: -60px;
+            top: 80px;
+        }
+    }
+}
+
+// sertificates
+
+.sertificate-href-item {
+    text-decoration: none;
+    
+    &:hover {
+        img {
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+    p {
+        color: #292929;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 8px 0px 0px 0px;
+    }
+    img {
+        border-radius: var(--borderRadiusS);
+        transition: all .2s;
+    }
+}
+
+.black-text {
+    color: var(--mainColor) !important;
+}
+
+// preloader
+
+.preloader-couses {
+    border-radius: var(--borderRadiusS);
+    border: 1px solid var(--mainColor);
+    background: var(--mainColor);
+    color: #fff;
+    padding: 6px 15px;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+    display: inline-block;
 }
