@@ -128,6 +128,10 @@ ul {
     }
 }
 
+.mb-2rem {
+    margin-bottom: 2rem;
+}
+
 .mt-0-md {
     @media (max-width:1024px) {
         margin-top: 0px !important;
@@ -136,6 +140,22 @@ ul {
 
 .pt-0 {
     padding-top: 0px !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
 }
 
 /* grid */
@@ -269,7 +289,10 @@ ul {
     .tablet-block {
         display: block ;
     }
-    
+
+    .tablet-none {
+        display: none !important;
+    }
 
 }
 
@@ -296,9 +319,19 @@ ul {
         padding-right: 16px;
     }
 
+    .cust-col-v-tablet-7 {
+        flex-basis: 58.33333%;
+        max-width: 58.33333%;
+    }
+
     .cust-col-v-tablet-6 {
         flex-basis: 50%;
         max-width: 50%;
+    }
+
+    .cust-col-v-tablet-5 {
+        flex-basis: 41.66666%;
+        max-width: 41.66666%;
     }
 
     .cust-col-v-tablet-12 {
@@ -785,6 +818,20 @@ a {
         background: #fff;
         color: var(--mainColor);
     }
+    &-xs {
+        font-size: 14px;
+        padding: 2px 12px;
+        border-radius: 12px;
+        background: var(--mainColor);
+        border: 1px solid var(--mainColor) !important;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            background: #fff;
+            color: var(--mainColor);
+            border: 1px solid var(--mainColor);
+        }
+    }
 }
 
 .btn-yellow {
@@ -826,6 +873,21 @@ a {
             border: 1px solid #406AFF;
             background: #406AFF;
             opacity: 0.8; 
+        }
+    }
+    &-xs {
+        font-size: 14px;
+        padding: 2px 12px;
+        border-radius: 12px;
+        background: none;
+        border: 1px solid var(--greyColor);
+        color: var(--mainColor);
+        text-decoration: none;
+        border-bottom: 1px solid var(--greyColor);
+        &:hover, &.active {
+            background: var(--mainColor);
+            border: 1px solid var(--mainColor);
+            color: #fff;
         }
     }
 }
@@ -6491,4 +6553,213 @@ form {
     font-size: 16px;
     margin: 20px 0px 0px 0px;
     display: inline-block;
+}
+
+// personal
+
+.personal-links {
+    padding: 20px;
+    border-radius: var(--borderRadiusM);
+    background: #fff;
+    margin-bottom: 5px;
+    width: 100%;
+    @media (max-width:768px) and (min-width: 481px) {
+        margin-bottom: 0px;
+    }
+    a {
+        padding: 20px 0px;
+        font-size: 16px;
+        color: var(--mainColor);
+        border-top: 1px solid #E8E8E8;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.2s;
+        opacity: 0.5;
+        &.active {
+            opacity: 1;
+        }
+        &:first-child {
+            padding-top: 0px;
+            border-top: 0px;
+        }
+        &:last-child {
+            padding-bottom: 0px;
+        }
+    }
+    @media (max-width:1024px) {
+        margin-top: 5px;
+    }
+}
+
+.card {
+    padding: 20px;
+    border-radius: var(--borderRadiusM);
+    background: #fff;
+    margin-bottom: 20px;
+    p {
+        font-weight: 500;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid;
+        color: var(--mainColor);
+    }
+    h2 {
+        margin: 0px 0px 2rem 0px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.personal-banner {
+    width: 100%;
+    display: block;
+
+    img {
+        width: 100%;
+    }
+    @media (max-width:768px) and (min-width: 481px) {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.personal-order, .personal-order-cashback {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            text-align: left;
+            color: #A0A0A0;
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 20px;
+            &:last-child {
+                text-align: right;
+            }
+        }
+        td {
+            padding: 20px 5px;
+            border-top: 1px solid #E8E8E8;
+            font-size: 14px;
+            min-width: 130px;
+            font-weight: 500;
+        }
+    }
+}
+
+.personal-order-cashback {
+    td {
+        &:last-child {
+            text-align: right;
+        }
+    }
+}
+
+.personal-order-control {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    .btn-black-xs {
+        color: #fff;
+        &:hover {
+            color: var(--mainColor);
+        }
+    }
+    .btn-white-xs {
+        border-bottom: 1px solid var(--greyColor);
+        &:hover {
+            color: #fff;
+            border-bottom: 1px solid var(--mainColor);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .personal-order table thead {
+        display: none;
+    }
+    .personal-order table tr {
+        display: block;
+        &:last-child {
+            td {
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    .card-personal-order .personal-order table tr {
+        background: #fff;
+        margin-bottom: 20px;
+        border-radius: var(--borderRadiusM);
+        padding: 20px;
+        &:last-child td {
+            padding-bottom: 0px;
+        }
+    }
+
+    .personal-order table td {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        
+    }
+    .card-personal-order .personal-order table td {
+        &:first-child {
+            border-top: 0px;
+            padding-top: 0px;
+        }
+    }
+
+    .personal-order table td::before {
+        content: attr(data-label);
+        margin-right: 20px;
+        color: #A0A0A0;
+    }
+    .card-personal-order {
+        background: none;
+        border-radius: 0px;
+        padding: 0px;
+    }
+}
+
+.form-row {
+    label {
+        margin: 0px 0px 5px 0px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        display: block;
+    }
+    input {
+        margin-bottom: 0px;
+        height: 38px;
+        font-weight: 400;
+    }
+    p {
+        color: #000;
+        opacity: 0.4;
+        font-size: 14px;
+        line-height: 150%; 
+        margin: 5px 0px;
+    }
 }

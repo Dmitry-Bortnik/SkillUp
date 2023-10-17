@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Up School - Работы студентов</title>
+    <title>Skills Up School - Личный кабинет</title>
     <link rel="stylesheet" href="css/style.css?v=1">
 </head>
 
@@ -218,281 +218,78 @@
     <main class="main">
         <div class="container">
             <div class="breadcrumbs">
-                <a href="#">Главная</a> / <span>Результаты студентов</span>
+                <a href="#">Главная</a> / <span>Личный кабинет</span>
             </div>
             <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Главная</a>
         </div>
+
         <div class="container">
-            <div class="results section--inner">
+            <div class="section--inner">
                 <div class="flex-row title-container align-center">
                     <div class="flex-col-12">
-                        <h1 class="title">Результаты студентов</h1>
-                    </div>
-                    <div class="flex-col-9 mt-auto cust-col-tablet-12">
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Направление</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="Рисунок">
-                                    <span class="content">Рисунок</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="2D Графика">
-                                    <span class="content">2D Графика</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="3D Графика">
-                                    <span class="content">3D Графика</span>
-                                </label>
-                            </div>
-                        </details>
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Уровень</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Junior">
-                                    <span class="content">Junior</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Middle">
-                                    <span class="content">Middle</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="High">
-                                    <span class="content">High</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Pro">
-                                    <span class="content">Pro</span>
-                                </label>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="flex-col-3 mt-auto cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
-                        <div class="result-slider__control xl-flex xl-align-center">
-                            <div id="result-slider-prev" class="result-slider__control__prev"></div>
-                            <div id="result-slider-noms" class="result-slider__control__noms"> </div>
-                            <div id="result-slider-next" class="result-slider__control__next"></div>
-                        </div>
+                        <h1 class="title">Мой аккаунт</h1>
                     </div>
                 </div>
-                <div id="result-slider" class="result-slider slider">
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-4.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-              
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="results section--inner">
-                <div class="flex-row title-container align-center">
-                    <div class="flex-col-12">
-                        <h2 class="title">Работы Кураторов</h2>
-                    </div>
-                    <div class="flex-col-9 mt-auto cust-col-tablet-12">
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Направление</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="Рисунок">
-                                    <span class="content">Рисунок</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="2D Графика">
-                                    <span class="content">2D Графика</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="napravlenie" value="3D Графика">
-                                    <span class="content">3D Графика</span>
-                                </label>
+                <div class="flex-row">
+                    <div class="flex-col-3 cust-col-v-tablet-12">
+                        <div class="flex-row help-fixed sticky-top" style="top: 90px;">
+                            <div class="flex-col-12 cust-col-v-tablet-7 cust-col-mobile-12 ">
+                                <div class="personal-links">
+                                    <a href="personal.html"><span><img src="img/personal/profile.svg" alt=""></span>Профиль</a>
+                                    <a href="personal-2.html"><span><img src="img/personal/orders.svg" alt=""></span> Заказы</a>
+                                    <a href="personal-3.html" class="active"><span><img src="img/personal/cashback.svg" alt=""></span> Кэшбек</a>
+                                    <a href="personal-4.html"><span><img src="img/personal/settings.svg" alt=""></span> Настройки</a>
+                                </div>
                             </div>
-                        </details>
-                        <details class="multiple-select">
-                            <summary>
-                                <div class="multiple--title">Уровень</div>
-                                <div class="multiple--selected"></div>
-                            </summary>
-                            <div class="multiple-select-dropdown">
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Junior">
-                                    <span class="content">Junior</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Middle">
-                                    <span class="content">Middle</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="High">
-                                    <span class="content">High</span>
-                                </label>
-                                <label>
-                                    <input type="radio" hidden name="levl" value="Pro">
-                                    <span class="content">Pro</span>
-                                </label>
+                            <div class="flex-col-12 cust-col-v-tablet-5 mobile-none">
+                                <a class="personal-banner" href="#"><img src="img/personal-banner.png" alt=""></a>
                             </div>
-                        </details>
-                    </div>
-                    <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start">
-                        <div class="result-slider__control xl-flex xl-align-center">
-                            <div id="works-curators-prev" class="result-slider__control__prev"></div>
-                            <div id="works-curators-noms" class="result-slider__control__noms"> </div>
-                            <div id="works-curators-next" class="result-slider__control__next"></div>
                         </div>
+                    </div>
+                    <div class="flex-col-9 cust-col-v-tablet-12">
+                        <div class="card fw-500">
+                            <div class="flex-row">
+                                <div class="flex-col-6">
+                                    Всего накоплено:
+                                </div>
+                                <div class="flex-col-6 text-right">
+                                    3 690.00 ₽
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="personal-order-cashback">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                        <th>Дата</th>
+                                        <th>Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12.12.23</td>
+                                            <td>+ 1 230.00 ₽</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12.12.23</td>
+                                            <td>+ 1 230.00 ₽</td>
+                                        </tr>
+                                         <tr>
+                                            <td>12.12.23</td>
+                                            <td>+ 1 230.00 ₽</td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-12 none mobile-block">
+                        <a class="personal-banner" href="#"><img src="img/personal-banner.png" alt=""></a>
                     </div>
                 </div>
-                <div id="result-slider-2" class="result-slider slider">
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-4.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="result--item">
-                            <img src="img/result-6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-
-        <div class="container">
-    <div class="section--inner">
-        <div class="flex-row title-container align-center">
-            <div class="flex-col-9 cust-col-tablet-12">
-                <h2 class="title">Смежные курсы</h2>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-12 xl-flex xl-jst-end x-jst-start tablet-none">
-                <a class="link-arrow-white" href="#">Все курсы</a>
-            </div>
-        </div>
-        <div class="our-courses__list similar-products-slider flex-row">
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="sale-tag">- 30%</span>
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
-                    <div class="our-courses__image">
-                        <img src="img/course-1.png" alt="">
-                    </div>
-                    <div class="our-courses__name">
-                        Стилизованный 3D-персонаж
-                    </div>
-                    <div class="our-courses__prices">
-                        <div class="our-courses__sale-price">от 4 250 <span class="rouble">i</span> в месяц</div>
-                    </div>
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
-                    <div class="our-courses__image">
-                        <img src="img/course-2.png" alt="">
-                    </div>
-                    <div class="our-courses__name">
-                        Стилизованный 3D-персонаж
-                    </div>
-                    <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
-                    </div>
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
-                    <div class="our-courses__image">
-                        <img src="img/course-3.png" alt="">
-                    </div>
-                    <div class="our-courses__name">
-                        Стилизованный 3D-персонаж
-                    </div>
-                    <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
-                    </div>
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
-                    <div class="our-courses__image">
-                        <img src="img/course-4.png" alt="">
-                    </div>
-                    <div class="our-courses__name">
-                        Стилизованный 3D-персонаж
-                    </div>
-                    <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
 
     </main>
     <footer class="footer">

@@ -1,0 +1,101 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Up School - Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+
+<body>
+    @@include('_header.html')
+    <main class="main">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#">Главная</a> / <span>Личный кабинет</span>
+            </div>
+            <a class="breadcrumbs-m" href="#" onclick="window.history.back()">Главная</a>
+        </div>
+
+        <div class="container">
+            <div class="section--inner">
+                <div class="flex-row title-container align-center">
+                    <div class="flex-col-12">
+                        <h1 class="title">Мой аккаунт</h1>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="flex-col-3 cust-col-v-tablet-12">
+                        <div class="flex-row help-fixed sticky-top" style="top: 90px;">
+                            <div class="flex-col-12 cust-col-v-tablet-7 cust-col-mobile-12 ">
+                                <div class="personal-links">
+                                    <a href="personal.html"><span><img src="img/personal/profile.svg" alt=""></span>Профиль</a>
+                                    <a href="personal-2.html" class="active"><span><img src="img/personal/orders.svg" alt=""></span> Заказы</a>
+                                    <a href="personal-3.html"><span><img src="img/personal/cashback.svg" alt=""></span> Кэшбек</a>
+                                    <a href="personal-4.html"><span><img src="img/personal/settings.svg" alt=""></span> Настройки</a>
+                                </div>
+                            </div>
+                            <div class="flex-col-12 cust-col-v-tablet-5 mobile-none">
+                                <a class="personal-banner" href="#"><img src="img/personal-banner.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-9 cust-col-v-tablet-12">
+                        <div class="card card-personal-order">
+                            <div class="personal-order">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                      <th>Заказ</th>
+                                      <th>Дата</th>
+                                      <th>Статус</th>
+                                      <th>Сумма</th>
+                                      <th>Дополнительно</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                      <td data-label="Заказ">№6200</td>
+                                      <td data-label="Дата">12.12.23</td>
+                                      <td data-label="Статус">5 дней</td>
+                                      <td data-label="Сумма">Ожидается оплата</td>
+                                      <td data-label="Дополнительно">
+                                        <div class="personal-order-control">
+                                            <a href="#" class="btn-black-xs">Оплатить</a>
+                                            <a href="#" class="btn-white-xs">Отменить</a>
+                                            <a href="personal-2-single.html" class="btn-white-xs">Просмотр</a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Заказ">№6200</td>
+                                        <td data-label="Дата">12.12.23</td>
+                                        <td data-label="Статус">5 дней</td>
+                                        <td data-label="Сумма">Ожидается оплата</td>
+                                        <td data-label="Дополнительно">
+                                          <div class="personal-order-control">
+                                            <a href="personal-2-single.html" class="btn-white-xs">Просмотр</a>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col-12 none mobile-block">
+                        <a class="personal-banner" href="#"><img src="img/personal-banner.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    @@include('_footer.html')
+    @@include('_modal.html')
+    @@include('_feedbacks-modal.html')
+    @@include('_scripts.html')
+</body>
+
+</html>
