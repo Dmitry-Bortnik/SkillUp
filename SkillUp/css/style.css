@@ -5519,6 +5519,12 @@ form input {
   margin-bottom: 30px;
 }
 
+.article-card-small h4 {
+  margin: 0px 0px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .article-card-small p {
   font-size: 16px;
   margin-bottom: 20px;
@@ -6931,6 +6937,22 @@ form input {
   font-size: 14px;
   line-height: 150%;
   margin: 5px 0px;
+}
+
+.default-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.default-radio input {
+  width: 14px;
+  height: 14px;
+  margin: 0px;
 }
 
 @media (min-width: 480px) {

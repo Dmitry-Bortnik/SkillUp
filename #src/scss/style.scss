@@ -5262,6 +5262,11 @@ form {
     border-radius: 14px;
     background: #FFF;
     margin-bottom: 30px;
+    h4 {
+        margin: 0px 0px 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
     @media (max-width:480px) {
         padding: 20px;
     }
@@ -6784,5 +6789,16 @@ form {
         font-size: 14px;
         line-height: 150%; 
         margin: 5px 0px;
+    }
+}
+
+.default-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input {
+        width: 14px;
+        height: 14px;
+        margin: 0px;
     }
 }
