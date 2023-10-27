@@ -638,7 +638,7 @@ a {
     font-family: var(--secondFont);
     margin: 0px;
     @media (max-width:480px) {
-        font-size: 38px;
+        font-size: 32px;
         text-align: center;
     }
 }
@@ -3695,12 +3695,9 @@ iframe {
 }
 
 .channel-connect, #change-connect_field {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
     select {
-        max-width: 323px;
+        max-width: 100%;
         height: 38px;
         width: 100%;
         border: 1px solid rgba(41, 41, 41, 0.2);
@@ -3847,6 +3844,7 @@ iframe {
     .main_text {
         @media (max-width:480px) {
             text-align: center;
+            color: #000 !important;
         }
     }
 }
@@ -6883,10 +6881,20 @@ form {
     float: none;
 }
 
-.checkout_coupon form .form-row-last, .woocommerce-page form .form-row-last  {
+.checkout_coupon form .form-row-last, .checkout_coupon form .form-row-last  {
     float: none;
 }
 
+.main-form--actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    p {
+        font-size: 14px;
+    }
+  }
+
+  
 #billing_phone_field .iti {
     width: 100%;
 }
@@ -6931,4 +6939,38 @@ form {
     a {
         color: var(--mainColor);
     }
+}
+
+.woocommerce .woocommerce-form-coupon .form-row {
+  margin:0px !important;
+}
+
+#change-connect_field .woocommerce-input-wrapper {
+    width: 100%;
+}
+
+.woocommerce-form-coupon form .form-row-last {
+    float: none;
+}
+
+.main-form--actions button#place_order {
+    background: #292929;
+    border-radius: 12px;
+  }
+
+.default-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input {
+        width: auto;
+        height: auto;
+        margin: 0px;
+    }
+}
+
+#result-slider img {
+    width: auto;
+    height: 100%;
+    display: inline-block;
 }
