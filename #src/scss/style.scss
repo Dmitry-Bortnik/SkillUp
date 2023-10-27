@@ -5186,19 +5186,17 @@ form {
     height: 550px;
     background: url(../img/cover_event.jpg) no-repeat center;
     background-size: cover;
-    padding: 100px 30px 50px 30px;
+    padding: 100px 30px 30px 30px;
     display: flex;
     align-items: flex-end;
     border-radius: 14px;
-    margin-bottom: 6.25rem;
-    @media (max-width:768px) {
-        margin-bottom: 4.68rem;
-    }
+    margin-bottom: 60px;
     @media (max-width:480px) {
         height: 450px;
         align-items: center;
         justify-content: center;
         padding: 60px 20px 60px 20px;
+        margin-bottom: 30px;
         .btn-black {
             margin: 30px auto 0px auto; 
             display: table;
@@ -5299,11 +5297,22 @@ form {
             margin-bottom: 0px;
         }
     }
+    table {
+        width: 100%;
+        text-align: left;
+        th {
+            opacity: 0.5;
+            font-weight: 500;
+        }
+    }
 }
 
 .article-card--inner {
     border-bottom: 1px solid #E8E8E8;
     padding: 30px 0px;
+    a:not(.btn) {
+        color: var(--mainColor);
+    }
     &:last-child {
         border-bottom: 0px;
         padding-bottom: 0px;

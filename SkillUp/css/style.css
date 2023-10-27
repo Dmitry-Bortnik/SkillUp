@@ -5544,7 +5544,7 @@ form input {
   height: 550px;
   background: url(../img/cover_event.jpg) no-repeat center;
   background-size: cover;
-  padding: 100px 30px 50px 30px;
+  padding: 100px 30px 30px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5552,7 +5552,7 @@ form input {
       -ms-flex-align: end;
           align-items: flex-end;
   border-radius: 14px;
-  margin-bottom: 6.25rem;
+  margin-bottom: 60px;
 }
 
 .event-cover h1 {
@@ -5640,9 +5640,23 @@ form input {
   margin-bottom: 0px;
 }
 
+.article-card-small table {
+  width: 100%;
+  text-align: left;
+}
+
+.article-card-small table th {
+  opacity: 0.5;
+  font-weight: 500;
+}
+
 .article-card--inner {
   border-bottom: 1px solid #E8E8E8;
   padding: 30px 0px;
+}
+
+.article-card--inner a:not(.btn) {
+  color: var(--mainColor);
 }
 
 .article-card--inner:last-child {
@@ -8607,10 +8621,6 @@ form input {
     padding: 26px;
   }
 
-  .event-cover {
-    margin-bottom: 4.68rem;
-  }
-
   .event-cover h1 {
     font-size: 38px;
   }
@@ -9332,6 +9342,7 @@ form input {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 60px 20px 60px 20px;
+    margin-bottom: 30px;
   }
 
   .event-cover .btn-black {
