@@ -1875,7 +1875,6 @@ header a {
         max-width: calc(50% - 15px);
         border-radius: 20px;
         width: 100%;
-        background: #E9E9E9;
         position: relative;
         img {
             position: absolute;
@@ -5600,9 +5599,6 @@ form {
             @media (max-width:480px) {
                 font-size: 16px;
             }
-            &:last-child {
-                padding-bottom: 0px;
-            }
         }
     }
     .help-search {
@@ -6969,8 +6965,14 @@ form {
     }
 }
 
-#result-slider img {
+#result-slider img, #result-slider-2 img  {
     width: auto;
     height: 100%;
     display: inline-block;
+}
+
+.entry-content {
+    a {
+        color: var(--mainColor);
+    }
 }

@@ -2717,7 +2717,6 @@ header a {
   max-width: calc(50% - 15px);
   border-radius: 20px;
   width: 100%;
-  background: #E9E9E9;
   position: relative;
 }
 
@@ -5928,10 +5927,6 @@ form input {
   opacity: 0.85;
 }
 
-.help-item .help-list a:last-child {
-  padding-bottom: 0px;
-}
-
 .help-item .help-search input {
   height: 38px;
 }
@@ -7208,10 +7203,15 @@ form input {
   margin: 0px;
 }
 
-#result-slider img {
+#result-slider img,
+#result-slider-2 img {
   width: auto;
   height: 100%;
   display: inline-block;
+}
+
+.entry-content a {
+  color: var(--mainColor);
 }
 
 @media (min-width: 480px) {
