@@ -982,3 +982,54 @@ if (window.innerWidth > 1024) {
       prevScrollPos = currentScrollPos;
   }
 }
+
+// basket counter
+
+const counters = document.querySelectorAll('.basket__counter');
+
+counters.forEach(counter => {
+    const decrementButton = counter.querySelector('.decrement');
+    const incrementButton = counter.querySelector('.increment');
+    const countInput = counter.querySelector('.count');
+
+    decrementButton.addEventListener('click', () => {
+      updateCounter(-1);
+    });
+
+    incrementButton.addEventListener('click', () => {
+        updateCounter(1);
+    });
+
+    countInput.addEventListener('input', () => {
+        updateCounter(0);
+    });
+
+    function updateCounter(change) {
+        let count = parseInt(countInput.value, 10) || 0;
+        count = Math.max(count + change, 0);
+        countInput.value = count;
+    }
+});
+
+// стилизация label radio
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Найти все радиокнопки
+  var radioInputs = document.querySelectorAll('input[type="radio"]');
+
+  // Перебрать радиокнопки и добавить обработчик события
+  radioInputs.forEach(function (radioInput) {
+      radioInput.addEventListener("change", function () {
+          // Удалить класс "active" у всех label
+          var labels = document.querySelectorAll('label');
+          labels.forEach(function (label) {
+              label.classList.remove("active");
+          });
+
+          // Если радиокнопка выбрана, добавить класс "active" к ближайшему label
+          if (radioInput.checked) {
+              radioInput.parentElement.classList.add("active");
+          }
+      });
+  });
+});
