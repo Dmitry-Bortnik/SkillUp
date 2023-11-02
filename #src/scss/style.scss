@@ -860,7 +860,7 @@ a {
     }
 }
 
-.btn-white {
+.woocommerce-button.btn-white, .btn-white {
     padding: 8px 15px;
     border-radius: 12px;
     background: none;
@@ -4703,6 +4703,7 @@ iframe {
 }
 
 .basket__summ {
+    margin-top: 16px;
     .btn-white {
         width: 100%;
         font-size: 16px;
@@ -6657,6 +6658,11 @@ form {
     @media (max-width:768px) and (min-width: 481px) {
         margin-bottom: 0px;
     }
+    ul {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
     a {
         padding: 20px 0px;
         font-size: 16px;
@@ -6811,7 +6817,7 @@ form {
         display: flex;
         justify-content: space-between;
         font-size: 14px;
-        
+        gap: 12px;
     }
     .card-personal-order .personal-order table td {
         &:first-child {
@@ -6824,6 +6830,7 @@ form {
         content: attr(data-label);
         margin-right: 20px;
         color: #A0A0A0;
+        flex: auto;
     }
     .card-personal-order {
         background: none;
@@ -7054,7 +7061,10 @@ form {
 }
 
 .entry-content {
-    a {
+    a:not(.btn-black) {
+        color: var(--mainColor);
+    }
+    a:not(.btn-black-xs) {
         color: var(--mainColor);
     }
 }
@@ -7262,4 +7272,119 @@ input::-webkit-inner-spin-button {
     background: #F3F3F3;
     font-size: 14px;
     line-height: 157%;
+}
+
+.woocommerce table.shop_table th {
+    font-weight: 500;
+}
+
+.woocommerce table.shop_table {
+    border-collapse: collapse;
+    border: none;
+    margin: 0px;
+}
+
+.woocommerce-Button {
+    margin-top: 16px !important;
+    border-radius: 12px !important;
+    background: #292929 !important;
+    color: #fff !important;
+}
+
+#mycred-partial-payment-wrapper {
+    margin-top: 24px;
+    #mycred-range-selector {
+        margin-bottom: 0px;
+        width: 280px;
+        input {
+            margin-bottom: 0px;
+        }
+    }
+    > div {
+        &:nth-child(2) {
+            gap: 16px;
+            .button.button-primary {
+                background: #292929;
+                border-radius: 12px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+#continue-pay {
+    margin-top: 16px;
+}
+
+.woocommerce-MyAccount-navigation-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 20px 0px;
+    margin: 0px;
+    &:first-child {
+        padding-top: 0px;
+    }
+    &:last-child {
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+    &.is-active a {
+        opacity: 1;
+    }
+ }
+ 
+ .woocommerce-MyAccount-navigation-link--dashboard:before {
+   content: '';
+   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzE4MDZfMTkwNjQpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzAwMCI+PHBhdGggZD0iTTEwLjUgNS43NWEzIDMgMCAxMS02IDAgMyAzIDAgMDE2IDB6bS0uNzUgMGEyLjI1IDIuMjUgMCAxMS00LjUgMCAyLjI1IDIuMjUgMCAwMTQuNSAweiIvPjxwYXRoIGQ9Ik0xNSA4YTcuNDY2IDcuNDY2IDAgMDEtMS43MTMgNC43N0E3LjQ4NSA3LjQ4NSAwIDAxNy41IDE1LjVhNy40ODkgNy40ODkgMCAwMS02LTNBNy41IDcuNSAwIDExMTUgOHptLTcuNSA2Ljc1aC4wMTJhNi43MzMgNi43MzMgMCAwMDUuMDItMi4yNUE2LjczMiA2LjczMiAwIDAwNy41IDEwLjI1YTYuNzMyIDYuNzMyIDAgMDAtNS4wMzEgMi4yNSA2LjczMyA2LjczMyAwIDAwNS4wMTkgMi4yNUg3LjV6bTAtNS4yNWE3LjQ4IDcuNDggMCAwMTUuNTA1IDIuNDA3IDYuNzUgNi43NSAwIDEwLTExLjAxIDBBNy40OCA3LjQ4IDAgMDE3LjUgOS41eiIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwXzE4MDZfMTkwNjQiPjxwYXRoIGZpbGw9IiNmZmYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLjUpIiBkPSJNMCAwaDE1djE1SDB6Ii8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+);
+   background-repeat: no-repeat;
+   width: 16px;
+   height: 16px;
+   font-size: 16px;
+ } 
+
+ .woocommerce-MyAccount-navigation-link--orders:before {
+    content: '';
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEwLjYzIDUuMzM4aC0uNzg1YS41MzMuNTMzIDAgMDAtLjQzMy4yMjJMNi43OCA5LjIxIDUuNTg4IDcuNTU2YS41MzUuNTM1IDAgMDAtLjQzMy0uMjIzaC0uNzg2YS4xMzQuMTM0IDAgMDAtLjEwOC4yMTNsMi4wODUgMi44OTNhLjUzMi41MzIgMCAwMC44NjYgMGwzLjUyNi00Ljg4OWEuMTMzLjEzMyAwIDAwLS4xMDctLjIxMnoiIGZpbGw9IiMyODI4MjgiLz48cGF0aCBkPSJNNy41LjVhNy41IDcuNSAwIDEwLjAwMSAxNS4wMDFBNy41IDcuNSAwIDAwNy41LjV6bTAgMTMuNzI4YTYuMjI5IDYuMjI5IDAgMDEwLTEyLjQ1NiA2LjIyOSA2LjIyOSAwIDAxMCAxMi40NTZ6IiBmaWxsPSIjMjgyODI4Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.woocommerce-MyAccount-navigation-link--cashback:before {
+    content: '';
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjMxOCA1Ljc1aC0yLjg5N3YtLjNDMTEuNDIgMy41NDUgOS42NjUgMiA3LjUgMlMzLjU4IDMuNTQ1IDMuNTggNS40NXYuM0guNjgyYy0uMzc3IDAtLjY4Mi4yNjgtLjY4Mi42VjE2LjRjMCAuMzMyLjMwNS42LjY4Mi42aDEzLjYzNmMuMzc3IDAgLjY4Mi0uMjY4LjY4Mi0uNlY2LjM1YzAtLjMzMi0uMzA1LS42LS42ODItLjZ6bS05LjIwNC0uM2MwLTEuMTYgMS4wNjctMi4xIDIuMzg2LTIuMSAxLjMxOSAwIDIuMzg2Ljk0IDIuMzg2IDIuMXYuM0g1LjExNHYtLjN6bTguMzUyIDEwLjJIMS41MzRWNy4xSDMuNTh2MS42NWMwIC4wODIuMDc2LjE1LjE3LjE1aDEuMTkzYy4wOTQgMCAuMTctLjA2OC4xNy0uMTVWNy4xaDQuNzczdjEuNjVjMCAuMDgyLjA3Ny4xNS4xNy4xNWgxLjE5NGMuMDk0IDAgLjE3LS4wNjguMTctLjE1VjcuMWgyLjA0NnY4LjU1eiIgZmlsbD0iIzI4MjgyOCIvPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 18px;
+    font-size: 16px;
+}
+
+.woocommerce-MyAccount-navigation-link--edit-account:before {
+    content: '';
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01LjI1IDguNWEyLjI1IDIuMjUgMCAxMTQuNSAwIDIuMjUgMi4yNSAwIDAxLTQuNSAwek03LjUgMTBhMS41IDEuNSAwIDExMC0zIDEuNSAxLjUgMCAwMTAgM3oiIGZpbGw9IiMwMDAiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjIxMiAyLjY2NmEuNzUuNzUgMCAwMTEuMDYxIDBsMS4wNiAxLjA2MWEuNzUuNzUgMCAwMTAgMS4wNkMxMi41MTggNS42MDUgMTMuMDk2IDcgMTQuMjUgN2EuNzUuNzUgMCAwMS43NS43NXYxLjVhLjc1Ljc1IDAgMDEtLjc1Ljc1Yy0xLjE1NSAwLTEuNzMzIDEuMzk2LS45MTYgMi4yMTJhLjc1Ljc1IDAgMDEwIDEuMDYxbC0xLjA2MSAxLjA2YS43NS43NSAwIDAxLTEuMDYgMEMxMC4zOTUgMTMuNTE4IDkgMTQuMDk2IDkgMTUuMjVhLjc1Ljc1IDAgMDEtLjc1Ljc1aC0xLjVhLjc1Ljc1IDAgMDEtLjc1LS43NWMwLTEuMTU1LTEuMzk2LTEuNzMzLTIuMjEyLS45MTZhLjc1Ljc1IDAgMDEtMS4wNjEgMGwtMS4wNi0xLjA2MWEuNzUuNzUgMCAwMTAtMS4wNkMyLjQ4MiAxMS4zOTUgMS45MDQgMTAgLjc1IDEwQS43NS43NSAwIDAxMCA5LjI1di0xLjVBLjc1Ljc1IDAgMDEuNzUgN2MxLjE1NSAwIDEuNzMzLTEuMzk2LjkxNi0yLjIxMmEuNzUuNzUgMCAwMTAtMS4wNjFsMS4wNjEtMS4wNmEuNzUuNzUgMCAwMTEuMDYgMEM0LjYwNSAzLjQ4MiA2IDIuOTA0IDYgMS43NUEuNzUuNzUgMCAwMTYuNzUgMWgxLjVhLjc1Ljc1IDAgMDEuNzUuNzVjMCAxLjE1NSAxLjM5NiAxLjczMyAyLjIxMi45MTZ6TS43NSA3Ljc1YzEuODIzIDAgMi43MzYtMi4yMDQgMS40NDctMy40OTNsMS4wNi0xLjA2YzEuMjkgMS4yODkgMy40OTMuMzc2IDMuNDkzLTEuNDQ3aDEuNWMwIDEuODIzIDIuMjA0IDIuNzM2IDMuNDkzIDEuNDQ3bDEuMDYgMS4wNmMtMS4yODkgMS4yOS0uMzc2IDMuNDkzIDEuNDQ3IDMuNDkzdjEuNWMtMS44MjMgMC0yLjczNiAyLjIwNC0xLjQ0NyAzLjQ5M2wtMS4wNiAxLjA2Yy0xLjI5LTEuMjg5LTMuNDkzLS4zNzYtMy40OTMgMS40NDdoLTEuNWMwLTEuODIzLTIuMjA0LTIuNzM2LTMuNDkzLTEuNDQ3bC0xLjA2LTEuMDZDMy40ODYgMTEuNDUzIDIuNTczIDkuMjUuNzUgOS4yNXYtMS41eiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 18px;
+    font-size: 16px;
+}
+
+.woocommerce-MyAccount-navigation-link--points, .woocommerce-MyAccount-navigation-link--customer-logout {
+    display: none;
+}
+
+.woocommerce table.my_account_orders td, .woocommerce table.my_account_orders th {
+    padding: 6px 0px !important;
+}
+
+.woocommerce table.my_account_orders td, .woocommerce table.my_account_orders th {
+    padding: 20px 5px;
+}
+
+.woocommerce table.shop_table td {
+    @media (max-width:480px) {
+        padding: 9px 0px;
+    }
 }
