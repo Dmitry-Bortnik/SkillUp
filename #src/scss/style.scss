@@ -2680,15 +2680,7 @@ iframe {
         margin: 0px -15px;
         .result--item {
             margin: 0px 15px;
-           @media (max-width:768px) {
-            width: 320px;
-            height: 380px;
-            img {
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-            }
-           }
+          
         }
     }
     @media (max-width: 768px) {
@@ -3743,7 +3735,7 @@ iframe {
             margin-bottom: 20px;
         }
     }
-    input {
+    input[type=text] {
         width: calc(100% - 343px);
         @media (max-width:1024px) {
             width: calc(100% - 265px);
@@ -4251,6 +4243,9 @@ iframe {
     .btn-white {
         font-size: 14px;
     }
+    > * {
+        margin-top: 0px !important;
+    }
 }
 
 .format-learning-controls {
@@ -4534,6 +4529,7 @@ iframe {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 12px;
         &--image {
             width: 60px;
             height: 60px;
@@ -4556,7 +4552,7 @@ iframe {
         }
         &--info {
             width: calc(100% - 163px);
-            margin-right: 20px;
+            margin-right: 0px;
             color: var(--mainColor);
             text-decoration: none;
             @media (max-width:480px) {
@@ -4755,6 +4751,7 @@ iframe {
 .payment-item--label {
     position: relative;
     cursor: pointer;
+    width: 100%;
     input {
         position: absolute;
         opacity: 0;
@@ -5103,8 +5100,8 @@ iframe {
 }
 
 form {
-    input {
-        height: 50px;
+    input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number] {
+        height: 38px;
         padding: 10px 20px;
         margin-bottom: 20px;
         width: 100%;
@@ -6270,6 +6267,9 @@ form {
 .wpcf7-spinner {
     margin-right: 0px;
     min-width: 24px;
+    position: absolute;
+    right: 0;
+    display: none;
 }
 
 .result-simple--item {
@@ -6422,6 +6422,15 @@ form {
 
 .result--item {
     position: relative;
+    @media (max-width:768px) {
+        width: 320px;
+        height: 380px;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
 
 .course_search_datafetch_result {
@@ -6448,6 +6457,9 @@ form {
         &.active {
             background: var(--mainColor);
         }
+    }
+    @media (max-width: 480px) {
+        margin-bottom: 0px;
     }
 }
 
@@ -6848,7 +6860,7 @@ form {
         line-height: 150%;
         display: block;
     }
-    input {
+    input[type=text], input[type=password], input[type=email]   {
         margin-bottom: 0px;
         height: 38px;
         font-weight: 400;
@@ -6860,6 +6872,19 @@ form {
         line-height: 150%; 
         margin: 5px 0px;
     }
+}
+
+.mycred-table tr > *:nth-child(3) {
+    opacity: 0;
+}
+
+.mycred-table tfoot {
+    display: none;
+}
+
+.woocommerce-form-login__rememberme {
+    margin-top: 4px;
+    margin-bottom: 0px !important;
 }
 
 .input-radio-group {
@@ -6896,7 +6921,6 @@ form {
         width: 50%;
         float: left;
         height: 100%;
-        display: flex;
         align-items: center;
         min-height: 38px;
         @media (max-width:992px) {
@@ -6954,13 +6978,14 @@ form {
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    position: relative;
     p {
         font-size: 14px;
     }
     @media (max-width:480px) {
         flex-wrap: wrap;
         input {
-            width: 100%;
+            width: 100% !important
         }
         .wpcf7-spinner {
             display: none;
@@ -6971,7 +6996,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    select, input {
+    select, input[type=text] {
         width: calc(50% - 8px);
         margin: 0px;
         @media (max-width:480px) {
@@ -7058,6 +7083,9 @@ form {
     width: auto;
     height: 100%;
     display: inline-block;
+    @media (max-width:768px) {
+        width: 100%;
+    }
 }
 
 .entry-content {
@@ -7386,5 +7414,21 @@ input::-webkit-inner-spin-button {
 .woocommerce table.shop_table td {
     @media (max-width:480px) {
         padding: 9px 0px;
+    }
+}
+
+.woocommerce form.login {
+    max-width: 400px;
+    background: #fff;
+    border: 1px solid var(--greyColor);
+}
+
+.payment_method_wc_tinkoff_kvk .flex, .payment_method_wc_tinkoff_kvk .flex-col-12 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    @media (max-width:1024px) {
+        padding-left: 0px;
+        padding-right: 0px;  
     }
 }

@@ -4607,8 +4607,8 @@ iframe {
   cursor: pointer;
 }
 
-.channel-connect input,
-#change-connect_field input {
+.channel-connect input[type=text],
+#change-connect_field input[type=text] {
   width: calc(100% - 343px);
 }
 
@@ -5064,6 +5064,10 @@ iframe {
   font-size: 14px;
 }
 
+.format-btns > * {
+  margin-top: 0px !important;
+}
+
 .format-learning-controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5310,6 +5314,7 @@ iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 12px;
 }
 
 .basket__course--image {
@@ -5335,7 +5340,7 @@ iframe {
 
 .basket__course--info {
   width: calc(100% - 163px);
-  margin-right: 20px;
+  margin-right: 0px;
   color: var(--mainColor);
   text-decoration: none;
 }
@@ -5537,6 +5542,7 @@ iframe {
 .payment-item--label {
   position: relative;
   cursor: pointer;
+  width: 100%;
 }
 
 .payment-item--label input {
@@ -5860,8 +5866,12 @@ iframe {
   visibility: visible;
 }
 
-form input {
-  height: 50px;
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=tel],
+form input[type=number] {
+  height: 38px;
   padding: 10px 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -7000,6 +7010,9 @@ form input {
 .wpcf7-spinner {
   margin-right: 0px;
   min-width: 24px;
+  position: absolute;
+  right: 0;
+  display: none;
 }
 
 .result-simple--item {
@@ -7470,7 +7483,9 @@ form input {
   display: block;
 }
 
-.form-row input {
+.form-row input[type=text],
+.form-row input[type=password],
+.form-row input[type=email] {
   margin-bottom: 0px;
   height: 38px;
   font-weight: 400;
@@ -7482,6 +7497,19 @@ form input {
   font-size: 14px;
   line-height: 150%;
   margin: 5px 0px;
+}
+
+.mycred-table tr > *:nth-child(3) {
+  opacity: 0;
+}
+
+.mycred-table tfoot {
+  display: none;
+}
+
+.woocommerce-form-login__rememberme {
+  margin-top: 4px;
+  margin-bottom: 0px !important;
 }
 
 .input-radio-group {
@@ -7530,9 +7558,6 @@ form input {
   width: 50%;
   float: left;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -7571,6 +7596,7 @@ form input {
   display: flex;
   gap: 20px;
   margin-top: 20px;
+  position: relative;
 }
 
 .main-form--actions p {
@@ -7587,7 +7613,7 @@ form input {
 }
 
 .channel-connect select,
-.channel-connect input {
+.channel-connect input[type=text] {
   width: calc(50% - 8px);
   margin: 0px;
 }
@@ -8011,6 +8037,19 @@ input::-webkit-inner-spin-button {
 .woocommerce table.my_account_orders td,
 .woocommerce table.my_account_orders th {
   padding: 20px 5px;
+}
+
+.woocommerce form.login {
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid var(--greyColor);
+}
+
+.payment_method_wc_tinkoff_kvk .flex,
+.payment_method_wc_tinkoff_kvk .flex-col-12 {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 @media (min-width: 480px) {
@@ -8857,8 +8896,8 @@ input::-webkit-inner-spin-button {
     max-width: 250px;
   }
 
-  .channel-connect input,
-  #change-connect_field input {
+  .channel-connect input[type=text],
+  #change-connect_field input[type=text] {
     width: calc(100% - 265px);
   }
 
@@ -9070,6 +9109,12 @@ input::-webkit-inner-spin-button {
     background: none;
     border-radius: 0px;
     padding: 0px;
+  }
+
+  .payment_method_wc_tinkoff_kvk .flex,
+  .payment_method_wc_tinkoff_kvk .flex-col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -9315,18 +9360,6 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
 
-  .result-slider .slick-list .result--item {
-    width: 320px;
-    height: 380px;
-  }
-
-  .result-slider .slick-list .result--item img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-
   .result-slider .flex-row {
     margin-left: 0px;
     margin-right: 0px;
@@ -9489,6 +9522,18 @@ input::-webkit-inner-spin-button {
     margin-top: 30px;
   }
 
+  .result--item {
+    width: 320px;
+    height: 380px;
+  }
+
+  .result--item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
   .woocommerce form.checkout_coupon .form-row.form-row-first {
     width: 100%;
   }
@@ -9511,6 +9556,11 @@ input::-webkit-inner-spin-button {
     right: 0px;
     top: auto;
     bottom: 0px;
+  }
+
+  #result-slider img,
+  #result-slider-2 img {
+    width: 100%;
   }
 
   .wrapper-langing {
@@ -9964,8 +10014,8 @@ input::-webkit-inner-spin-button {
     margin-bottom: 20px;
   }
 
-  .channel-connect input,
-  #change-connect_field input {
+  .channel-connect input[type=text],
+  #change-connect_field input[type=text] {
     width: 100%;
   }
 
@@ -10392,6 +10442,10 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
   }
 
+  .tab {
+    margin-bottom: 0px;
+  }
+
   .modal-addCart {
     left: 16px;
     right: 16px;
@@ -10422,7 +10476,7 @@ input::-webkit-inner-spin-button {
   }
 
   .main-form--actions input {
-    width: 100%;
+    width: 100% !important;
   }
 
   .main-form--actions .wpcf7-spinner {
@@ -10430,7 +10484,7 @@ input::-webkit-inner-spin-button {
   }
 
   .channel-connect select,
-  .channel-connect input {
+  .channel-connect input[type=text] {
     width: 100%;
   }
 
