@@ -6847,6 +6847,12 @@ form input[type=number] {
   max-width: 460px;
 }
 
+.main-banner.loyality-banner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .partner--item {
   font-size: 20px;
 }
@@ -8015,6 +8021,15 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
 }
 
+.woocommerce-MyAccount-navigation-link--learn:before {
+  content: "";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktc2hpZWxkLWV4Y2xhbWF0aW9uIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik01LjMzOCAxLjU5YTYxLjQ0IDYxLjQ0IDAgMCAwLTIuODM3Ljg1Ni40ODEuNDgxIDAgMCAwLS4zMjguMzljLS41NTQgNC4xNTcuNzI2IDcuMTkgMi4yNTMgOS4xODhhMTAuNzI1IDEwLjcyNSAwIDAgMCAyLjI4NyAyLjIzM2MuMzQ2LjI0NC42NTIuNDIuODkzLjUzMy4xMi4wNTcuMjE4LjA5NS4yOTMuMTE4YS41NS41NSAwIDAgMCAuMTAxLjAyNS42MTUuNjE1IDAgMCAwIC4xLS4wMjVjLjA3Ni0uMDIzLjE3NC0uMDYxLjI5NC0uMTE4LjI0LS4xMTMuNTQ3LS4yOS44OTMtLjUzM2ExMC43MjYgMTAuNzI2IDAgMCAwIDIuMjg3LTIuMjMzYzEuNTI3LTEuOTk3IDIuODA3LTUuMDMxIDIuMjUzLTkuMTg4YS40OC40OCAwIDAgMC0uMzI4LS4zOWMtLjY1MS0uMjEzLTEuNzUtLjU2LTIuODM3LS44NTVDOS41NTIgMS4yOSA4LjUzMSAxLjA2NyA4IDEuMDY3Yy0uNTMgMC0xLjU1Mi4yMjMtMi42NjIuNTI0ek01LjA3Mi41NkM2LjE1Ny4yNjUgNy4zMSAwIDggMHMxLjg0My4yNjUgMi45MjguNTZjMS4xMS4zIDIuMjI5LjY1NSAyLjg4Ny44N2ExLjU0IDEuNTQgMCAwIDEgMS4wNDQgMS4yNjJjLjU5NiA0LjQ3Ny0uNzg3IDcuNzk1LTIuNDY1IDkuOTlhMTEuNzc1IDExLjc3NSAwIDAgMS0yLjUxNyAyLjQ1MyA3LjE1OSA3LjE1OSAwIDAgMS0xLjA0OC42MjVjLS4yOC4xMzItLjU4MS4yNC0uODI5LjI0cy0uNTQ4LS4xMDgtLjgyOS0uMjRhNy4xNTggNy4xNTggMCAwIDEtMS4wNDgtLjYyNSAxMS43NzcgMTEuNzc3IDAgMCAxLTIuNTE3LTIuNDUzQzEuOTI4IDEwLjQ4Ny41NDUgNy4xNjkgMS4xNDEgMi42OTJBMS41NCAxLjU0IDAgMCAxIDIuMTg1IDEuNDMgNjIuNDU2IDYyLjQ1NiAwIDAgMSA1LjA3Mi41NnoiLz4KICA8cGF0aCBkPSJNNy4wMDEgMTFhMSAxIDAgMSAxIDIgMCAxIDEgMCAwIDEtMiAwek03LjEgNC45OTVhLjkwNS45MDUgMCAxIDEgMS44IDBsLS4zNSAzLjUwN2EuNTUzLjU1MyAwIDAgMS0xLjEgMEw3LjEgNC45OTV6Ii8+Cjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 18px;
+  font-size: 16px;
+}
+
 .woocommerce-MyAccount-navigation-link--edit-account:before {
   content: "";
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01LjI1IDguNWEyLjI1IDIuMjUgMCAxMTQuNSAwIDIuMjUgMi4yNSAwIDAxLTQuNSAwek03LjUgMTBhMS41IDEuNSAwIDExMC0zIDEuNSAxLjUgMCAwMTAgM3oiIGZpbGw9IiMwMDAiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjIxMiAyLjY2NmEuNzUuNzUgMCAwMTEuMDYxIDBsMS4wNiAxLjA2MWEuNzUuNzUgMCAwMTAgMS4wNkMxMi41MTggNS42MDUgMTMuMDk2IDcgMTQuMjUgN2EuNzUuNzUgMCAwMS43NS43NXYxLjVhLjc1Ljc1IDAgMDEtLjc1Ljc1Yy0xLjE1NSAwLTEuNzMzIDEuMzk2LS45MTYgMi4yMTJhLjc1Ljc1IDAgMDEwIDEuMDYxbC0xLjA2MSAxLjA2YS43NS43NSAwIDAxLTEuMDYgMEMxMC4zOTUgMTMuNTE4IDkgMTQuMDk2IDkgMTUuMjVhLjc1Ljc1IDAgMDEtLjc1Ljc1aC0xLjVhLjc1Ljc1IDAgMDEtLjc1LS43NWMwLTEuMTU1LTEuMzk2LTEuNzMzLTIuMjEyLS45MTZhLjc1Ljc1IDAgMDEtMS4wNjEgMGwtMS4wNi0xLjA2MWEuNzUuNzUgMCAwMTAtMS4wNkMyLjQ4MiAxMS4zOTUgMS45MDQgMTAgLjc1IDEwQS43NS43NSAwIDAxMCA5LjI1di0xLjVBLjc1Ljc1IDAgMDEuNzUgN2MxLjE1NSAwIDEuNzMzLTEuMzk2LjkxNi0yLjIxMmEuNzUuNzUgMCAwMTAtMS4wNjFsMS4wNjEtMS4wNmEuNzUuNzUgMCAwMTEuMDYgMEM0LjYwNSAzLjQ4MiA2IDIuOTA0IDYgMS43NUEuNzUuNzUgMCAwMTYuNzUgMWgxLjVhLjc1Ljc1IDAgMDEuNzUuNzVjMCAxLjE1NSAxLjM5NiAxLjczMyAyLjIxMi45MTZ6TS43NSA3Ljc1YzEuODIzIDAgMi43MzYtMi4yMDQgMS40NDctMy40OTNsMS4wNi0xLjA2YzEuMjkgMS4yODkgMy40OTMuMzc2IDMuNDkzLTEuNDQ3aDEuNWMwIDEuODIzIDIuMjA0IDIuNzM2IDMuNDkzIDEuNDQ3bDEuMDYgMS4wNmMtMS4yODkgMS4yOS0uMzc2IDMuNDkzIDEuNDQ3IDMuNDkzdjEuNWMtMS44MjMgMC0yLjczNiAyLjIwNC0xLjQ0NyAzLjQ5M2wtMS4wNiAxLjA2Yy0xLjI5LTEuMjg5LTMuNDkzLS4zNzYtMy40OTMgMS40NDdoLTEuNWMwLTEuODIzLTIuMjA0LTIuNzM2LTMuNDkzLTEuNDQ3bC0xLjA2LTEuMDZDMy40ODYgMTEuNDUzIDIuNTczIDkuMjUuNzUgOS4yNXYtMS41eiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==);
@@ -8022,6 +8037,11 @@ input::-webkit-inner-spin-button {
   width: 16px;
   height: 18px;
   font-size: 16px;
+}
+
+.woocommerce-MyAccount-navigation-link--learn {
+  padding-bottom: 0px;
+  border-bottom: 0px;
 }
 
 .woocommerce-MyAccount-navigation-link--points,
@@ -9506,6 +9526,13 @@ input::-webkit-inner-spin-button {
   .main-banner {
     margin-bottom: 3.125rem;
     min-height: none;
+  }
+
+  .loyality-lvls .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .partner-info .flex-row {
