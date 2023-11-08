@@ -93,7 +93,7 @@
                         <a class="header__for-partners__link" href="contacts.html">Контакты</a>
                         <div class="header__basket">
                             <div class="basket">
-                                <span class="active-basket"></span>
+                                <span class="active-basket">3</span>
                             </div>
                             <div class="header-add-product">
                                 Товар добавлен
@@ -155,71 +155,173 @@
         <div class="basket__wrapper">
     <div class="basket__container">
         <div class="basket__head">
-            <div class="basket__title">Выбранные курсы</div>
-            <div class="basket__close">закрыть</div>
-        </div>
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <div class="basket__counter">
-                    <button class="decrement">-</button>
-                    <input type="number" class="count" value="1" min="1">
-                    <button class="increment">+</button>
-                </div>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
+            <div class="basket__title">Корзина</div>
+            <div class="basket__close"></div>
         </div>
 
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <div class="basket__counter">
-                    <button class="decrement">-</button>
-                    <input type="number" class="count" value="1" min="1">
-                    <button class="increment">+</button>
-                </div>
+        <div class="basket-overflow">
+            <div class="basket-sale-container">
+                <h4>Текущая скидка: <span>0%</span></h4>
+                <p>Добавьте 2 курс в корзину, чтобы получить скидку в <span>20%</span></p>
             </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
 
+            <div class="basket__courses" style="opacity: 1;">
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Пустая корзина-->
+            <div class="basket__empty" style="display: none;">
+                <div class="basket-empty-icon"></div>
+                <p>Вы ещё не добавили ни одного курса</p>
+            </div>
+            <!---->
+        </div>
 
         <div class="basket__summ">
+
             <div class="basket__summ--row">
-                <div class="basket__summ--title">
-                    Вся сумма
+                <div class="basket__summ--title"> Скидка </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount amount-sale">
+                        <bdi>-34 960&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
                 </div>
-                <div class="basket__summ--i">
-                    61 250 <span class="rouble">i</span>
+            </div>
+            <div class="basket__summ--row">
+                <div class="basket__summ--title"> Кэшбек </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount amount-cashback">
+                        <bdi>+960&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
                 </div>
             </div>
             <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+                <div class="basket__summ--title basket__summ-itog"> Вся сумма </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount">
+                        <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
+                </div>
+            </div>
+
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="order.html">Оформить заказ</a>
             </div>
             <div class="basket__summ--row">
-                <a id="continue-pay" class="btn-white" href="#">Продолжить покупки</a>
+                <a id="continue-pay" class="btn-white" href="#">Все курсы</a>
             </div>
+
         </div>
-
-       <!-- <div class="basket__head">
-            <div class="basket__title">В корзине ничего нет</div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="#">В каталог</a>
-            </div>
-        </div>-->
-
     </div>
 </div>
     </div>
@@ -617,99 +719,98 @@
                 <div class="flex-row title-container align-center">
                     <div class="flex-col-12">
                         <h2 class="title">Форматы обучения</h2>
+                        <p class="mt-0">Выберите наиболее подходящий способ оплаты</p>
                     </div>
-                    <!--<div class="flex-col-4">
+                    <div class="flex-col-4 mt-auto">
                         <div class="format-learning-controls">
                             <a data-gpoup="3000" data-ind="5000" data-off="10000" class="btn-white active" onclick="updatePrice(event, this)">24 месяцев</a>
                             <a data-gpoup="4000" data-ind="6000" data-off="11000" class="btn-white" onclick="updatePrice(event, this)">12 месяцев</a>
                             <a data-gpoup="5000" data-ind="7000" data-off="12000" class="btn-white" onclick="updatePrice(event, this)">Оплата сразу</a>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
                 <div class="flex-row">
                     <div class="flex-col-4 cust-col-tablet-12">
-                        <div class="format-learning--item">
-                            <div class="format-learning--item-title">Групповой</div>
+                        <div class="format-learning--item added">
+                            <div class="format-learning--item-title">
+                                <div>
+                                    Групповой онлайн 
+                                    <p>Обучение 8 месяцев</p>
+                                </div>
+                                <span class="sale-tag">-38%</span>
+                            </div>
                             <div class="format-learning--item-text">
-                                <p class="bold-text mb-10">Ключевые преимущества:</p>
-                                <ul class="pt-0">
-                                    <li>Онлайн в группе студентов с куратором</li>
-                                    <li>Длительность 6 месяцев</li>
+                                <ul>
+                                    <li>Занятия проходят онлайн — можно учиться из любой точки мира!</li>
+                                    <li>Обратная связь от куратора во время групповых созвонов в зуме</li>
+                                    <li>Длительность от трех месяцев в зависимости от курса</li>
                                     <li>Строгие дедлайны</li>
                                 </ul>
+                                <a class="purple-link" href="#" data-src="#dialog-content">Подробнее о формате</a>
                                 <div class="format-learning-bottom">
+                                    <div class="flex align-center gap-16">
+                                        <div class="our-courses__sale-price">6 000 ₽</div>
+                                        <div class="our-courses__cashback">
+                                            +кэшбек 988 ₽
+                                        </div>
+                                    </div>
                                     <div class="format-learning--content-price">
-                                        <div class="format-learning--price"><span id="groupValue">3 760</span> ₽ /</div>
+                                        <div class="format-learning--price">от <span id="groupValue">17 084 ₽ /</span> </div>
                                         <div class="format-learning--price-month">мес</div>
                                     </div>
                                     <div class="format-learning--footer">
-                                        <span>Рассрочка на 24 месяцев</span>
+                                        <span>Рассрочка на 10 месяцев</span>
                                         <span>Без первого взноса</span>
                                     </div>
-                                    <div class="format-btns gap-10">
-                                        <a data-fancybox data-src="#dialog-content" class="btn-white mt-20">Подробнее о формате</a>
-                                        <a href="#" class="btn-white btn-add-card mt-20">Добавлено в корзину</a>
+                                    <div class="format-btns gap-10 mt-20">
+                                        <button type="submit"
+                                            class="ajax_add_to_cart add_to_cart_button btn-primary mt-20">Добавить в корзину</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex-col-4 cust-col-tablet-12">
-                        <div class="format-learning--item">
-                            <div class="format-learning--item-title blue-color">Индивидуальный
-                                <div class="format-learning--item-title-sale">– 30%</div>
-                            </div>
-                            <div class="format-learning--item-text">
-                                <p class="bold-text mb-10">Ключевые преимущества:</p>
-                                <ul class="pt-0">
-                                    <li>Онлайн с куратором</li>
-                                    <li>Длительность 6 месяцев</li>
-                                    <li>Индивидуальные дедлайны</li>
-                                </ul>
-                                <div class="format-learning-bottom">
-                                    <div class="format-learning--content-price">
-                                        <div class="format-learning--price"><span id="individualValue">3 760</span> ₽ /</div>
-                                        <div class="format-learning--price-month">мес</div>
-                                    </div>
-                                    <div class="format-learning--footer">
-                                        <span>Рассрочка на 24 месяцев</span>
-                                        <span>Без первого взноса</span>
-                                    </div>
-                                    <div class="format-btns gap-10">
-                                        <a data-fancybox data-src="#dialog-content" class="btn-white mt-20">Подробнее о формате</a>
-                                        <a href="#" class="btn-white btn-blue mt-20">Добавить в корзину</a>
-                                    </div>
+                        <div class="format-learning--item added">
+                            <div class="format-learning--item-title">
+                                <div>
+                                    Индивидуальный онлайн
+                                    <p>Обучение 8 месяцев</p>
                                 </div>
+                                <span class="sale-tag">-38%</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="flex-col-4 cust-col-tablet-12">
-                        <div class="format-learning--item">
-                            <div class="format-learning--item-title">Офлайн</div>
                             <div class="format-learning--item-text">
-                                <p class="bold-text mb-10">Ключевые преимущества:</p>
-                                <ul class="pt-0">
-                                    <li>В Москве или в Петербурге</li>
-                                    <li>Длительность 1 год</li>
+                                <ul>
+                                    <li>Занятия проходят онлайн — можно учиться из любой точки мира!</li>
+                                    <li>Обратная связь от куратора во время групповых созвонов в зуме</li>
+                                    <li>Длительность от трех месяцев в зависимости от курса</li>
                                     <li>Строгие дедлайны</li>
                                 </ul>
+                                <a class="purple-link" href="#" data-src="#dialog-content">Подробнее о формате</a>
                                 <div class="format-learning-bottom">
+                                    <div class="flex align-center gap-16">
+                                        <div class="our-courses__sale-price">6 000 ₽</div>
+                                        <div class="our-courses__cashback">
+                                            +кэшбек 988 ₽
+                                        </div>
+                                    </div>
                                     <div class="format-learning--content-price">
-                                        <div class="format-learning--price"><span id="offlineValue">3 760</span> ₽ /</div>
+                                        <div class="format-learning--price">от <span id="groupValue">17 084 ₽ /</span> </div>
                                         <div class="format-learning--price-month">мес</div>
                                     </div>
                                     <div class="format-learning--footer">
-                                        <span>Рассрочка на 24 месяцев</span>
+                                        <span>Рассрочка на 10 месяцев</span>
                                         <span>Без первого взноса</span>
                                     </div>
-                                    <div class="format-btns gap-10">
-                                        <a data-fancybox data-src="#dialog-content" class="btn-white mt-20">Подробнее о формате</a>
-                                        <a href="#" class="btn-white mt-20">Добавить в корзину</a>
+                                    <div class="format-btns gap-10 mt-20">
+                                        <button type="submit"
+                                            class="ajax_add_to_cart add_to_cart_button btn-primary mt-20">Добавить в корзину</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -763,14 +864,16 @@
                         <a href="#" class="btn-white">Творчество</a>
                     </div>
                     <h3>Творчество и деньги</h3>
-                    <p>С помощью курса вы сориентируетесь в индустрии, поймете в каком формате хотите работать и сколько будете зарабатывать на каждом уровне , соберете свою "дорожную карту" для старта и развития в профессии.</p>
+                    <p>С помощью курса вы сориентируетесь в индустрии, поймете в каком формате хотите работать и сколько
+                        будете зарабатывать на каждом уровне , соберете свою "дорожную карту" для старта и развития в
+                        профессии.</p>
                     <a href="#" class="btn-black mt-0">Подробнее о курсе</a>
                 </div>
             </div>
         </div>
 
         <!---->
-        
+
         <div class="container">
             <div class="section--inner">
                 <div class="flex-row title-container align-center with-link">
@@ -782,8 +885,10 @@
                     </div>
                 </div>
                 <div class="tab">
-                    <button class="tablinks btn-white active" onclick="openCity(event, 'gruppovoj')">Групповой онлайн</button>
-                    <button class="tablinks btn-white" onclick="openCity(event, 'individualnyj')">Индивидуальный онлайн</button>
+                    <button class="tablinks btn-white active" onclick="openCity(event, 'gruppovoj')">Групповой
+                        онлайн</button>
+                    <button class="tablinks btn-white" onclick="openCity(event, 'individualnyj')">Индивидуальный
+                        онлайн</button>
                 </div>
                 <div class="flex-row">
                     <div class="flex-col-12">
@@ -1036,7 +1141,8 @@
                                 Стилизованный 3D-персонаж
                             </div>
                             <div class="our-courses__prices">
-                                <div class="our-courses__sale-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                                <div class="our-courses__sale-price">от 4 250 <span class="rouble">i</span> в месяц
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -1052,7 +1158,8 @@
                                 Стилизованный 3D-персонаж
                             </div>
                             <div class="our-courses__prices">
-                                <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                                <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -1068,7 +1175,8 @@
                                 Стилизованный 3D-персонаж
                             </div>
                             <div class="our-courses__prices">
-                                <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                                <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -1084,7 +1192,8 @@
                                 Стилизованный 3D-персонаж
                             </div>
                             <div class="our-courses__prices">
-                                <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                                <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -1094,21 +1203,22 @@
 
         <!--modals-->
         <div id="dialog-content" class="dialog-formats" style="display:none; max-width:1200px">
-          <div class="dialog-formats--header">
-            <h2>Групповой</h2>
-          </div>
-          <div class="flex-row dialog-formats--body">
-            <div class="flex-col-6 cust-col-tablet-12 dialog-formats--text">
-                <p>Небольшая группа до 6 человек. Каждую неделю вам открывается доступ к учебному материалу, в конце каждой недели куратор собирает группу и дает фидбэк по каждому домашнему заданию.</p>
-                <div class="dialog-formats--footer">
-                    <div>Дата старта обучения</div>
-                    <div class="dialog-formats--data">24.02.23</div>
+            <div class="dialog-formats--header">
+                <h2>Групповой</h2>
+            </div>
+            <div class="flex-row dialog-formats--body">
+                <div class="flex-col-6 cust-col-tablet-12 dialog-formats--text">
+                    <p>Небольшая группа до 6 человек. Каждую неделю вам открывается доступ к учебному материалу, в конце
+                        каждой недели куратор собирает группу и дает фидбэк по каждому домашнему заданию.</p>
+                    <div class="dialog-formats--footer">
+                        <div>Дата старта обучения</div>
+                        <div class="dialog-formats--data">24.02.23</div>
+                    </div>
+                </div>
+                <div class="flex-col-6 cust-col-tablet-12 dialog-formats--img">
+                    <img src="img/dialog-format-img.png" alt="">
                 </div>
             </div>
-            <div class="flex-col-6 cust-col-tablet-12 dialog-formats--img">
-                <img src="img/dialog-format-img.png" alt="">
-            </div>
-          </div>
         </div>
 
     </main>

@@ -93,7 +93,7 @@
                         <a class="header__for-partners__link" href="contacts.html">Контакты</a>
                         <div class="header__basket">
                             <div class="basket">
-                                <span class="active-basket"></span>
+                                <span class="active-basket">3</span>
                             </div>
                             <div class="header-add-product">
                                 Товар добавлен
@@ -155,71 +155,173 @@
         <div class="basket__wrapper">
     <div class="basket__container">
         <div class="basket__head">
-            <div class="basket__title">Выбранные курсы</div>
-            <div class="basket__close">закрыть</div>
-        </div>
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <div class="basket__counter">
-                    <button class="decrement">-</button>
-                    <input type="number" class="count" value="1" min="1">
-                    <button class="increment">+</button>
-                </div>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
+            <div class="basket__title">Корзина</div>
+            <div class="basket__close"></div>
         </div>
 
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <div class="basket__counter">
-                    <button class="decrement">-</button>
-                    <input type="number" class="count" value="1" min="1">
-                    <button class="increment">+</button>
-                </div>
+        <div class="basket-overflow">
+            <div class="basket-sale-container">
+                <h4>Текущая скидка: <span>0%</span></h4>
+                <p>Добавьте 2 курс в корзину, чтобы получить скидку в <span>20%</span></p>
             </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
 
+            <div class="basket__courses" style="opacity: 1;">
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Пустая корзина-->
+            <div class="basket__empty" style="display: none;">
+                <div class="basket-empty-icon"></div>
+                <p>Вы ещё не добавили ни одного курса</p>
+            </div>
+            <!---->
+        </div>
 
         <div class="basket__summ">
+
             <div class="basket__summ--row">
-                <div class="basket__summ--title">
-                    Вся сумма
+                <div class="basket__summ--title"> Скидка </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount amount-sale">
+                        <bdi>-34 960&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
                 </div>
-                <div class="basket__summ--i">
-                    61 250 <span class="rouble">i</span>
+            </div>
+            <div class="basket__summ--row">
+                <div class="basket__summ--title"> Кэшбек </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount amount-cashback">
+                        <bdi>+960&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
                 </div>
             </div>
             <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+                <div class="basket__summ--title basket__summ-itog"> Вся сумма </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount">
+                        <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
+                </div>
+            </div>
+
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="order.html">Оформить заказ</a>
             </div>
             <div class="basket__summ--row">
-                <a id="continue-pay" class="btn-white" href="#">Продолжить покупки</a>
+                <a id="continue-pay" class="btn-white" href="#">Все курсы</a>
             </div>
+
         </div>
-
-       <!-- <div class="basket__head">
-            <div class="basket__title">В корзине ничего нет</div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="#">В каталог</a>
-            </div>
-        </div>-->
-
     </div>
 </div>
     </div>
@@ -233,8 +335,8 @@
                 <div class="index-banner--bottom">
                     <picture class="index-banner--image">
                         <source media="(min-width:1024px)" srcset="img/banner-about.png">
-                        <img  src="img/main-banner-int--tablet.png" alt="">
-                      </picture>
+                        <img src="img/main-banner-int--tablet.png" alt="">
+                    </picture>
                     <div class="index-banner--int"><img src="img/banner-girl.png" alt=""></div>
                 </div>
             </div>
@@ -263,8 +365,11 @@
                         <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
                             <a href="directions.html" class="link-arrow-white">Подробнее</a>
                         </div>
-                        <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
-                            <div class="index-basic-direction--img" style="background: url('img/direction-1.png') no-repeat center; background-size: cover;"></div>
+                        <div
+                            class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
+                            <div class="index-basic-direction--img"
+                                style="background: url('img/direction-1.png') no-repeat center; background-size: cover;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -285,8 +390,11 @@
                         <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
                             <a href="directions.html" class="link-arrow-white">Подробнее</a>
                         </div>
-                        <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
-                            <div class="index-basic-direction--img" style="background: url('img/direction-2.png') no-repeat center; background-size: cover;"></div>
+                        <div
+                            class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
+                            <div class="index-basic-direction--img"
+                                style="background: url('img/direction-2.png') no-repeat center; background-size: cover;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -307,8 +415,11 @@
                         <div class="flex-col-3 cust-col-tablet-8 cust-col-mobile-12 mobile-order-3">
                             <a href="directions.html" class="link-arrow-white">Подробнее</a>
                         </div>
-                        <div class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
-                            <div class="index-basic-direction--img" style="background: url('img/direction-3.png') no-repeat center; background-size: cover;"></div>
+                        <div
+                            class="flex-col-3 cust-col-tablet-4 cust-col-mobile-12 tablet-absolute mobile-relative mobile-order-1">
+                            <div class="index-basic-direction--img"
+                                style="background: url('img/direction-3.png') no-repeat center; background-size: cover;">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -445,130 +556,143 @@
         <div class="our-courses__list flex-row mt-xl-0 mt-l-0">
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="sale-tag">- 30%</span>
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-1.png" alt="">
                     </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
+                    </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__sale-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-2.png" alt="">
                     </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
+                    </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-3.png" alt="">
                     </div>
-                    <div class="our-courses__name">
-                        Скетч от руки + перевод рисунка в цифровой вид
-                    </div>
-                    <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
-                    </div>
-                </a>
-            </div>
-            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
-                <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
-                    <div class="our-courses__image">
-                        <img src="img/course-4.png" alt="">
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
                     </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
+                    <div class="our-courses__image">
+                        <img src="img/course-4.png" alt="">
                     </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
+                    </div>
+                    <div class="our-courses__name">
+                        Стилизованный 3D-персонаж
+                    </div>
+                    <div class="our-courses__prices">
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
+                    </div>
+                </a>
+            </div>
+            <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
+                <a href="#" class="our-courses__item">
                     <div class="our-courses__image">
                         <img src="img/course-1.png" alt="">
                     </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
+                    </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-2.png" alt="">
                     </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
+                    </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-3.png" alt="">
                     </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
+                    </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__normal-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
                     </div>
                 </a>
             </div>
             <div class="flex-col-3 cust-col-tablet-6 cust-col-mobile-12">
                 <a href="#" class="our-courses__item">
-                    <div class="our-courses__tags">
-                        <span class="data-range"> 6 месяцев</span>
-                    </div>
                     <div class="our-courses__image">
                         <img src="img/course-4.png" alt="">
+                    </div>
+                    <div class="our-courses__cashback">
+                        +кэшбек 988 ₽
                     </div>
                     <div class="our-courses__name">
                         Стилизованный 3D-персонаж
                     </div>
                     <div class="our-courses__prices">
-                        <div class="our-courses__sale-price">от 4 250 <span class="rouble">i</span> в месяц</div>
+                        <div class="our-courses__normal-price">от 12 250 ₽</div>
+                        <div class="our-courses__sale-price">35 000</div>
+                        <span class="basket_course-sale">- 30%</span>
                     </div>
                 </a>
             </div>
@@ -882,7 +1006,8 @@
                         <a href="#">
                             <div class="event-img">
                                 <img src="img/event-3.png" alt="">
-                                <div class="index-item__info">Теория цвета для художников: комплементарная цветовая схема
+                                <div class="index-item__info">Теория цвета для художников: комплементарная цветовая
+                                    схема
                                 </div>
                             </div>
                         </a>
@@ -891,7 +1016,8 @@
                         <a href="#">
                             <div class="event-img">
                                 <img src="img/event-4.png" alt="">
-                                <div class="index-item__info">Теория цвета для художников: комплементарная цветовая схема
+                                <div class="index-item__info">Теория цвета для художников: комплементарная цветовая
+                                    схема
                                 </div>
                             </div>
                         </a>
@@ -938,12 +1064,105 @@
         </div>
 
         <div class="modal-addCart">
-            <p>{Название курса} успешно добавлен в корзину.</p>
-            <div class="modal-addCart-btn">
-                <a class="btn btn-white" href="#">Продолжить покупки</a>
-                <a class="btn btn-black" href="#">Оформить заказ</a>
+            <div class="modal-addCard-bf">
+                <div class="modal-addCard-bf-head">
+                    <h4>ЧЕРНАЯ ПЯТНИЦА В SKILLS UP</h4>
+                    <div class="modal-addCard-link">
+                        <a href="#">Подробнее</a>
+                        <a href="#" class="toCourses">Все курсы</a>
+                    </div>
+                </div>
+                <p>Добавьте 2 курс в корзину, чтобы получить скидку в <span>20%</span></p>
+                <div class="bf-range-overflow">
+                <div class="bf-range-container">
+                    <span class="bf-range">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span class="bf-range-last"></span>
+                    </span>
+                    <div class="bf-range-item active">
+                        0%
+                    </div>
+                    <div class="bf-range-item active">
+                        10%
+                        <div class="bf-gift">
+                            <span class="bg-gift-icon"></span>
+                            <div class="bf-gift-dropdown">
+                                <div class="close-bg-gift"></div>
+                                <a href="#"><img src="img/course-2.png" alt=""></a>
+                                <h4>КУРС В ПОДАРОК</h4>
+                                <p>При покупке двух любых курсов </p>
+                                <p>Дарим онлайн - курс «Творчество и деньги»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bf-range-item active">
+                        20%
+                        <div class="bf-gift">
+                            <span class="bg-gift-icon"></span>
+                            <div class="bf-gift-dropdown">
+                                <div class="close-bg-gift"></div>
+                                <a href="#"><img src="img/course-2.png" alt=""></a>
+                                <h4>КУРС В ПОДАРОК</h4>
+                                <p>При покупке двух любых курсов </p>
+                                <p>Дарим онлайн - курс «Творчество и деньги»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bf-range-item">
+                        30%
+                        <div class="bf-gift">
+                            <span class="bg-gift-icon"></span>
+                            <div class="bf-gift-dropdown">
+                                <div class="close-bg-gift"></div>
+                                <a href="#"><img src="img/course-2.png" alt=""></a>
+                                <h4>КУРС В ПОДАРОК</h4>
+                                <p>При покупке двух любых курсов </p>
+                                <p>Дарим онлайн - курс «Творчество и деньги»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bf-range-item">
+                        40%
+                        <div class="bf-gift">
+                            <span class="bg-gift-icon"></span>
+                            <div class="bf-gift-dropdown">
+                                <div class="close-bg-gift"></div>
+                                <a href="#"><img src="img/course-2.png" alt=""></a>
+                                <h4>КУРС В ПОДАРОК</h4>
+                                <p>При покупке двух любых курсов </p>
+                                <p>Дарим онлайн - курс «Творчество и деньги»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bf-range-item">
+                        45%
+                        <div class="bf-gift">
+                            <span class="bg-gift-icon"></span>
+                            <div class="bf-gift-dropdown">
+                                <div class="close-bg-gift"></div>
+                                <a href="#"><img src="img/course-2.png" alt=""></a>
+                                <h4>КУРС В ПОДАРОК</h4>
+                                <p>При покупке двух любых курсов </p>
+                                <p>Дарим онлайн - курс «Творчество и деньги»</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            </div>
+            <div class="modal-addCart-container">
+                <div class="modal-addCard-left">
+                    <span>Курс добавлен в корзину</span>
+                    <p>Дизайн персонажа в анимации</p>
+                </div>
+                <div class="modal-addCart-btn">
+                    <a class="btn btn-white" href="#">Продолжить покупки</a>
+                    <a class="btn btn-black" href="#">Оформить заказ</a>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -1146,7 +1365,7 @@
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/script.js?v=1"></script>
 
-   
+
 </body>
 
 </html>

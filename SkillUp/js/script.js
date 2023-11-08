@@ -1033,3 +1033,34 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+// black frid block
+
+const bfIcons = document.querySelectorAll('.bg-gift-icon');
+const bfDropdown = document.querySelectorAll('.bf-gift-dropdown');
+const bfDropdownClose = document.querySelectorAll('.close-bg-gift');
+
+bfIcons.forEach((link) => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+    link.nextSibling.nextSibling.classList.toggle('active');
+  })
+})
+
+
+bfDropdownClose.forEach((close) => {
+  close.addEventListener('click', function (event) {
+    bfDropdown.forEach((dropdown) => {
+      dropdown.classList.remove("active");
+    })
+  })
+})
+
+$(document).on('click', function (e) {
+  if ((!$(e.target).closest(".bg-gift-icon").length) && (!$(e.target).closest(".bf-gift-dropdown").length)) {
+    bfDropdown.forEach((dropdown) => {
+      dropdown.classList.remove("active");
+    })
+  }
+  e.stopPropagation();
+});

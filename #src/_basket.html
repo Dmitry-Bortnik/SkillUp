@@ -1,70 +1,172 @@
 <div class="basket__wrapper">
     <div class="basket__container">
         <div class="basket__head">
-            <div class="basket__title">Выбранные курсы</div>
-            <div class="basket__close">закрыть</div>
-        </div>
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-1.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">PHOTOSHOP ДЛЯ ХУДОЖНИКА ЭКСПРЕСС</a>
-                <div class="basket__counter">
-                    <button class="decrement">-</button>
-                    <input type="number" class="count" value="1" min="1">
-                    <button class="increment">+</button>
-                </div>
-            </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
+            <div class="basket__title">Корзина</div>
+            <div class="basket__close"></div>
         </div>
 
-        <div class="basket__course">
-            <a href="#" class="basket__course--image">
-                <img src="img/course-2.png" alt="">
-            </a>
-            <div class="basket__course--info">
-                <a href="#" class="basket__course--title">Стилизованный 3D-персонаж</a>
-                <div class="basket__counter">
-                    <button class="decrement">-</button>
-                    <input type="number" class="count" value="1" min="1">
-                    <button class="increment">+</button>
-                </div>
+        <div class="basket-overflow">
+            <div class="basket-sale-container">
+                <h4>Текущая скидка: <span>0%</span></h4>
+                <p>Добавьте 2 курс в корзину, чтобы получить скидку в <span>20%</span></p>
             </div>
-            <div class="basket__course--price">
-                12 250 <span class="rouble">i</span>
-            </div>
-        </div>
 
+            <div class="basket__courses" style="opacity: 1;">
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+                <div class="basket__course basket__course_from_mini-cart">
+                    <a class="basket__course--image" href="#">
+                        <img src="img/course-1.png" alt=""></a>
+                    <div class="basket__course--info">
+                        <div class="basket_course-sale">-30%</div>
+                        <a class="basket__course--title" href="#">
+                            Junior Artist</a>
+                        <div class="basket__counter">
+                            <button class="decrement">-</button>
+                            <input type="number" class="count" value="1" min="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <span class="category_course" style="display:none">Рисунок</span>
+                        <span class="format_course" style="display:none">Групповой онлайн</span>
+                    </div>
+                    <div class="basket__course--price">
+                        <span class="old_amount">150 000 ₽</span>
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi></span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Пустая корзина-->
+            <div class="basket__empty" style="display: none;">
+                <div class="basket-empty-icon"></div>
+                <p>Вы ещё не добавили ни одного курса</p>
+            </div>
+            <!---->
+        </div>
 
         <div class="basket__summ">
+
             <div class="basket__summ--row">
-                <div class="basket__summ--title">
-                    Вся сумма
+                <div class="basket__summ--title"> Скидка </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount amount-sale">
+                        <bdi>-34 960&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
                 </div>
-                <div class="basket__summ--i">
-                    61 250 <span class="rouble">i</span>
+            </div>
+            <div class="basket__summ--row">
+                <div class="basket__summ--title"> Кэшбек </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount amount-cashback">
+                        <bdi>+960&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
                 </div>
             </div>
             <div class="basket__summ--row">
-                <a class="btn btn-black" href="basket.html">Перейти к оплате</a>
+                <div class="basket__summ--title basket__summ-itog"> Вся сумма </div>
+                <div class="basket__summ--i" style="opacity: 1;">
+                    <span class="woocommerce-Price-amount amount">
+                        <bdi>102 500&nbsp;<span class="woocommerce-Price-currencySymbol">₽</span></bdi>
+                    </span>
+                </div>
+            </div>
+
+            <div class="basket__summ--row">
+                <a class="btn btn-black" href="order.html">Оформить заказ</a>
             </div>
             <div class="basket__summ--row">
-                <a id="continue-pay" class="btn-white" href="#">Продолжить покупки</a>
+                <a id="continue-pay" class="btn-white" href="#">Все курсы</a>
             </div>
+
         </div>
-
-       <!-- <div class="basket__head">
-            <div class="basket__title">В корзине ничего нет</div>
-        </div>
-
-        <div class="basket__summ">
-            <div class="basket__summ--row">
-                <a class="btn btn-black" href="#">В каталог</a>
-            </div>
-        </div>-->
-
     </div>
 </div>
