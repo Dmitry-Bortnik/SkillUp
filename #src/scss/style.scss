@@ -5,6 +5,7 @@
 @import 'remodal';
 @import 'remodal-default-theme';
 @import 'loyality-programm';
+@import 'components/bf';
 
 :root {
     --greyColor: #D9D9D9;
@@ -186,6 +187,16 @@ ul {
     max-width: 50%;
 }
 
+.flex-col-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+}
+
+.flex-col-5 {
+    flex-basis: 41.66666%;
+    max-width: 41.66666%;
+}
+
 .flex-col-3 {
     flex-basis: 25%;
     max-width: 25%;
@@ -290,7 +301,7 @@ ul {
     }
 
     .tablet-block {
-        display: block ;
+        display: block !important;
     }
 
     .tablet-none {
@@ -648,6 +659,7 @@ a {
     margin: 0px;
     @media (max-width:480px) {
         font-size: 32px;
+        text-align: center;
     }
 }
 
@@ -853,13 +865,50 @@ a {
     background: #7455EF;
     padding: 16px;
     color: #fff;
-    width: 100%;
     border: none;
     font-size: 16px;
     transition: all .2s;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
     &:hover {
         opacity: 0.8;
+    }
+}
+
+.btn-primary-black {
+    border-radius: 12px;
+    background: #000;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    transition: all .2s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-primary-white {
+    border-radius: 12px;
+    background: #ffff;
+    padding: 16px;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    transition: all .2s;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #A0A0A0;
+    text-align: center;
+    &:hover {
+        border: 1px solid #000;
     }
 }
 
@@ -2761,7 +2810,7 @@ iframe {
     margin-bottom: 0px;
     justify-content: flex-end;
     @media (max-width:768px) {
-        margin: 25px 0px 10px 0px;
+        margin: 25px auto 10px auto;
     }
 }
 
@@ -4330,6 +4379,14 @@ iframe {
     > * {
         margin-top: 0px !important;
     }
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+.result-slider img, .result-slider-free img {
+    max-height: 380px;
+    min-height: 380px;
 }
 
 .format-learning-controls {
@@ -6932,6 +6989,9 @@ form {
     }
     &:last-child {
         margin-bottom: 0px;
+    }
+    @media (max-width:480px) {
+        padding: 16px;
     }
 }
 
