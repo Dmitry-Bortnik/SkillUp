@@ -2210,6 +2210,10 @@ ul li {
   margin-bottom: 2rem;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .pt-0 {
   padding-top: 0px !important;
 }
@@ -8197,10 +8201,6 @@ form input[type=number] {
 
 .modal-addCart {
   position: fixed;
-  border-radius: 12px;
-  border: 1px solid #A0A0A0;
-  background: #FFF;
-  padding: 14px 20px;
   bottom: 0px;
   max-width: 816px;
   width: 100%;
@@ -8224,6 +8224,13 @@ form input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.modal-addCart .modal-addCard-bg {
+  border-radius: 12px;
+  border: 1px solid #B3B3B3;
+  background: #FFF;
+  padding: 14px 20px;
 }
 
 .modal-addCard-left {
@@ -11582,8 +11589,9 @@ input::-webkit-inner-spin-button {
   .modal-addCart-btn {
     text-align: center;
     gap: 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .modal-addCart-btn .btn {

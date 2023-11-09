@@ -136,6 +136,10 @@ ul {
     margin-bottom: 2rem;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .mt-0-md {
     @media (max-width:1024px) {
         margin-top: 0px !important;
@@ -7170,10 +7174,7 @@ form {
 
 .modal-addCart {
     position: fixed;
-    border-radius: 12px;
-    border: 1px solid #A0A0A0;
-    background: #FFF;
-    padding: 14px 20px;
+   
     bottom: 0px;
     max-width: 816px;
     width: 100%;
@@ -7202,6 +7203,12 @@ form {
         @media (max-width: 768px) {
             flex-direction: column;
         }
+    }
+    .modal-addCard-bg {
+        border-radius: 12px;
+        border: 1px solid #B3B3B3;
+        background: #FFF;
+        padding: 14px 20px;
     }
 }
 
@@ -7471,7 +7478,7 @@ form {
     @media (max-width:480px) {
         text-align: center;
         gap: 10px;
-        flex-wrap: wrap;
+        justify-content: center;
         .btn {
             margin: 0px;
             max-width: 200px;
