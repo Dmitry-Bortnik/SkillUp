@@ -96,7 +96,7 @@
     }
     .persent-sale {
         color: #7455EF;
-        font-size: 48px;
+        font-size: 38px;
         font-weight: 600;
         @media (max-width:480px) {
             font-size: 40px;
@@ -104,10 +104,12 @@
     }
     p {
         margin: 8px 0px 0px 0px;
+        font-size: 14px;
         a {
             color: #7455EF;
             text-decoration: none;
             border-bottom: 1px solid transparent;
+            display: inline;
             &:hover {
                 border-bottom: 1px solid;
             }
