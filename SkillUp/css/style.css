@@ -2085,6 +2085,161 @@ html.remodal-is-locked {
   background-position: center;
 }
 
+.woocommerce .login-content {
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.woocommerce .login-content form {
+  margin-bottom: 0px;
+}
+
+.woocommerce .login-content form input {
+  font-size: 14px;
+}
+
+.woocommerce .login-content h2 {
+  font-size: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.woocommerce .login-content form .form-row {
+  margin-bottom: 20px !important;
+}
+
+.woocommerce .login-content .login-form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.woocommerce .login-content .login-form-footer .woocommerce-form-login__rememberme {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.woocommerce .login-content .login-form-footer .woocommerce-form-login__rememberme input {
+  width: 16px;
+  height: 16px;
+}
+
+.woocommerce .login-content .login-form-footer .woocommerce-form-login__rememberme span {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.woocommerce .login-content .login-form-footer .woocommerce-button {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-top: 0px !important;
+}
+
+.woocommerce .login-content .lost_password a {
+  color: #282828;
+  font-size: 14px;
+  opacity: 0.7;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  line-height: 120%;
+}
+
+.woocommerce .login-content .lost_password a:hover {
+  opacity: 1;
+}
+
+.login-page {
+  margin: 60px 12px;
+}
+
+.login-page .login-logo {
+  margin: 0 auto;
+  width: 125px;
+  margin-bottom: 30px;
+}
+
+.login-page .login-descr {
+  text-align: center;
+  color: #282828;
+  font-size: 20px;
+  margin: 30px 0px;
+}
+
+.login-l-link {
+  margin: 30 auto 0 auto;
+  display: table;
+  text-align: center;
+  color: #282828;
+  font-size: 16px;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.login-l-link:hover {
+  opacity: 1;
+}
+
+.woocommerce-form-login__submit {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.woocommerce-form-login__submit:hover {
+  background: #fff !important;
+  color: var(--mainColor) !important;
+}
+
+.reg-form-footer .woocommerce-form-login__submit {
+  width: 100%;
+}
+
+.reg-form-footer .woocommerce-form-login__rememberme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.reg-form-footer .woocommerce-form-login__rememberme .woocommerce-form__input-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.reg-form-footer .woocommerce-form-login__rememberme span {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.reg-form-footer .woocommerce-form-login__rememberme span a {
+  color: #000;
+}
+
+.reg-form-footer .woocommerce-form-login__rememberme span a:hover {
+  text-decoration: none;
+}
+
 :root {
   --greyColor: #D9D9D9;
   --blueHoverColor: #4B3BFF;
@@ -5082,7 +5237,8 @@ iframe {
 }
 
 .channel-connect select,
-#change-connect_field select {
+#change-connect_field select,
+form select {
   max-width: 100%;
   height: 38px;
   width: 100%;
@@ -5101,7 +5257,8 @@ iframe {
 }
 
 .channel-connect input[type=text],
-#change-connect_field input[type=text] {
+#change-connect_field input[type=text],
+form input[type=text] {
   width: calc(100% - 343px);
 }
 
@@ -8131,7 +8288,7 @@ form input[type=number] {
 }
 
 .personal-order-control .btn-black-xs {
-  color: #fff;
+  color: #fff !important;
 }
 
 .personal-order-control .btn-black-xs:hover {
@@ -8657,11 +8814,7 @@ form input[type=number] {
   display: inline-block;
 }
 
-.entry-content a:not(.btn-black) {
-  color: var(--mainColor);
-}
-
-.entry-content a:not(.btn-black-xs) {
+.entry-content a:not(.btn-black):not(.btn-black-xs):not(.btn-white-xs) {
   color: var(--mainColor);
 }
 
@@ -8997,12 +9150,6 @@ input::-webkit-inner-spin-button {
 .woocommerce table.my_account_orders td,
 .woocommerce table.my_account_orders th {
   padding: 20px 5px;
-}
-
-.woocommerce form.login {
-  max-width: 400px;
-  background: #fff;
-  border: 1px solid var(--greyColor);
 }
 
 .payment_method_wc_tinkoff_kvk .flex,
@@ -9864,12 +10011,14 @@ input::-webkit-inner-spin-button {
   }
 
   .channel-connect select,
-  #change-connect_field select {
+  #change-connect_field select,
+  form select {
     max-width: 250px;
   }
 
   .channel-connect input[type=text],
-  #change-connect_field input[type=text] {
+  #change-connect_field input[type=text],
+  form input[type=text] {
     width: calc(100% - 265px);
   }
 
@@ -11130,13 +11279,15 @@ input::-webkit-inner-spin-button {
   }
 
   .channel-connect select,
-  #change-connect_field select {
+  #change-connect_field select,
+  form select {
     max-width: 100%;
     margin-bottom: 20px;
   }
 
   .channel-connect input[type=text],
-  #change-connect_field input[type=text] {
+  #change-connect_field input[type=text],
+  form input[type=text] {
     width: 100%;
   }
 

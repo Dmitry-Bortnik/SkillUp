@@ -1,0 +1,124 @@
+.woocommerce .login-content {
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    form {
+        margin-bottom: 0px;
+        input {
+            font-size: 14px;
+        }
+    }
+    h2 {
+        font-size: 20px;
+        margin: 0px 0px 20px 0px;
+    }
+    form .form-row {
+        margin-bottom: 20px !important;
+    }
+    .login-form-footer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .woocommerce-form-login__rememberme {
+            order: 2;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            gap: 8px;
+            input {
+                width: 16px;
+                height: 16px;
+            }
+            span {
+                font-size: 12px;
+                color: #000;
+                opacity: 0.5;
+            }
+        }
+        .woocommerce-button {
+            order: 1;
+            margin-top: 0px !important;
+           
+        }
+    }
+    .lost_password {
+        a {
+            color: #282828;
+            font-size: 14px;
+            opacity: 0.7;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            line-height: 120%;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.login-page {
+    margin: 60px 12px;
+    .login-logo {
+        margin: 0 auto;
+        width: 125px;
+        margin-bottom: 30px;
+    }
+    .login-descr {
+        text-align: center;
+        color: #282828;
+        font-size: 20px;
+        margin: 30px 0px;
+    }
+}
+
+.login-l-link {
+    margin: 30 auto 0 auto;
+    display: table;
+    text-align: center;
+    color: #282828;
+    font-size: 16px;
+    border-bottom: 1px solid;
+    text-decoration: none;
+    opacity: 0.7;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.woocommerce-form-login__submit {
+    cursor: pointer;
+    font-size: 14px;
+    &:hover {
+        background: #fff !important;
+        color: var(--mainColor) !important;
+    }
+}
+
+.reg-form-footer {
+    .woocommerce-form-login__submit {
+        width: 100%;
+    }
+    .woocommerce-form-login__rememberme {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .woocommerce-form__input-checkbox {
+            width: 16px;
+            height: 16px;
+        }
+        span {
+            font-size: 12px;
+            color: #000;
+            opacity: 0.5;
+            a {
+                color: #000;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

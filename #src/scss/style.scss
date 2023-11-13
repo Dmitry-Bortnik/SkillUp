@@ -6,6 +6,7 @@
 @import 'remodal-default-theme';
 @import 'loyality-programm';
 @import 'components/bf';
+@import 'components/login';
 
 :root {
     --greyColor: #D9D9D9;
@@ -3805,7 +3806,7 @@ iframe {
     }
 }
 
-.channel-connect, #change-connect_field {
+.channel-connect, #change-connect_field, form {
 
     select {
         max-width: 100%;
@@ -7061,7 +7062,7 @@ form {
     justify-content: flex-end;
     gap: 10px;
     .btn-black-xs {
-        color: #fff;
+        color: #fff !important;
         &:hover {
             color: var(--mainColor);
         }
@@ -7611,10 +7612,7 @@ form {
 }
 
 .entry-content {
-    a:not(.btn-black) {
-        color: var(--mainColor);
-    }
-    a:not(.btn-black-xs) {
+    a:not(.btn-black):not(.btn-black-xs):not(.btn-white-xs) {
         color: var(--mainColor);
     }
 }
@@ -7947,12 +7945,6 @@ input::-webkit-inner-spin-button {
     @media (max-width:480px) {
         padding: 9px 0px;
     }
-}
-
-.woocommerce form.login {
-    max-width: 400px;
-    background: #fff;
-    border: 1px solid var(--greyColor);
 }
 
 .payment_method_wc_tinkoff_kvk .flex, .payment_method_wc_tinkoff_kvk .flex-col-12 {
