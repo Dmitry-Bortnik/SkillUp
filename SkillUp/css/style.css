@@ -7289,7 +7289,8 @@ form input[type=number] {
   color: #fff;
 }
 
-.proffessions--main-banner h1 {
+.proffessions--main-banner h1,
+.proffessions--main-banner h2 {
   font-family: var(--secondFont);
   font-size: 68px;
   font-weight: 500;
@@ -7302,6 +7303,10 @@ form input[type=number] {
 
 .proffessions--main-banner .btn-black {
   margin-top: 55px;
+}
+
+.proffessions--main-banner.index-section {
+  margin: 12.5rem 0rem;
 }
 
 .prof--banner-section {
@@ -10638,6 +10643,10 @@ input::-webkit-inner-spin-button {
     margin-bottom: 6.25rem;
   }
 
+  .proffessions--main-banner.index-section {
+    margin: 6.25rem 0rem;
+  }
+
   .main-banner {
     margin-bottom: 3.125rem;
     min-height: none;
@@ -11612,7 +11621,8 @@ input::-webkit-inner-spin-button {
     line-height: normal;
   }
 
-  .proffessions--main-banner h1 {
+  .proffessions--main-banner h1,
+  .proffessions--main-banner h2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

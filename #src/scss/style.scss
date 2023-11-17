@@ -6011,7 +6011,7 @@ form {
             }
         }
     }
-    h1 {
+    h1, h2 {
         font-family: var(--secondFont);
         font-size: 68px;
         font-weight: 500;
@@ -6031,6 +6031,12 @@ form {
         @media (max-width:480px) {
             margin: 30px auto;
             display: table;
+        }
+    }
+    &.index-section {
+        margin: 12.5rem 0rem;
+        @media (max-width:768px) {
+            margin: 6.25rem 0rem;
         }
     }
 }
