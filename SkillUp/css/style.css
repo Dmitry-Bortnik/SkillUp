@@ -2152,6 +2152,10 @@ html.remodal-is-locked {
   margin-top: 0px !important;
 }
 
+.woocommerce .login-content .lost_password {
+  margin-top: 20px;
+}
+
 .woocommerce .login-content .lost_password a {
   color: #282828;
   font-size: 14px;
@@ -2163,6 +2167,10 @@ html.remodal-is-locked {
 
 .woocommerce .login-content .lost_password a:hover {
   opacity: 1;
+}
+
+.woocommerce .login-content form .form-row.login-form-footer {
+  margin-bottom: 0px !important;
 }
 
 .login-page {
@@ -2180,6 +2188,7 @@ html.remodal-is-locked {
   color: #282828;
   font-size: 20px;
   margin: 30px 0px;
+  line-height: 140%;
 }
 
 .login-l-link {

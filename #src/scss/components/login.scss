@@ -45,6 +45,7 @@
         }
     }
     .lost_password {
+        margin-top: 20px;
         a {
             color: #282828;
             font-size: 14px;
@@ -59,6 +60,10 @@
     }
 }
 
+.woocommerce .login-content form .form-row.login-form-footer {
+    margin-bottom: 0px !important;
+}
+
 .login-page {
     margin: 60px 12px;
     .login-logo {
@@ -71,6 +76,7 @@
         color: #282828;
         font-size: 20px;
         margin: 30px 0px;
+        line-height: 140%;
     }
 }
 
